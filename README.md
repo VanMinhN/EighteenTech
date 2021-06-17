@@ -1,11 +1,11 @@
 # EighteenTech
 
-Basic template
+Basic template.
 
 ## To do
 
-Template pages for categories, sign up, and the whole admin side
+Template pages for categories, sign up, and the whole admin side.
 
 ## Any doubts?
 
-Ping the team members on discord
+Ping the team members on discord.
