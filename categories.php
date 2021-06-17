@@ -12,8 +12,11 @@
 	</head>
 	<body>
 	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."navbar.html"); ?>
-<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap-4.4.1.js"></script>
+		<div class="container" style="margin-top: 100px">
+			<h2 class="text-center">Pick a category to start browsing</h2>
+		</div>
+<script src="./js/jquery-3.4.1.min.js"></script>
+	<script src="./js/popper.min.js"></script>
+	<script src="./js/bootstrap-4.4.1.js"></script>
 	</body>
 </html>

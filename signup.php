@@ -14,22 +14,24 @@
 	<div class="container">
 	<div class="card" style="margin-top: 40vh">
 		<article class="card-body">
-			<a href="./index.php" class="float-left btn btn-outline-dark">Go Back</a>
-		<a href="./signup.php" class="float-right btn btn-secondary">Sign up</a>
-		<h4 class="card-title mb-4 mt-1">&nbsp;Sign in</h4>
+			<a href="./login.php" class="float-left btn btn-outline-dark">Go Back</a>
+		<h4 class="card-title mb-4 mt-1">&nbsp;Sign up</h4>
 	 	<form>
     		<div class="form-group">
     			<label>Your email</label>
         		<input name="" class="form-control" placeholder="Email" type="email">
     		</div> <!-- form-group// -->
     		<div class="form-group">
-    			<a class="float-right" href="#">Forgot password?</a>
     			<label>Your password</label>
         		<input class="form-control" placeholder="******" type="password">
-    		</div> <!-- form-group// -->   
+    		</div> <!-- form-group// -->
+        <div class="form-group">
+    			<label>Re-enter your password</label>
+        		<input class="form-control" placeholder="******" type="password">
+    		</div> <!-- form-group// -->
     		<div class="form-group">
-        		<button type="submit" class="btn btn-primary btn-block"> Login  </button>
-    		</div> <!-- form-group// -->                                                           
+        		<button type="submit" class="btn btn-primary btn-block"> Register  </button>
+    		</div> <!-- form-group// -->
 		</form>
 		</article>
 	</div></div>
