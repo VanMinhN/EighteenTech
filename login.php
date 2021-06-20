@@ -10,11 +10,16 @@
  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
 	</head>
-	<body>
+	<body style="background-color: #f0f0f0">
 	<div class="container">
-	<div class="card" style="margin-top: 40vh">
+	<div class="card" style=" position: fixed;
+    top: 50%;
+    left: 50%;
+	min-width: 350px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);">
+		<a href="./index.php" class="float-left btn btn-outline-dark">Go Back</a>
 		<article class="card-body">
-			<a href="./index.php" class="float-left btn btn-outline-dark">Go Back</a>
 		<a href="./signup.php" class="float-right btn btn-secondary">Sign up</a>
 		<h4 class="card-title mb-4 mt-1">&nbsp;Sign in</h4>
 	 	<form>
