@@ -12,7 +12,7 @@
 	</head>
 	<body>
 	<div>
-	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."navbar.html"); ?>
+	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."navbar.php"); ?>
 	</div>
 	 <div class="container" style="margin-top: 100px">
 		<div class="row">

@@ -16,7 +16,7 @@
 				border-color: #42f596;
 			}
 			.btn-lg:hover{
-				
+
 				border-color: #3bd985;
 				background-color: #3bd985;
 			}
@@ -31,7 +31,7 @@
 		</style>
 	</head>
 	<body>
-	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."navbar.html"); ?>
+	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."navbar.php"); ?>
 		<div class="container" style="margin-top: 100px">
 			<h2 class="text-center">Pick a category to start browsing</h2><br/><br/>
 		  <div class="row">

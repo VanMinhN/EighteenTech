@@ -13,6 +13,7 @@
 			document.getElementById("nav_categories").className = "nav-link active";
 			console.log("done");
 		}
+		
 };
 
 </script>
@@ -36,7 +37,27 @@
 		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query" required >
 		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Search">Search</button>
 	        </form>&nbsp;&nbsp;
-			<a href="./login.php"><button class="btn btn-outline-dark my-2 my-sm-0">Login/Signup</button></a>
+					<div id="loginButton">
+					<?php
+					// Initialize the session
+					session_start();
+
+					// shows username if logged in, otherwise shows login button
+					if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+					    echo '<a href="./login.php"><button class="btn btn-outline-dark my-2 my-sm-0">Login/Signup</button></a>';
+
+					}
+					else{
+						echo '<div class="dropdown">
+  									<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'.htmlspecialchars($_SESSION["username"]).'</button>
+  									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    									<a class="dropdown-item" href="./user.php">View profile</a>
+    									<a class="dropdown-item" href="./logout.php">Log out</a>
+  									</div>
+									</div>';
+					}
+					?>
+				</div>
       </div>
     </nav>
 

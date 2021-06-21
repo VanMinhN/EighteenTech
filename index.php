@@ -9,11 +9,11 @@
   		<meta name="author" content="Nitin Ramesh">
  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
-	
+
 	</head>
 	<body>
 		<div>
-	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."navbar.html"); ?> <!-- Navbar -->
+	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."navbar.php"); ?> <!-- Navbar -->
 		</div>
 	<div class="container" style="margin-top: 100px">
 	  <div class="container mt-3">
