@@ -1,15 +1,4 @@
-<?php
 
-// Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: ../login.php");
-    exit;
-}
-if ($_SESSION["is_admin"] != true){
-  header("location: ../user.php");
-  exit;
-}
-?>
 <div class="container">
 	<h2>Admin Information</h2>
 	<p >Name: <b><?php echo htmlspecialchars($_SESSION["first_name"])." ".htmlspecialchars($_SESSION["last_name"]); ?></b></p>
