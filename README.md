@@ -4,7 +4,7 @@ Basic template.
 
 ## To do
 
-* Create browse.php
+* Create database schema for products
 
 ## How to run
 

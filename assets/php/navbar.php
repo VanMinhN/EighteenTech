@@ -13,7 +13,7 @@
 			document.getElementById("nav_categories").className = "nav-link active";
 			console.log("done");
 		}
-		
+
 };
 
 </script>
@@ -50,7 +50,7 @@
 					else{
 						echo '<div class="dropdown">
   									<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'.htmlspecialchars($_SESSION["username"]).'</button>
-  									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+  									<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
     									<a class="dropdown-item" href="./user.php">View profile</a>
     									<a class="dropdown-item" href="./logout.php">Log out</a>
   									</div>

@@ -34,26 +34,28 @@
 	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."navbar.php"); ?>
 		<div class="container" style="margin-top: 100px">
 			<h2 class="text-center">Pick a category to start browsing</h2><br/><br/>
+      <form action="browse.php">
 		  <div class="row">
 			  <div class="col-xl-4">
-			    <button type="button" class="btn btn-lg">Cell phones</button>
+          <button name="category" value="101" class="btn btn-lg" type="submit">Cell Phones</button>
               </div>
 			  <div class="col-xl-4">
-				  <button type="button" class="btn btn-lg">Headphones & Speakers</button>
+          <button name="category" value="102" class="btn btn-lg" type="submit">Headphones & Speakers</button>
 			  </div>
 			  <div class="col-xl-4">
-				  <button type="button" class="btn btn-lg">Cameras</button>
+          <button name="category" value="103" class="btn btn-lg" type="submit">Cameras</button>
 			  </div>
 		    <div class="col-xl-4">
-				  <button type="button" class="btn btn-lg">TV & Home Theatres</button>
+          <button name="category" value="104" class="btn btn-lg" type="submit">TV & Home Theatres</button>
 			  </div>
 		    <div class="col-xl-4">
-			  <button type="button" class="btn btn-lg">Wearable Technology</button>
+          <button name="category" value="105" class="btn btn-lg" type="submit">Wearable Technology</button>
 			  </div>
 		    <div class="col-xl-4">
-			  <button type="button" class="btn btn-lg">Smart home</button>
+          <button name="category" value="106" class="btn btn-lg" type="submit">Smart home</button>
 			  </div>
 		  </div>
+    </form>
         </div>
 <script src="./js/jquery-3.4.1.min.js"></script>
 	<script src="./js/popper.min.js"></script>
