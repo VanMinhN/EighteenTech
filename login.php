@@ -107,7 +107,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   		<meta name="keywords" content="appliances, tech, review, tv, mobile, headphone, laptop, phone">
   		<meta name="author" content="Nitin Ramesh">
  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	</head>
 	<body style="background-color: #f0f0f0">
 	<div class="container">
