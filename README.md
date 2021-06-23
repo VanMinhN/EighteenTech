@@ -11,9 +11,10 @@ Basic template.
 ### PHP
 
 1. Follow the steps on  https://www.sunant.com/running-php-from-windows-command-line/ to set up php on your windows command line
-2. Clone this repo onto your local machine
-3. in the project directory, open the command line and enter `php -S localhost:8000`
-4. The site will now be up on http://localhost:8000/ (The page won't load without starting the MySQL service on XAMPP)
+2. Add/Replace the php.ini file (located in the folder you created in step 1) with the one sent on Discord
+3. Clone this repo onto your local machine
+4. in the project directory, open the command line and enter `php -S localhost:8000`
+5. The site will now be up on http://localhost:8000/ (The page won't load without starting the MySQL service on XAMPP)
 
 ### MySQL
 
