@@ -4,7 +4,7 @@ Basic template.
 
 ## To do
 
-* Create database schema for products
+* Populate browse page and create product page
 
 ## How to run
 
