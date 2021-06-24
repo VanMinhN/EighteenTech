@@ -4,7 +4,7 @@ Basic template.
 
 ## To do
 
-* Populate browse page and create product page
+* Create product page
 
 ## How to run
 
