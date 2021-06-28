@@ -4,7 +4,7 @@ Basic template.
 
 ## To do
 
-* Create product page
+* Create admin product management page
 
 ## How to run
 
