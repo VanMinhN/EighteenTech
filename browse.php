@@ -85,16 +85,18 @@
 
 
 
-  $query = "SELECT p_name, p_image FROM products where p_category=".$cat." LIMIT " . $page_first_result . ',' . $results_per_page;  //to be changed
+  $query = "SELECT p_id, p_name, p_image FROM products where p_category=".$cat." LIMIT " . $page_first_result . ',' . $results_per_page;  //to be changed
   $result = mysqli_query($link, $query);
 
   echo '<div class="row">';
   while ($row = mysqli_fetch_array($result)) { //printing products on screen
     echo ' <div class="col-sm-4">
+            <a class=" text-decoration-none" href="product.php?pid='.$row['p_id'].'">
               <div class="card" style="height: 300px">
                 <img class="card-img-top" src="'.$row['p_image'].'" style=" display: block; margin-left: auto; margin-right: auto;max-width: 150px; max-height:250px; overflow: hidden; object-position: 50% 50%; object-fit: contain;" alt="'.$row['p_name'].'">
                 <h5 class="card-title">'.$row['p_name'].'</h5>
               </div>
+              </a>
             </div>';
   }
   echo '</div></br><hr/>';

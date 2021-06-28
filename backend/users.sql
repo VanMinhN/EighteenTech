@@ -142,6 +142,295 @@ Manufacturer	‎Samsung
 Item model number	‎SM-A515F/DS
 Product Dimensions	‎17.78 x 7.62 x 6.35 cm; 172 Grams
 ASIN	‎B082YF7WY5", "https://www.amazon.ca/Samsung-Galaxy-SM-A515F-Factory-Unlocked/dp/B082YF7WY5/ref=sr_1_30?crid=24WG2VTQWGWVJ&dchild=1&keywords=cell%2Bphone&qid=1624463971&sprefix=cell%2Caps%2C184&sr=8-30&th=1", "https://www.newegg.ca/samsung-galaxy-a51-6-5-4g-lte-prism-crush-black/p/N82E16875169911?Description=Samsung%20Galaxy%20A51&cm_re=Samsung_Galaxy%20A51-_-75-169-911-_-Product", "https://www.bestbuy.ca/en-ca/product/samsung-galaxy-a51-64gb-smartphone-crush-black-unlocked-new/15338048");
+INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("101", "Huawei MATE 20 Pro", "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/133/13387/13387891.jpg", "Brand New Huawei MATE 20 Pro 128GB ROM & 6 GB RAM. Featuring Display : Size:6.39 inches - Colour:Black - Colour gamut: DCI-P3 - Type:OLED - Resolution:2K+ 3120 x 1440, 538 PPI
+Chipset : HUAWEI Kirin 980 2 x Cortex-A76 2.6 GHz + 2 x Cortex-A76 1.92 GHz + 4 x Cortex-A55 1.8 GHz
+Operating System: Android 9
+Memory : 6 GB RAM + 128 GB ROM - NM card: support up to 256 GB
+Network : LYA-L0C:FDD LTE: B1 / 2 / 3 / 4 / 5 / 6 / 7 / 8 / 9 / 12 / 17 / 18 / 19 / 20 / 26 / 28 / 66-TDD LTE: B34 / B38 / 39 / 40 / 41-WCDMA: B1 / 2 / 4 / 5 / 6 / 8 / 19-GSM: B2 / 3 / 5 / 8
+GPS : GPS (L1 + L5 dual band) / AGPS / Glonass / BeiDou / Galileo (E1 + E5a dual band) / QZSS (L1 + L5 dual band)
+Connectivity : 802.11 a/b/g/n/ac (wave2), 2.4 GHz and 5 GHz - Bluetooth 5.0, BLE, SBC, AAC, aptX, aptX HD, LDAC and HWA Audio - Type-C, USB 3.1 GEN1 - Type-C earjack -
+PC Data Synchronisation
+Sensors : Gravity Sensor- Ambient Light Sensor - Proximity Sensor - Gyroscope - Compass - In-Screen Fingerprint Sensor, Hall sensor, laser sensor, Barometer, Infrared sensor, colour temperature sensor
+Camera : Leica Triple camera: 40 MP (Wide Angle Lens, f/1.8 aperture) + 20 MP (Ultra Wide Angle Lens, f/2.2 aperture) + 8 MP (Telephoto, f/2.4 aperture), supports autofocus (laser focus, phase focus, contrast focus), supports AIS (Huawei AI Image Stabilization). Front Camera: Support 3D Depth Sensing Camera. 24 MP, f/2.0 aperture
+Audio : Audio File Format: mp3, mp4, 3gp, ogg, amr, aac, flac, wav, midi
+Video : Video File Format: 3gp, mp4 - EMUI - EMUI 9.0
+Battery : 4200 mAh (typical value) - Wire Charging: MAX 40 W HUAWEI SuperCharge -Wireless charging: 15 W HUAWEI Wireless Quick Charge
+NFC : Read Write mode / Peer to Peer mode / Card Emulation mode (payment by *SIM card, or HCE) is supported.
+SIM card only supports SIM 1 slot.
+SPLASH, WATER, AND DUST RESISTANT
+In the box : Handset x 1 - Type-C Earphones x 1- Charger x 1 - Type-C Cable x 1 - Eject tool x 1 - Quick Start Guide x 1 - Protective case x 1 (not for WEU and NEU) - Warranty card x 1 - Type-C to 3.5 mm headphone jack adapter x 1", "Base feature:          Wireless Carrier:
+Unlocked
+Product Condition:
+New
+Bluetooth:
+5.0, BLE, SBC, AAC, aptX, aptX HD, LDAC and HWA Audio
+Dual SIM Card:
+No
+Storage:
+128 GB
+Memory - Expansion:
+NM card: support up to 256 GB
+CPU:
+HUAWEI Kirin 980 - x Cortex-A76 2.6 GHz + 2 x Cortex-A76 1.92 GHz + 4 x Cortex-A55 1.8 GHz
+RAM Size:
+6GB
+Phone Operating System:
+Android 9
+SIM Card:
+Nano SIM
+Battery - Standby:
+10 hours and 23 minutes
+Battery - Talk Time:
+29 hours
+Battery Type:
+4200 mAh (typical value) - Wire Charging: MAX 40 W HUAWEI SuperCharge - Wireless charging: 15 W HUAWEI Wireless Quick Charge", "", "https://www.newegg.ca/green-huawei-6-4-gsm-hspa-lte/p/23B-001M-004T8?Description=Huawei%20MATE%2020%20Pro&cm_re=Huawei_MATE%2020%20Pro-_-23B-001M-004T8-_-Product", "https://www.bestbuy.ca/en-ca/product/huawei-mate-20-pro-128gb-unlocked-smartphone-black/13387891");
+INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("101", "Samsung Galaxy Note 5", "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/132/13221/13221234.jpg", "Operating System: Android 5.1.1 Lollipop, TouchWiz
+
+Display: 5.7-inch QHD (2560x1440, 518 ppi) Super AMOLED
+
+Processor: Exynos 7420 octa-core (2.1GHz quad + 1.5GHz quad)
+
+Storage: 32GB
+
+RAM: 4GB
+
+Rear Camera: 16MP, f/1.9, OIS, phase detection auto focus 4K video, slow motion video
+
+Front Camera: 5MP, f/1.9
+
+Network: LTE cat.9
+
+Connectivity: 802.11ac Wifi, 2.4/5GHz, Bluetooth v4.2 LE ANT+, NFC, Location (GPS, Glonass, Beidou), Sensors, Accelerometer, Proximity, RGB Light, Geo-magnetic, Gyro, Fingerprint, Barometer, Hall, HRM
+
+Charging: Micro USB 2.0, Adaptive Fast Charging, Qi wireless, Powermat wireless, fast wireless charging
+
+Battery: 3000 mAh (Non-removable)
+
+Dimensions: 153.2 x 76.1 x 7.6mm", "Base Features
+Wireless Carrier:
+Unlocked
+Bluetooth:
+4.2, A2DP, EDR, LE
+Dual SIM Card:
+No
+Storage:
+32 GB
+RAM Size:
+4
+Phone Operating System:
+Android
+SIM Card:
+Nano SIM
+Battery - Talk Time:
+Up to 22 hours
+Battery Type:
+Non-removable Li-Po 3000 mAh battery
+                       Connectivity
+Wi-Fi:
+802.11AC; ac; 802.11ac; Wi-Fi 5
+NFC:
+Yes
+Mobile Pay:
+Yes
+Wireless Charging:
+Yes
+Cable Connection Type:
+Micro USB
+                                  Camera
+Front-Facing Camera Resolution:
+5 MP, f/1.9, 22mm (wide), 1/4.1"", 1.34µm
+Rear Camera Resolution:
+16 MP, f/1.9, 28mm (wide), 1/2.6"", 1.12µm, OIS, AF
+Front Video Capture: Resolution
+1440p@30fps
+Rear Video Capture: Resolution
+2160p@30fps, 1080p@60fps, dual-video rec.
+Camera Flash:
+Yes", "https://www.amazon.ca/Samsung-Galaxy-SM-N920W8-Black-Unlocked/dp/B0149FJOCG/ref=sr_1_5?dchild=1&keywords=Samsung+Galaxy+Note+5&qid=1624568132&sr=8-5", "", "https://www.bestbuy.ca/en-ca/product/samsung-galaxy-note-5-32gb-smartphone-black-sapphire-unlocked-certified-pre-owned-9-10/13221234");
+INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("101", "Apple iPhone 6S Plus", "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/135/13537/13537893.jpg", "All Marketplace Refurbished Sellers have been carefully selected to meet the standard of Best Buy-qualified partners.
+
+.
+
+The moment you use iPhone 6s Plus, you know you’ve never felt anything like it. With just a single press, 3D Touch lets you do more than ever. Live Photos brings your memories to life in a powerfully vivid way. And that’s just the beginning. Take a deeper look at iPhone 6s, and you’ll find innovation on every level.
+
+.
+
+• 5.5-inch Retina HD display with 1920 x 1080-pixel resolution at 401ppi is constructed with the strongest cover glass used in any smartphone
+
+• 3D Touch senses how deeply you press the display, opening up new possibilities for how you interact with your content and letting you do all kinds of essential things more quickly and simply
+
+• A9 chip with 64-bit architecture delivers 70% faster CPU and 90% faster GPU for all your favourite graphics-intensive games and apps
+
+• 7.3mm thin design made with 7000 series aluminum, the strongest alloy Apple has ever used in an iPhone
+
+• Integrated M9 motion coprocessor connects to the accelerometer, compass, gyroscope and barometer for a wide range of ﬁtness tracking capabilities
+
+• 12MP iSight camera with 2.2 aperture, state-of-the-art sensors, new image signal processor, advanced pixel technology, autofocus with Focus Pixels, True Tone flash, Panorama (up to 63MP), and optimal image stabilization
+
+• Live Photo feature lets you bring still photos to life at the touch of a button
+
+• Record breathtaking 4K video with 3840 x 2160 resolution at 30 fps and create YouTube-ready 4K films using iMovie in just a few taps
+
+• Optical image stabilization for video
+
+• 5MP FaceTime camera with 2.2 aperture, 720p HD video recording, Retina Flash, face detection, burst mode, and exposure control
+
+• Keep in touch with family and friends with FaceTime video and audio over WiFi or cellular to any FaceTime-enabled device
+
+• Faster connectivity using 802.11a/b/g/n/ac WiFi with MIMO and support for up to 23 LTE bands
+
+• Use Siri to voice and send messages, set reminders and more
+
+• Second generation Touch ID fingerprint sensor is faster and more accurate
+
+• Built-in rechargeable lithium-ion battery with up to 24 hours of talk time and 16 days standby
+
+.
+
+.
+
+What''s an ""unlocked phone?""
+
+Purchasing an unlocked handset gives you more handset options to choose from and more flexibility as to where you use it. Because an unlocked handset isn''t tied to a particular service provider, it can be used with any service provider in the world that operates on a SIM card-based GSM network. Simply place an activated SIM card in the handset and you''ll enjoy the same or similar service. Some premium features may not be available. SIM card sold separately. Speak with your current service provider for more details.", "Base Features
+Wireless Carrier:
+Unlocked
+Bluetooth:
+Bluetooth 4.2
+Dual SIM Card:
+No
+Storage:
+32 GB
+CPU:
+Apple A9
+RAM Size:
+2 GB
+Phone Operating System:
+IOS
+SIM Card:
+Nano SIM
+Battery - Standby:
+Up To 16 Days
+Battery - Talk Time:
+Up to 24 Hours on 3G
+Battery Type:
+Non-removable Li-Ion battery
+                             Connectivity
+Supported Network/Bands:
+4G LTE; UMTS/HSPA+; DC-HSDPA
+Wi-Fi:
+802.11AC; ac; 802.11ac; Wi-Fi 5
+NFC:
+Yes
+Mobile Pay:
+Yes
+Wireless Charging:
+No
+Cable Connection Type:
+Lightning
+Headphone Jack:
+Yes
+                                Camera
+Front-Facing Camera: Resolution
+720p HD
+Rear Camera Resolution:
+12 MP
+Front Video Capture Resolution:
+720p HD
+Rear Video Capture Resolution:
+4K video recording at 30 fps; 1080p HD video recording at 30 fps or 60 fps
+Camera Flash:
+Yes
+Other Camera Features:
+Autofocus; Digital zoom up to 3x; Slo-mo video support for 1080p at 120 fps and 720p at 240 fps; Time-lapse video with stabilization", "https://www.amazon.ca/Apple-iPhone-Plus-Unlocked-32GB/dp/B0743HW32H/ref=sr_1_4?dchild=1&keywords=Koodo+Apple+iPhone+XR&qid=1624568501&sr=8-4", "", "https://www.bestbuy.ca/en-ca/product/apple-iphone-6s-plus-32gb-smartphone-space-gray-unlocked-refurbished-like-new/13537893");
+INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("101", "Apple iPhone 8 ", "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/135/13527/13527671.jpg", "All Marketplace Refurbished Sellers have been carefully selected to meet the standard of Best Buy-qualified partners.
+
+.
+
+A new generation of iPhone, the iPhone 8 is designed with the most durable glass ever in a smartphone and a stronger aerospace-grade aluminum band. Charges wirelessly. Resists water and dust. 4.7-inch Retina HD display with True Tone. 12MP camera with new sensor and advanced image signal processor. Powered by A11 Bionic. Supports augmented reality experiences in games and apps.
+
+• 4.7-inch Retina HD display with True Tone
+
+• All-glass and aluminum design, water- and dust resistant
+
+• 12MP camera with OIS and 4K video up to 60fps
+
+• 7MP FaceTime HD camera with Retina Flash for stunning selfies
+
+• Touch ID for secure authentication and Apple Pay
+
+• A11 Bionic, the most powerful and smartest chip in a smartphone
+
+• Wireless charging -- works with Qi chargers (sold separately)
+
+.
+
+.
+
+What''s an ""unlocked phone?""
+
+Purchasing an unlocked handset gives you more handset options to choose from and more flexibility as to where you use it. Because an unlocked handset isn''t tied to a particular service provider, it can be used with any service provider in the world that operates on a SIM card-based GSM network. Simply place an activated SIM card in the handset and you''ll enjoy the same or similar service. Some premium features may not be available. SIM card sold separately. Speak with your current service provider for more details.", "Base Features
+Wireless Carrier:
+Unlocked
+Bluetooth:
+Bluetooth 5.0
+Dual SIM Card:
+No
+Storage:
+64 GB
+CPU:
+Apple A11 Bionic
+RAM Size:
+2 GB
+Phone Operating System:
+IOS
+SIM Card:
+Nano SIM
+Battery - Talk Time:
+Up to 14 Hours
+Battery Type:
+Non-removable Li-Ion battery
+                          Connectivity
+Supported Network/Bands:
+FDD-LTE (Bands 1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 29, 30, 66)
+Wi-Fi:
+802.11AC; ac; 802.11ac; Wi-Fi 5
+NFC:
+Yes
+Mobile Pay:
+Yes
+Wireless Charging:
+Yes
+Cable Connection Type:
+Lightning
+Headphone Jack:
+No
+Other Connectivity:
+2G,3G,4G,4G+,Bluetooth,GPS,Lightning,NFC,USB,Wi-Fi
+                                       Camera
+Front-Facing Camera Resolution:
+7 MP
+Rear Camera Resolution:
+12MP Wide-Angle & Telephoto Cameras
+Front Video Capture Resolution:
+1080p HD
+Rear Video Capture Resolution:
+4K Video Recording at 24 fps; 30 fps or 60 fps
+Camera Flash:
+Yes
+Other Camera Features:
+Optical Image Stabilization, Quad-LED True Tone Flash", "https://www.amazon.ca/Apple-iPhone-64GB-Unlocked-Refurbished/dp/B078P5BK5G/ref=sr_1_5?dchild=1&keywords=Koodo+Apple+iPhone+XR&qid=1624568679&sr=8-5", "", "https://www.bestbuy.ca/en-ca/product/apple-iphone-8-64gb-smartphone-gold-unlocked-certified-refurbished/13527671");
+INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("101", "Samsung Galaxy J2", "https://images-na.ssl-images-amazon.com/images/I/81xGUG4BxaL._AC_SL1500_.jpg", "With a 5"" display, 8MP main camera with an LED flash, 5MP selfie camera, a memory card slot, and a removable battery, the Samsung Galaxy J2 is an entry-level phone that''s perfect for you. It also gives you an Easy Mode option with a simplified interface.", "Base Features
+Wireless Carrier:
+Unlocked
+Product Condition:
+New
+RAM Size:
+2 GB
+Warranty
+Seller''s Warranty - Parts:
+90 Days
+Seller''s Warranty - Labour:
+90 Days", "https://www.amazon.ca/Samsung-Galaxy-Shine-Unlocked-Phone/dp/B08NRNSHLD/ref=sr_1_10?dchild=1&keywords=Koodo+Apple+iPhone+XR&qid=1624569195&sr=8-10", "", "https://www.bestbuy.ca/en-ca/product/samsung-galaxy-j2-16-gb-black-5-unlocked-phone-4g-lte/14680406");
 INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("102", "Sony MDRZX110 Over-Ear Headphones", "https://images-na.ssl-images-amazon.com/images/I/51eJUpMRnzL._AC_SL1000_.jpg", "Maximizing your personal audio experience has never been easier than with SONY ZX-Series Monitor headphones. Built with comfort and performance in mind, there''s no need to compromise.", "Batteries ‏ : ‎ 1 Lithium ion batteries required.
 Is Discontinued By Manufacturer ‏ : ‎ No
 Product Dimensions ‏ : ‎ 14.91 x 4.6 x 19.99 cm; 135 Grams
@@ -454,6 +743,295 @@ Manufacturer ‏ : ‎ Canon Cameras
 Place of Business ‏ : ‎ BRAMPTON, ON, L6Y 5Z7 CA
 ASIN ‏ : ‎ B01BV14OXA
 Item model number ‏ : ‎ 1066C001", "https://www.amazon.ca/Canon-PowerShot-Mark-Digital-Camera/dp/B01BV14OXA/ref=pd_di_sccai_8/132-7245197-5750229?pd_rd_w=WJvaQ&pf_rd_p=e92f388e-b766-4f7f-aac1-ee1d0056e8fb&pf_rd_r=ERT9D242KGKV3XH6QN40&pd_rd_r=7ae25090-0b92-49d8-8829-78addf4a456e&pd_rd_wg=t9tKt&pd_rd_i=B01BV14OXA&psc=1", "https://www.newegg.ca/canon-powershot-g7-x-mark-ii-compact/p/N82E16830120850?Description=Canon%20PowerShot%20G7%20X%20Mark%20II&cm_re=Canon_PowerShot%20G7%20X%20Mark%20II-_-30-120-850-_-Product", "https://www.bestbuy.ca/en-ca/product/canon-powershot-g7-x-mark-ii-wi-fi-20-1mp-4-2x-optical-zoom-digital-camera-black-1066c001/10414355");
+INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("103", "GoPro HERO9", "https://images-na.ssl-images-amazon.com/images/I/71f8wMHfklL._AC_SL1500_.jpg", "Capture smooth images and video footage
+
+    5K video resolution (5120 x 2880) records in stunning detail, even when you''re zoomed in
+    23.6MP CMOS image sensor captures images and footage in true-to-life clarity and colours
+    LiveBurst records everything that happens 1.5 seconds before and after your shot so you can pick your favourite frame
+    Intuitive rear touch screen and front display allows you to frame shots, snap a selfie, or playback footage to bring greater control to what you shoot
+
+Shoot your journey wherever it takes you
+
+    Rugged waterproof design allows you to shoot up to 33 feet underwater without a housing
+    Built-in mounting means you can flip out the folding fingers and attach your camera to any mount
+    Live-stream in 1080p via the GoPro app and save the footage to your SD card (supports cards up to 256GB, sold separately)
+    Mount the camera to your computer to use it as a 1080p webcam
+
+Steady shooting features
+
+    HyperSmooth 3.0 technology helps stabilise your shots to deliver smooth footage
+    Horizon (up to 45% tilt) and linear levelling ensure your footage is straight and stable
+    Digital lenses let you switch between modes to capture the best footage
+
+Transfer and share
+
+    USB 3.0 port and included USB-C cable allows easy transfer of footage and photos to your compatible devices
+    GoPro app lets you remotely operate your camera and edit and share photos from your smartphone
+    Front display and rear touchscreen with touch zoom makes for easy framing and intuitive controls
+
+Storage and battery life
+
+    1720mAh battery powers your camera for hours, even in cold weather
+    GoPro subscription (sold separately) backs up all your shoots to the cloud, so you can access it from anywhere
+    High Efficiency Video Coding (HEVC) shrinks the files without losing image quality, so you don''t have to constantly change your memory card or transfer photos
+
+Capture the best moments for the duration
+
+    Nighttime lapse allows you capture 4K, 2.7 4:3, 1440p, or 1080p in-camera processed footage in the night
+    Schedule lapse gives you the freedom to the start time of shoot in advance
+    Duration lapse lets you choose how long you want to record the footage
+    Timer makes it easy to capture your gang or take selfies
+
+Enhance your footage
+
+    Data overlays allow you to add location, speed, altitude, maps, and more
+    TimeWarp 3.0 condenses time to capture time-lapse footage
+    Speed Ramp allows you to select Real Speed with audio or Half Speed, so you can capture footage the way you want
+    HindSight captures 30 seconds before you press the shutter button, so you don''t miss a precious moment
+    SuperPhoto with 20MP automatically picks the ideal image processing so you can get the best shot possible
+
+Other important features
+
+    Portrait mode lets you shoot videos and footage for social media platforms such as Instagram and Snapchat
+    RAW photo for time lapse or burst mode provides maximum flexibility
+    8x Slo-Mo is made possible with an ultra-high frame rate and HyperSmooth 3.0 stabilization
+    Face, Smile, Blink + Scene Detection features detect smiles, faces, and more, which can be used to identify or pick pictures using the GoPro app
+
+Flexible mods system
+
+    Max lens mod provides horizon-locked, shake-free videos
+    Light mod lets you illuminate the subject to capture all the details
+    Media mod allows you to add accessories like a mic for interviews, vlogging, and more
+
+Freedom and control
+
+    Voice control lets you go hands-free using 14 voice commands in an array of languages and dialects including English (US, UK, Australia, and India), Chinese (Mandarin), French, German, Italian, Japanese, Korean, Portuguese (Brazil), Russian, Spanish (Europe and North America), and Swedish
+    Preloaded with presets and lets you create custom presets, so you can capture the perfect moment or footage every time
+    Supports up to 45 compatible mounts and accessories to boost your shooting experience", "Image Sensor
+Sensor Type:
+CMOS
+Effective Megapixels:
+23.6 MP
+Max Video Resolution:
+5120 x 2880 (5K)
+                          Lens/Optics
+Electronic (software) Image Stabilization:
+Yes
+                                   LCD & Viewfinder
+LCD Resolution:
+Rear: 368 x 552; Front: 240 x 240
+Touchscreen:
+Yes
+                                  Video
+Video Format:
+H.264 codec, .mp4 file; H.265 codec, .mp4 file
+Time Lapse Video:
+Yes
+Nightvision:
+Yes
+                              Support
+Max Capacity:
+256 GB
+                       Connections
+USB:
+Included
+Wi-Fi:
+Included
+Bluetooth:
+Included
+                         Hardware
+Battery Type:
+Lithium-ion", "https://www.amazon.ca/GoPro-HERO9-Black-Waterproof-Stabilization/dp/B08DK5ZH44/ref=sr_1_5?dchild=1&keywords=GoPro+HERO9&qid=1624569374&sr=8-5", "", "https://www.bestbuy.ca/en-ca/product/gopro-hero9-black-waterproof-5k-sports-helmet-camera/14927801");
+INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("103", "GoPro HERO7", "https://images-na.ssl-images-amazon.com/images/I/71Xbu0FUDAL._AC_SL1500_.jpg", "Amazing adventures, even more amazing footage
+
+    Capture 4K30 video and WDR photos so you can relive your most awe-inspiring moments
+    10MP CMOS sensor delivers sharp, vibrant photos even in challenging shots that mix bright light and shadows
+
+Savour and share the moment
+
+    Burst mode captures 15 photos in one second
+    Shoot time lapse videos to turn longer events into short, shareable moments
+    Photos and videos move right to the GoPro app for easy sharing
+
+Smart features
+
+    Intuitively designed touch screen and simple, streamlined capture modes, make it easy to get great shots with a simple swipe and tap
+    Voice control lets you capture your adventures with commands like ""GoPro, take a photo"" and ""GoPro, start recording"" so you never miss a moment
+
+Designed for the great outdoors
+
+    GPS lets you track how fast, high and far you went
+    Rugged and waterproof design can go places your phone can''t", "Image Sensor
+Sensor Type:
+CMOS
+Total Pixels:
+10 MP
+                               Video
+Slow Shutter Mode:
+Yes
+                              Physical Features
+Width:
+6.2 cm
+Height:
+3.2 cm
+Weight:
+120 g", "https://www.amazon.ca/GoPro-HERO7-Silver-Waterproof-Digital/dp/B07GDGZCCJ/ref=sr_1_6?dchild=1&keywords=GoPro+HERO7&qid=1624569556&sr=8-6", "", "https://www.bestbuy.ca/en-ca/product/gopro-hero7-waterproof-4k-sports-helmet-camera-silver/12910139");
+INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("103", "Canon EOS M50", "https://images-na.ssl-images-amazon.com/images/I/61HRnUdvv6L._AC_SL1000_.jpg", "Inspiring new perspectives
+
+    24.1MP (APS-C) CMOS Sensor and DIGIC 8 Image Processor combine to ensure everything you shoot is sharp, clear, and vibrant
+    ISO range of 100 to 25600 lets you confidently shoot in low light with minimal noise and grain at high ISOs
+
+Formidable 4K
+
+    Records up to 24p 4K UHD, which can give your videos a beautifully cinematic look
+    Enjoy the smooth slow-motion effect using high-speed 120p in HD
+
+Dual Pixel CMOS Autofocus system
+
+    Wide autofocus area helps you create the photo or video you want by letting you focus on nearly any part of the image
+    Advanced subject tracking to help ensure the crucial parts of the shot are sharply in focus
+    Eye Detection AF for brilliant headshots
+
+Convenience comes standard
+
+    High-resolution, high-contrast built-in electronic viewfinder features Touch and Drag AF to make focusing with the EVF a breeze
+    Vari-angle LCD touchscreen LCD lets you see the image you’re about to take, select focus with just a tap, and more
+    Creative Assist makes it easy to quickly find and adjust the right camera settings to make sure your pictures come out just as you imagine
+    Canon EOS Webcam Utility turns your camera into a capable webcam, works with popular streaming apps, and allows you to record internally while streaming
+
+Share on social media in a snap
+
+    Built-in Wi-Fi, NFC, and Bluetooth technology makes it easy to share your photos and videos as soon as you take them with
+    Automatically transfer your photos and videos to your computer or mobile device for easy backup and posting to social media", "Wi-Fi:
+Yes
+NFC:
+Yes
+Bluetooth:
+Yes
+Jpeg:
+Yes
+Raw:
+Yes
+Raw+Jpeg:
+Yes
+Guided Shooting Mode:
+Yes
+Languages Supported:
+English; German; French; Dutch; Danish; Portuguese; Finnish; Italian; Norwegian; Swedish; Spanish; Greek; Russian; Polish; Czech; Hungarian; Romanian; Ukranian; Turkish; Arabic; Thai; Simplified Chinese; Traditional Chinese; Korean; Malay; Vietnamese; Idonesian; Hindi; Japanese
+Compatible Operating Systems:
+Mac/PC                                                               Image Sensor
+NFC Enabled:
+Yes
+Sensor Type:
+CMOS
+Image Sensor Format:
+APS-C
+Sensor Crop Factor:
+1.6x
+Effective Megapixels:
+24.1 MP
+Bluetooth:
+Included
+Total Pixels:
+25.8 MP
+Colour Space:
+sRGB; Adobe RGB
+Dust Reduction:
+Yes
+Processor:
+DIGIC 8", "https://www.amazon.ca/Canon-Mirrorless-Camera-15-45mm-Black/dp/B079Y45KTJ/ref=sr_1_1?dchild=1&keywords=Canon+EOS+M50&qid=1624569680&sr=8-1", "https://www.newegg.ca/p/1A9-0002-000V9?Description=Canon%20EOS%20M50&cm_re=Canon_EOS%20M50-_-9SIAMTTB308988-_-Product", "https://www.bestbuy.ca/en-ca/product/canon-eos-m50-mirrorless-camera-with-15-45mm-lens-kit/12383479");
+INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("103", "Canon EOS Rebel T7", "https://images-na.ssl-images-amazon.com/images/I/713ShDiciHL._AC_SL1500_.jpg", "Retain fleeting moments in clear detail
+
+    Effective 24.1MP CMOS sensor (APS-C format) helps you realize your potential for great photographs
+    DIGIC 4+ processor provides faster image processing and improved performance
+    ISO sensitivity from 100 to 6400 (expandable to 12800) gives you the freedom to shoot at high noon on a bright sunny day and capture the cityscape on a moonlit night
+    Full HD 1080p video recording allows you to preserve once-in-a-lifetime moments you can relive over and over
+
+Capture life through a lens
+
+    EF-S 18-55mm f/3.5-5.6 IS II lens is optimized for use with the T7''s APS-C sensor, so you can start capturing your photographic masterpieces right out of the box
+    The lens''s 18-55mm focal range allows you to shoot at some of the most frequently used focal lengths -- 18mm for groups shots, 35mm for landscapes, and 50mm for street photography or portraits -- all in one lens
+
+Convenience comes standard
+
+    On-board feature guide to help you maximize the camera''s capabilities
+    Eye-level single lens reflex (with fixed pentamirror) viewfinder for easy viewing of potential shots
+    Large LCD screen with resolution of approximately 920,000 dots allows you to clearly see the photo immediately after capturing it
+    Built-in flash in the pentamirror (auto pop-up, retractable) allows you to take great quality photos even in low light situations
+    SD, SDHC, SDXC memory card compatibility to take as many photos as you want
+    Canon EOS Webcam Utility turns your camera into a capable webcam, works with popular streaming apps, and allows you to record internally while streaming
+
+Instant sharing
+
+    Built-in Wi-Fi and NFC technology enable almost instantaneous sharing of photos", "Included Lens
+Lens Frame Colour:
+Black
+Lens Range:
+18-55mm
+Stabilized:
+Yes
+Model Number:
+2042B002
+Filter Size:
+58mm
+35mm Equivalent
+18-55mm
+Lens Weight:
+200g
+                                      Body Features
+Stabilized Body:
+No
+Body Colour:
+Black
+Intelligent Shoe:
+No
+Cable Release:
+No
+Weather Sealed:
+No
+                                   Power
+Battery Type:
+1 x Lithium Ion
+Included Battery Model:
+LP-E10
+Power Saving Modes:
+Auto Power Off
+                                Physical Features
+Width:
+10.13 cm
+Height:
+7.76 cm
+Depth:
+12.9 cm
+Weight:
+475 g
+Camera Model:
+Canon T7
+Camera Kit:
+Camera Body with Lens
+Lens Mount:
+EF / EF-S", "https://www.amazon.ca/Canon-T7-18-55mm-II-Digital/dp/B07C2Z21X5/ref=sr_1_2?dchild=1&keywords=Canon+EOS+Rebel+T7&qid=1624569855&sr=8-2", "", "https://www.bestbuy.ca/en-ca/product/canon-eos-rebel-t7-dslr-camera-with-18-55mm-is-lens-kit/12383477");
+INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("103", "Fujifilm Instax Mini 11", "https://images-na.ssl-images-amazon.com/images/I/7104Ejxu-TL._AC_SL1500_.jpg", "    Instant film camera is fun to use and lets you create memories in a snap (Fujifilm INSTAX Mini Instant colour 5.3cm x 8.4cm film sold separately)
+    One-touch selfie mode includes a built-in close up lens that works at a range of 35cm - 50cm and a mirror so you can see ahead of time what your snapshots will turn out like
+    Custom shutter buttons let you add fun shutter accessories to personalize your camera
+    Electronic shutter works from 1/2 to 1/400 of second so everything is captured as it should be
+    Auto-exposure means you don''t have to fiddle around to adjust the exposure manually
+    Built-in lens cover protects the lens when not in use and opens automatically the camera turns on so you can start shooting right away
+    Minimal, easily portable design lets you take this camera anywhere", "Power
+Battery Type & Quantity:
+2 x AA                                             Lens
+Film Required:
+Yes
+                                        Flash
+Built-in Flash:
+Yes
+Auto Flash Mode:
+Yes
+                                       Aperture & Exposure
+Shutter Speed Range:
+1/2 - 1/400 s
+ISO Sensitivity:
+Auto/Lv 5.0 - 14.5 (ISO 800)", "https://www.amazon.ca/Fujifilm-16654803-Instax-Instant-Camera/dp/B085286JCJ/ref=sr_1_5?dchild=1&keywords=Fujifilm+Instax+Mini+11&qid=1624570011&sr=8-5", "", "https://www.bestbuy.ca/en-ca/product/fujifilm-instax-mini-11-instant-camera-blush-pink/14438364");
 INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("104", "Sony X950H 55-inch", "https://images-na.ssl-images-amazon.com/images/I/61AZHTzK-dL._AC_SL1080_.jpg", "Explore a new level of contrast with the Picture Processor X1 Ultimate. With advanced Full Array LED technology, you''ll see crystal-clear 4K HDR images in everything you watch. Bright and dark scenes feel more natural, and colours are even more true to life with the Triluminos display.", "Brand	‎Sony
 Manufacturer	‎Sony
 Place of Business	‎SAN DIEGO, CA, 92127 US
@@ -554,6 +1132,335 @@ Manufacturer	‎YAMAHA
 Item model number	‎RX-V4ABL
 Product Dimensions	‎50.8 x 45.72 x 27.94 cm; 8.85 Kilograms
 ASIN	‎B08CKGYLNS", "https://www.amazon.ca/YAMAHA-RX-V4A-5-2-Channel-Receiver-MusicCast/dp/B08CKGYLNS/ref=sr_1_2?dchild=1&keywords=Yamaha+RX-V4A&qid=1624467265&s=electronics&sr=1-2", "", "https://www.bestbuy.ca/en-ca/product/yamaha-rx-v4a-5-2-channel-av-receiver-with-musiccast/15088082");
+INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("104", "Toshiba 32"" 720p HD LED Smart TV", "https://images-na.ssl-images-amazon.com/images/I/818FrdfTcGL._AC_SL1500_.jpg", "Perfect for small rooms, guest bedrooms, and dorms, this Toshiba 32"" HD LED smart TV is sure to keep you entertained. Backed by Amazon''s Fire TV operating system, this television with HD picture quality offers easy access to global content of your choice. It has dual 10W speakers with DTS TruSurround to deliver immersive audio for movies and streaming.", "Video
+Screen Size:
+31.5 in
+Resolution:
+720p HD
+TV Display Technology:
+LED
+High Dynamic Range (HDR):
+No
+Motion Enhancement Technology:
+Not Applicable
+Panel Shape:
+Flat
+                                        Audio
+Audio Enhancement:
+No
+Speaker Configuration:
+Bottom
+Speaker Output Power:
+10W x 2
+                         Inputs/Outputs
+HDMI Inputs:
+3-Side
+MHL Inputs:
+No
+Component Video Inputs:
+No
+Coaxial Cable Inputs:
+No
+Optical Digital Audio Outputs:
+1 - Side
+Stereo Audio Outputs:
+No
+Headphone Jack:
+1 - Side
+USB Media Port:
+1 - Side
+Internet Connectivity:
+Wi-Fi and Wired
+Bluetooth:
+Yes (For Mobile Device Identification Only)
+DLNA Certified:
+No
+Other Inputs/Outputs:
+No
+TV Operating System:
+Fire TV
+Preloaded Apps:
+No
+Motion Control:
+No
+Voice Control:
+Yes
+Voice Assistant Built-In:
+Amazon Alexa
+Works with Google Assistant:
+No
+Works with Amazon Alexa:
+Yes
+Works with Apple HomeKit:
+No
+Typical Consumption:
+63.84 W
+Energy Saving Mode:
+Yes
+ENERGY STAR Qualified:
+No", "https://www.amazon.ca/Toshiba-32-inch-720p-Smart-LED/dp/B089QBDR97/ref=sr_1_9?dchild=1&keywords=Toshiba+32%22+720p+HD+LED+Smart+TV&qid=1624594625&sr=8-9", "", "https://www.bestbuy.ca/en-ca/product/toshiba-32-720p-hd-led-smart-tv-32lf221c21-fire-tv-edition-only-at-best-buy/14422161");
+INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("104", "Toshiba 55"" 4K UHD HDR LED Smart TV", "https://multimedia.bbycastatic.ca/multimedia/products/500x500/144/14422/14422159.jpg", "Enjoy stunningly crisp visuals in 4K Ultra HD on this Toshiba smart TV. It boasts a 55"" screen with a 60Hz refresh rate for smooth motion, while VA display technology offers wide viewing angles and a great contrast ratio, and DTX VX technology gives you immersive multi-dimensional audio. Powered by Fire OS, you''ll get access to a world of apps, games, streaming services, and more", "Video
+Screen Size:
+54.6 in
+Resolution:
+4K Ultra HD
+TV Display Technology:
+LED
+High Dynamic Range (HDR):
+Yes
+Panel Shape:
+Flat
+
+Audio
+Audio Enhancement:
+No
+Speaker Configuration:
+Bottom
+Speaker Output Power:
+10W + 10W
+
+Inputs/Outputs
+HDMI Inputs:
+3-Side
+MHL Inputs:
+No
+Component Video Inputs:
+No
+Coaxial Cable Inputs:
+1-Back
+Optical Digital Audio Outputs:
+1 - Side
+Stereo Audio Outputs:
+No
+Headphone Jack:
+1 - Side
+USB Media Port:
+1 - Side
+Internet Connectivity:
+Wi-Fi and Wired
+Bluetooth:
+Yes (for mobile device identify only)
+DLNA Certified:
+No
+Other Inputs/Outputs:
+No
+TV Operating System:
+Fire TV
+Preloaded Apps:
+No
+Motion Control:
+No
+Voice Control:
+Yes
+Voice Assistant Built-In:
+Amazon Alexa
+Works with Google Assistant:
+No
+Works with Amazon Alexa:
+Yes
+Works with Apple HomeKit:
+No
+Typical Consumption:
+144.84 W
+Energy Saving Mode:
+Yes
+ENERGY STAR Qualified:
+No", "https://www.amazon.ca/All-New-Toshiba-55LF621U21-55-inch-4K-Ultra-HD/dp/B089N9NXPW/ref=sr_1_1?dchild=1&keywords=Toshiba+55%22+4K+UHD+HDR+LED+Smart+TV&qid=1624594884&sr=8-1", "", "https://www.bestbuy.ca/en-ca/product/toshiba-55-4k-uhd-hdr-led-smart-tv-55lf621c21-fire-tv-edition-only-at-best-buy/14422159");
+INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("104", "TCL 3-Series 32"" 1080p HD LED Roku Smart TV", "https://multimedia.bbycastatic.ca/multimedia/products/500x500/132/13285/13285894.jpg", "Experience all your favourite content with the exceptional picture and efficient functionality of the TCL 3-Series 32"" Roku Smart TV. It features a brilliant 1080p Full HD LED screen for vibrant colours and exceptional contrast, immersing you in lifelike imagery. Spend less time looking and more time watching with the simple, intuitive interface", "Video
+Screen Size:
+31.5 in
+Resolution:
+1080p HD
+TV Display Technology:
+LED
+High Dynamic Range (HDR):
+No
+Motion Enhancement Technology:
+120Hz Clear Motion
+Video Modes:
+Movie; Normal; Vivid; Low Power; Sports
+Panel Shape:
+Flat
+
+Audio
+Audio Enhancement:
+Dolby Digital +
+Speaker Configuration:
+Bottom
+Speaker Output Power:
+5W + 5W
+
+Inputs/Outputs
+HDMI Inputs:
+3-Side
+MHL Inputs:
+No
+Component Video Inputs:
+No
+Coaxial Cable Inputs:
+1-Back
+Optical Digital Audio Outputs:
+1 - Side
+Stereo Audio Outputs:
+0
+Headphone Jack:
+1 - Side
+USB Media Port:
+1 - Side
+Internet Connectivity:
+Wi-Fi
+Bluetooth:
+Yes
+DLNA Certified:
+No
+Other Inputs/Outputs:
+No
+TV Operating System:
+Roku TV
+Preloaded Apps:
+No
+Motion Control:
+No
+Voice Control:
+No
+Works with Google Assistant:
+No
+Works with Apple HomeKit:
+No
+Typical Consumption:
+144.84 W
+Energy Saving Mode:
+Yes
+ENERGY STAR Qualified:
+No", "https://www.amazon.ca/TCL-Class-LED-Smart-Roku/dp/B07KD9SGH2/ref=sr_1_1?dchild=1&keywords=TCL%2B3-Series%2B32&qid=1624595107&sr=8-1&th=1", "https://www.newegg.ca/p/12K-01R1-00014?Description=TCL%203-Series%2032&cm_re=TCL_3-Series%2032-_-9SIAV1ZF1F8486-_-Product", "https://www.bestbuy.ca/en-ca/product/tcl-3-series-32-1080p-hd-led-roku-smart-tv-32s327-ca/13285894");
+INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("104", "Samsung 55"" 4K UHD HDR LED Tizen Smart TV", "https://images-na.ssl-images-amazon.com/images/I/91uCG0qRvAL._AC_SL1500_.jpg", "Enjoy long hours of entertainment on this Samsung 55"" 4K UHD LED smart TV that provides realistic pictures in everything from sports to movies. Its HDR and PurColor technology enhance the display with natural colours, while the Crystal Processor 4K turns up the clarity. Its Wi-Fi connectivity helps in streaming your favourite online content.", "Video
+Screen Size:
+55 in
+Resolution:
+4K Ultra HD
+TV Display Technology:
+LED
+High Dynamic Range (HDR):
+Yes
+HDR10:
+Yes
+IMAX Enhanced:
+No
+Motion Enhancement Technology:
+MR120
+Colour Enhancement:
+PurColor
+Panel Shape:
+Flat
+
+Audio
+Audio Enhancement:
+Adaptive Sound
+Speaker Configuration:
+2CH
+Speaker Output Power:
+20W
+
+Inputs/Outputs
+HDMI Inputs:
+2
+Coaxial Cable Inputs:
+Yes
+Optical Digital Audio Outputs:
+1
+USB Media Port:
+1
+Internet Connectivity:
+Wi-Fi and Wired
+Bluetooth:
+Yes (4.2)
+Works with Apple AirPlay:
+AirPlay 2
+DLNA Certified:
+Yes
+TV Operating System:
+Tizen OS
+Preloaded Apps:
+Apple TV, Netflix, Prime, Cineplex, Crave, UFC, DAZN, TVA Sports
+Motion Control:
+No
+Voice Control:
+No
+Works with Google Assistant:
+Yes
+Works with Amazon Alexa:
+Yes
+Works with Apple HomeKit:
+No
+Typical Consumption:
+60 W
+Energy Saving Mode:
+Yes
+ENERGY STAR Qualified:
+Yes
+Other Features:
+Auto Low Latency Mode (ALLM); Game Enhancer", "https://www.amazon.ca/Samsung-TU7000-UN55TU7000FXZC-Canada-Version/dp/B084ZSZM27/ref=sr_1_2?dchild=1&keywords=Samsung+55%22+4K&qid=1624595362&sr=8-2", "", "https://www.bestbuy.ca/en-ca/product/samsung-55-4k-uhd-hdr-led-tizen-smart-tv-un55tu7000fxzc-titan-grey/14469353");
+INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("104", "LG 49"" 4K UHD HDR LCD webOS Smart TV", "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/147/14760/14760721.jpg", "Enhance your home entertainment experience with this 49"" LG UN70 Series smart TV. Backed by 4K Ultra HD resolution and a quad-core processor, this television optimises every scene in the best possible detail and delivers incredible visuals with true-to-life colours on the screen. Its webOS platform provides instant access to a world of content.", "Video
+Screen Size:
+49 in
+Resolution:
+4K Ultra HD
+TV Display Technology:
+LCD
+High Dynamic Range (HDR):
+Yes
+Motion Enhancement Technology:
+4K Active HDR, HDR10 Pro, HLG, HDR Effect HDR Dynamic Tone Mapping, 4K Upscaler, Double step noise reduction, Sharpness enhancer)
+Colour Enhancement:
+Advanced Colour Enhancer, True Colour Accuracy
+Video Modes:
+Vivid, Standard, Eco, Cinema, Sports, Game, HDR Effect, FILMMAKER MODE, (ISF)Expert(Bright Room), (ISF)Expert(Dark Room)
+Panel Shape:
+Flat
+
+Audio
+Audio Enhancement:
+AI Sound, Ultra Surround, Clear Voice III
+Speaker Configuration:
+Bottom
+Speaker Output Power:
+20 W
+
+Inputs/Outputs
+HDMI Inputs:
+3
+Component Video Inputs:
+1 -Rear (Component in/AV in common)
+Coaxial Cable Inputs:
+1 - Rear
+Optical Digital Audio Outputs:
+1 - Rear
+USB Media Port:
+1 - Rear, 1 - Side
+Internet Connectivity:
+Wi-Fi and Wired
+Bluetooth:
+No
+Works with Apple AirPlay:
+No
+Other Inputs/Outputs:
+LAN
+TV Operating System:
+webOS
+Preloaded Apps:
+Youtube; Twitter; Facebook; LG Content Store; Netflix; Amazon Prime Video; Disney +; Apple TV; Sports alert; etc.
+Works with Google Assistant:
+Yes
+Works with Amazon Alexa:
+Yes
+Works with Apple HomeKit:
+Yes
+Typical Consumption:
+56.4 W
+ENERGY STAR Qualified:
+No
+Other Features:
+Supports FreeSync and G-SYNC Adaptive Sync Technology; Auto Low Latency Mode (ALLM)", "https://www.amazon.ca/LG-49UN7000-UHD-Smart-LED/dp/B08DYJPWTF/ref=sr_1_1?dchild=1&keywords=LG+49&qid=1624595525&sr=8-1", "", "https://www.bestbuy.ca/en-ca/product/lg-49-4k-uhd-hdr-lcd-webos-smart-tv-49un7000-2020/14760721");
 INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("105", "UMIDIGI Smart Watch", "https://images-na.ssl-images-amazon.com/images/I/61TO9r5l5zL._AC_SL1000_.jpg", "Smart Watch for Men WomenUwatch3 GPS smartwatch is equipped with a 1.3"" high-definition full-touch display screen, with built-in GPS (no need to connect to phone), activity tracker, heart rate monitor, 14 sport modes, sleep monitor, women menstrual cycle calculation, Call, SMS and APP messages, music control, weather report, sedentary reminder, alarm clock, stopwatch, timer, find phone, call rejection, brightness adjustment and other functions to meet your daily needs.Accurate Fitness Tracker", "Parcel Dimensions	‎16.6 x 7.2 x 3.7 cm; 160 Grams
 Item model number	‎Uwatch3 GPS
 Connectivity technologies	‎GPS
@@ -630,6 +1537,272 @@ Manufacturer	‎Samsung
 Item model number	‎SMR500NZSAXAC
 Product Dimensions	‎2.54 x 2.54 x 2.54 cm; 49.9 Grams
 ASIN	‎B07NPZHTL1", "https://www.amazon.ca/Samsung-Galaxy-Watch-Active-Silver/dp/B07NPZHTL1/ref=sr_1_4?crid=2U580W9RBNBCM&dchild=1&keywords=wearable+technology&qid=1624467894&sprefix=wearable+technolog%2Csporting%2C163&sr=8-4", "", "https://www.bestbuy.ca/en-ca/product/samsung-galaxy-watch-active-40mm-smartwatch-with-heart-rate-monitor-silver/13399167");
+INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("105", "Fitbit Charge 4", "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/144/14498/14498686.jpg", "The Fitbit Charge 4 Fitness Tracker with 24/7 heart rate tracking helps optimise your day-to-day activities, fitness routines, and lead a healthy lifestyle. Equipped with built-in GPS, Sp02 monitoring, Bluetooth technology, and a host of advanced tracking features, it provides real-time stats that offer clever insights about your body.", "Band Colour:
+Black
+Band Material:
+Silicone
+Case Colour:
+Black
+GPS:
+Yes
+GPS Details:
+Built-In GPS
+Heart Rate Monitor:
+Yes
+ECG:
+No
+Licensed by Health Canada:
+No
+
+Connectivity
+NFC Enabled:
+Yes
+
+Compatibility
+Watch Operating System:
+Fitbit OS
+Smartphone Compatibility:
+iPhone; Android
+Mac iOS Compatibility:
+iOS 12.2+
+Android Compatibility:
+Android 7.0+
+Voice Commands:
+No
+
+Display
+Touchscreen:
+Yes
+Display Technology:
+OLED
+Illuminated Display:
+Yes
+Ambient Light Sensor:
+Yes
+Display Resolution:
+100 x 160
+Display Colour:
+Monochrome
+
+Power
+Power Type:
+Battery Powered
+Battery Type:
+Lithium-polymer
+Battery Life (Typical):
+Up to 7 Days; Up to 5 Hours with GPS
+Charging Method:
+USB
+Charging Time:
+2 Hours", "https://www.amazon.ca/Fitbit-Charge-fitness-Activity-Tracker/dp/B085M5SXVS/ref=sr_1_5?dchild=1&keywords=Fitbit+Charge+4&qid=1624595671&sr=8-5", "", "https://www.bestbuy.ca/en-ca/product/fitbit-charge-4-fitness-activity-tracker-with-gps-24-7-heart-rate-sleep-black/14498686");
+INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("105", "Fitbit Versa 2", "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/138/13864/13864604.jpg", "Reach your physical fitness goals in style with the Fitbit Versa 2 smartwatch. It automatically tracks your calories burned, steps taken, heart rate, sleeping patterns, and more. It helps keep you in the loop by wirelessly syncing with your smartphone for at-a-glance notifications from texts, emails, social media, and your calendar.", "Connectivity
+3G:
+No
+4G LTE:
+No
+NFC Enabled:
+Yes
+
+Compatibility
+Voice Assistant Built-In:
+Amazon Alexa
+Works with Amazon Alexa:
+Yes
+Voice Commands:
+Yes
+
+Display
+Touchscreen:
+Yes
+Display Technology:
+Amoled
+Illuminated Display:
+Yes
+Display Resolution:
+300 x 300
+
+Display Colour:
+Full Colour
+
+Power
+Power Type:
+Battery Powered
+Battery Type:
+Lithium-Polymer
+Battery Life (Typical):
+6 Days
+Charging Method:
+USB
+Charging Time:
+1 h
+
+Features
+Water Resistance:
+Yes
+Dust Proof:
+Yes
+
+Health Tracking Features
+Heart Rate:
+Yes
+Sleep Tracking:
+Yes
+Body Temperature:
+No", "https://www.amazon.ca/Fitbit-Health-Fitness-Smartwatch-Tracking-Black/dp/B07W82DN5B/ref=sr_1_1?dchild=1&keywords=Fitbit+Versa+2&qid=1624595812&sr=8-1", "", "https://www.bestbuy.ca/en-ca/product/fitbit-versa-2-40mm-smartwatch-with-amazon-alexa-heart-rate-tracking-black/13864604");
+INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("105", "Apple Watch Series 6 (GPS) 44mm", "https://images-na.ssl-images-amazon.com/images/I/71IocB4x93L._AC_SL1500_.jpg", "The future of health is on your wrist. Measure your blood oxygen level with a revolutionary new sensor and app. Take an ECG anytime, anywhere. See your fitness metrics at a glance with the enhanced Always-On Retina display. With the Apple Watch Series 6 on your wrist, a healthier, more active, more connected life is within reach.", "Connectivity
+NFC Enabled:
+Yes
+
+Compatibility
+Watch Operating System:
+watchOS
+Smartphone Compatibility:
+iPhone 6S or later
+Other Compatibility:
+None
+Voice Assistant Built-In:
+Siri
+Works with Apple HomeKit:
+Yes
+Voice Commands:
+Yes
+
+Display
+Touchscreen:
+Yes
+Display Technology:
+Retina LTPO OLED
+Illuminated Display:
+Yes
+
+Power
+Battery Type:
+Lithium-ion
+
+Health Tracking Features
+Biometrics Tracked:
+Blood Oxygen Levels
+Heart Rate:
+Yes
+Fall Detection:
+Yes
+Personal Safety Alert:
+Yes
+
+Activity Monitoring Features
+Other Tracking & Monitoring:
+Noise Monitoring
+Compass:
+Yes
+
+Sensors
+Accelerometer:
+Yes
+
+Other Features
+Built-in Mic:
+Yes
+
+Physical Features
+Adjustable Band:
+Yes
+Removable Band:
+Yes", "https://www.amazon.ca/Apple-Watch-GPS-44mm-Space-Aluminum/dp/B08J96N211/ref=sr_1_5?dchild=1&keywords=Apple+Watch+Series+6&qid=1624596073&sr=8-5", "", "https://www.bestbuy.ca/en-ca/product/apple-watch-series-6-gps-44mm-space-grey-aluminum-case-with-black-sport-band/14961882");
+INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("105", "Apple Watch SE", "https://m.media-amazon.com/images/I/71NVDjayU9L._AC_SL1500_.jpg", "An expansive Retina display so you can see more at a glance. Advanced sensors to track all the ways you move. Powerful features to keep you healthy and safe. The Apple Watch SE is a lot of watch for a lot less than you expected.", "Case Diameter (mm):
+40 mm
+Watch Series:
+SE (GPS)
+Band Size:
+Medium
+Band Material:
+Fluoroelastomer
+Case Material:
+Aluminum
+GPS:
+Yes
+GPS Details:
+Built-in
+Heart Rate Monitor:
+Yes
+ECG:
+No
+
+Connectivity
+NFC Enabled:
+Yes
+
+Compatibility
+Watch Operating System:
+watchOS
+Smartphone Compatibility:
+iPhone 6S or later
+Other Compatibility:
+None
+Voice Assistant Built-In:
+Siri
+Works with Apple HomeKit:
+Yes
+Voice Commands:
+Yes
+
+Display
+Touchscreen:
+Yes
+Display Technology:
+Retina LTPO OLED
+Illuminated Display:
+Yes
+
+Power
+Battery Type:
+Lithium-ion", "https://www.amazon.ca/New-Apple-Watch-GPS-44mm/dp/B08J97Y7PJ/ref=sr_1_1?dchild=1&keywords=Apple%2BWatch%2BSE&qid=1624596334&sr=8-1&th=1", "https://www.newegg.ca/p/2RC-0CJB-005X1?Description=Apple%20Watch%20SE&cm_re=Apple_Watch%20SE-_-9SIAV2VEZX6923-_-Product", "https://www.bestbuy.ca/en-ca/product/apple-watch-se-gps-40mm-space-grey-aluminum-case-with-black-sport-band/14961891");
+INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("105", "Garmin vivoactive 3 Smartwatch", "https://images-na.ssl-images-amazon.com/images/I/617nz0iX03L._AC_SL1446_.jpg", "Stay connected, on trend, and on top of your fitness goals with this Garmin vivoactive 3 smartwatch. Rugged and waterproof, this sporty smartwatch offers fitness tracking, sleep tracking, and heart-rate monitoring, as well as smartphone notifications, built-in GPS, and customizable apps and widgets.", "Case Diameter (mm):
+43 mm
+Display Size (Wearables):
+30.4 mm
+Band Colour:
+Gunmetal
+Band Size:
+Large
+Band Material:
+Plastic
+Case Colour:
+Gunmetal Grey
+Case Material:
+Steel
+GPS:
+Yes
+Heart Rate Monitor:
+Yes
+                       Connectivity
+3G:
+Yes
+NFC Enabled:
+Yes
+                     Compatibility
+Watch Operating System:
+Garmin OS
+Mac iOS Compatibility:
+Yes
+Android Compatibility:
+Yes
+Other Compatibility:
+None
+Voice Commands:
+No
+                               Display
+Touchscreen:
+Yes
+Display Technology:
+LCD
+Illuminated Display:
+Yes
+Ambient Light Sensor:
+No
+Display Resolution:
+240 x 240
+Display Colour:
+Full Colour", "https://www.amazon.ca/Garmin-Vivoactive-Smartwatch-Gunmetal-010-01769-10/dp/B0751HV9QT/ref=sr_1_5?dchild=1&keywords=Garmin+vivoactive+3+GPS&qid=1624596503&sr=8-5", "https://www.newegg.ca/p/2S7-0007-000M3?Description=Garmin%20vivoactive%203%20GPS&cm_re=Garmin_vivoactive%203%20GPS-_-2S7-0007-000M3-_-Product", "https://www.bestbuy.ca/en-ca/product/garmin-vivoactive-3-gps-smartwatch-with-heart-rate-monitor-large-gunmetal-grey/11524339");
 INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("106", "Echo Dot (4th Gen)", "https://images-na.ssl-images-amazon.com/images/I/71fnXKyRa4L._AC_SL1000_.jpg", "Round out any room with the Amazon Echo Dot (4th Gen). This smart speaker delivers clear, crisp vocals and balanced bass, while its sleek, compact design fits perfectly into small spaces. With built-in Amazon Alexa, use your voice commands to ask Alexa to play music, answer questions, give you the news and weather, and much more.", "Voice Control
 Yes
 Voice Assistant Built-In
@@ -762,3 +1935,236 @@ Item Package Quantity	‎1
 Batteries Included?	‎No
 Batteries Required?	‎No
 Item Weight	‎923 g", "https://www.amazon.ca/Brilliant-Control-Lighting-Switch-Version/dp/B07C6PPCCH/ref=sr_1_31?dchild=1&keywords=smart%2Bhome&qid=1624468140&sr=8-31&th=1", "", "https://www.bestbuy.ca/en-ca/product/brilliant-smart-home-control-3-switch-panel/15481934");
+INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("106", "Arlo Essential Spotlight", "https://c1.neweggimages.com/ProductImageCompressAll1280/AGGMD2104112LM4X.jpg", "    Wire-free camera captures 1080p Full HD video with a 130-degree field of view and 12x optical zoom so you can keep a watchful eye on your home or business
+    Integrated spotlight, motion detection, and colour night vision ensure you have a clear view anytime day or night
+    Weather-resistant design stands up to the heat, cold, rain, and sun so the camera can be used indoors or out
+    Built-in siren can be triggered remotely or automatically to deter trespassers and burglars
+    Companion app lets you watch live streams or recorded video from your smartphone or tablet
+    Two-way audio allows you to hear and speak with visitors by tapping a button in the app
+    Included power cable makes it easy to recharge the camera''s battery
+    Step-by-step instructions in the app make the camera easy to install
+    Comes with a 3-month trial of Arlo Smart for instant notifications and a rolling 30 days of cloud recordings (note: renewal of an Arlo Smart subscription is required to maintain Arlo Smart features, including cloud storage)", "Security Camera Type:
+IP Cameras
+Number of Cameras Included:
+1
+Camera Connection:
+Wire-Free
+Usage:
+Indoor & Outdoor
+Device Compatibility:
+Android & iOS
+Works with Amazon Alexa:
+Yes
+Works with Google Assistant:
+Yes
+Works with Apple HomeKit:
+No
+IFTTT:
+Yes
+Connectivity:
+Wifi - No Hub :Required
+Remote Access:
+Yes
+Remote Monitoring:
+Yes
+Mobile Remote Monitoring:
+Yes
+Wireless Standard:
+802.11 b/g/n
+WPS Connection:
+No
+Detachable:
+Not Applicable
+Built-In Siren:
+Yes
+Pet Mode:
+No
+Colour:
+White
+Material:
+Plastic
+Language Support:
+English; French", "https://www.amazon.ca/Arlo-Essential-Spotlight-Wire-Free-Activated/dp/B0875FRJPT/ref=sr_1_6?dchild=1&keywords=arlo+essential+spotlight&qid=1624570395&sr=8-6", "https://www.newegg.ca/p/0YH-026H-00135?Description=Arlo%20Essential%20Spotligh&cm_re=Arlo_Essential%20Spotligh-_-9SIAGGMEA91594-_-Product", "https://www.bestbuy.ca/en-ca/product/arlo-essential-spotlight-wire-free-indoor-outdoor-1080p-security-camera-white/14696139");
+INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("106", "Google Nest Hello Wi-Fi", "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/122/12222/12222651.jpg", "    Google Nest Hello combines the convenience of a video doorbell with the intelligence and high image quality of a Google Nest Cam
+    Provides a live view of your front door and sends you a mobile alert when someone approaches, rings the doorbell, or leaves a package
+    Smart technology is intelligent enough to tell the difference between a person and a thing; with a Nest Aware subscription (not included), Hello can even tell you if the visitor is someone you know or a complete stranger
+    HD video with HDR imaging and night vision mean you can enjoy bright and clear video day or night, even in challenging lighting conditions
+    160-degree field of view and 4:3 aspect ratio ensure you can see visitors head to toe from close range, as well as packages on the ground
+    Built-in Wi-Fi and Bluetooth mean you can check in anytime from anywhere, and even view a 3-hour snapshot history to see what you missed
+    HD Talk and Listen feature lets you have a loud-and-clear conversation with a doorstep visitor even if you''re not at home
+    Quick Response feature lets you respond to visitors with convenient pre-recorded messages
+    Works with Google Assistant for convenient voice controls
+    Note: Google Nest Hello requires an existing wired doorbell and chime, as well as 16V AC to 24V AC power and a 10VA transformer; mobile alerts, video streaming, and video recording require working internet and Wi-Fi
+    30-day free trial of Nest Aware cloud storage included (limited to one per home); if you subscribe to Nest Aware, your camera streams all video to the cloud for secure offsite storage
+    Add a Nest Aware subscription for all your Nest cameras, speakers, and displays so you can get more video history and alerts that matter", "Compatibility
+Works with Google Assistant:
+Yes
+IFTTT:
+Yes
+Device Compatibility:
+Nest; iOS; Android
+Operating environment:
+Outdoor
+                          Connectivity
+Connectivity:
+Bluetooth; Wi-Fi
+Wi-Fi:
+Yes
+Bluetooth:
+Yes
+Apps:
+Nest App
+Two-Way Communication:
+Yes
+                                    Features
+Automatic Locking/Unlocking:
+No
+Remote Operation:
+Yes
+Auto-Shut Off:
+No
+Entry/Exit History:
+Yes
+Push Notifications:
+Yes
+Motion Sensors:
+Yes
+Built-in Camera:
+Yes
+Battery Operated:
+No
+                                   Type Of Installation
+Self
+Lights Control:
+Yes", "", "https://www.newegg.ca/nest-nc5100ef-wifi-accessories/p/N82E16881860030?Description=Google%20Nest%20Hello%20Wi-Fi&cm_re=Google_Nest%20Hello%20Wi-Fi-_-81-860-030-_-Product", "https://www.bestbuy.ca/en-ca/product/google-nest-hello-wi-fi-video-doorbell-black-white/12222651");
+INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("106", "Blink Outdoor Wire-Free", "https://images-na.ssl-images-amazon.com/images/I/51INpZzwCZL._SL1000_.jpg", "    Includes 1 add-on camera (note: requires a Blink Sync Module/Base Station hub, sold separately)
+    Wire-free outdoor IP camera with 1080p Full HD resolution, 30fps video capture, and 110-degree viewing angles gives you a clear, vivid view to monitor your home
+    Infrared night vision lets you see what''s going on, whether it''s broad daylight or the middle of the night
+    Motion detection lets you get alerts on your phone via the Blink Home Monitor app
+    Two-way audio features mean you can see, hear, and speak to people (and pets) outside your door
+    Weather-resistant design is built to withstand the elements
+    Wi-Fi (2.4 GHz 802.11b/g/n) gives you an easy, secure wireless connection
+    Runs for up to 2 years on a set of AA lithium batteries (included)
+    Amazon Alexa compatibility lets you stream live video, play clips, arm and disarm the camera, get motion alerts, and use other voice commands
+    Store your footage in the cloud with the Blink subscription plan (note: Record, view, and save events in your Blink app with a free trial of the Blink Subscription Plan included with your purchase through September 2021. Then, subscribe for just $5 per-camera per-month, or $15 per-month for unlimited cameras at a single location.)", "Security Camera Type:
+Add-On Security Cameras
+Number of Cameras Included:
+1
+Camera Connection:
+Wire-Free
+Usage:
+Outdoor
+Device Compatibility:
+Alexa
+Works with Amazon Alexa:
+Yes
+Works with Google Assistant:
+No
+Works with Apple HomeKit:
+No
+IFTTT:
+Yes
+Connectivity:
+Wi-Fi: 2.4 GHz 802.11b/g/n
+Remote Access:
+Yes
+Mobile Remote Monitoring:
+Yes
+Wireless Standard:
+802.11n
+Detachable:
+Yes
+LED Indicator:
+Yes
+Built-In Siren:
+No
+Pet Mode:
+No
+Power Input:
+2 x AA 1.5V Lithium Batteries
+Colour:
+Black
+Language Support:
+English; French", "https://www.amazon.ca/Blink-Outdoor-Wireless-Security-Camera-Add-on/dp/B086DKR8GT/ref=sr_1_1?dchild=1&keywords=Blink+Outdoor+Wire-Free&qid=1624570722&sr=8-1", "", "https://www.bestbuy.ca/en-ca/product/blink-outdoor-wire-free-1080p-add-on-ip-security-camera-black/14923943");
+INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("106", "Google Nest Wi-Fi Smart Learning Thermostat 3rd Generation", "https://c1.neweggimages.com/ProductImageCompressAll1280/AA1A_1310434709421106154nnVvWGfdT.jpg", "    Innovation upgraded: The 3rd generation Google Nest Learning Thermostat is slimmer, but offers a big 2.08"" 24-bit colour LCD display, with sharper 480 x 480 resolution that makes it even easier to read. With Farsight, it knows you''re around and lights up so you can check the temperature, or time, at a glance from across the room.
+    Reduce your energy bill: Nest uses smart learning technology and learns your schedule and heating/cooling preferences over time. It then takes this data and programs itself in a way that reduces overall energy usage up to 20%. The environment and your wallet will thank you.
+    Smart savings: Nest is smart enough to turn down the thermostat when you''re away at work, and it displays the Leaf icon to show you when it''s at a temperature that''s saving you money. Airwave automatically reduces air conditioning usage when indoor humidity isn''t too high, so you''ll get reduced energy bills while keeping the house cool.
+    Connectivity: Nest connects with your home''s WiFi network so you can control it from your smartphone, tablet, or laptop from anywhere in the world. Compatible with mobile devices that use iOS 8 or later, or Android 4 or later with the free Nest app and Bluetooth 4.0 or set it up from your computer using USB connectivity and a web browser.
+    Remote monitoring: You can view Energy History on the Nest Mobile or Web apps so you can get detailed information about your energy usage and figure out how best to save. Plus, Nest lets you know something is out of the ordinary, like if the temperature is too low or too high, with an alert to your mobile device. You can even control your Google Nest Thermostat from your Apple Watch.
+    Weather aware: Nest monitors weather conditions so it can figure out how outdoor temperatures and weather affects your heating and cooling needs.
+    Convenient voice controls: Works with Google Assistant for convenient voice controls.
+    Smart device compatibility: Since Nest is smart and WiFi-connected, it''s able to work with a variety of other smart devices to provide additional convenience and functionality, and the list of compatible devices is growing all the time.
+    Easy installation: As easy as installing a lighting fixture, Nest is simple to install, and probably in less than 30 minutes. If you''d rather let a professional handle it, you can contact a Google Nest Pro to install Nest, remove and recycle your old thermostat, and connect Nest to your WiFi network.", "ENERGY STAR Qualified:
+Yes
+Colour:
+White
+Works with Google Assistant:
+Yes
+IFTTT:
+Yes
+Device Compatibility:
+iOS; Android
+Connectivity:
+WiFi; Bluetooth Low Energy (BLE)
+Works Offline:
+Yes
+Heating/Cooling System Compatibility:
+Nest works with over 95% of 24V heating and cooling systems; Gas, Electric, Oil, Solar, Hot Water, Geothermal, Forced Air, Heat Pump and Radiant
+Wiring Compatibility:
+Heating: 1, 2, And 3 Stages (W1; W2; W3); Cooling: 1 And 2 Stages (Y1; Y2); Heat Pump: With Auxiliary And Emergency Heat (O/B; Aux; E); Humidifier Or Dehumidifier (Hum; Dehum); Fan (G) Power (C; Rh; Rc)
+Self-Installation:
+Yes
+Apps:
+Free Nest App with compatible phones or tablets running iOS 8 or later or Android 4 or later and Bluetooth 4.0; Or set it up from your computer using USB and a web browser
+Multiple Zones:
+Yes
+Motion Activated:
+Yes
+Scheduling:
+Yes
+Remote Controlled:
+Yes
+Touchscreen:
+No
+Multi Stage Control:
+Yes
+Backup Battery:
+Yes
+Compatible Systems:
+Nest; Insteon; Control4; Crestron; RTI; URC", "", "https://www.newegg.ca/nest-t3007ef-thermostats-hvac/p/35E-000B-00002?Description=Google%20Nest%20Wi-Fi%20Smart%20Learning&cm_re=Google_Nest%20Wi-Fi%20Smart%20Learning-_-35E-000B-00002-_-Product", "https://www.bestbuy.ca/en-ca/product/google-nest-wi-fi-smart-learning-thermostat-3rd-generation-white-only-at-best-buy/10747787");
+INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("106", "Google Nest Mini ", "https://c1.neweggimages.com/ProductImageCompressAll1280/81-716-013-S05.jpg", "    Voice-controlled speaker with Google Assistant helps you stay organised by managing your schedule, checking the weather, setting reminders, and more
+    Built-in timers and alarms help to ensure you never miss an important appointment
+    Compatible with more than a thousand smart devices so you can turn on the lights, adjust the thermostat, and control your smart plugs (sold separately)
+    Upgraded audio technology plays music from Spotify, YouTube Music, TuneIn, and more with rich bass and powerful sound (additional subscriptions may be required)
+    Make calls using a Google Duo account to other Google Duo users anywhere in Canada and the United States
+    Intercom feature lets you send messages from your phone to everyone at home or chat between rooms with other Google Nest speakers or displays
+    Voice Match recognises voices to provide personalized information for up to six users (additional setup and enrollment required)
+    The built-in Google Assistant lets you use your voice to stream your favourite shows and videos right to your TV
+    Volume controls on the speaker, as well as voice- and phone-controlled volume adjustment make it easy to turn the speaker up and down
+    Downtime helps everyone to disconnect from technology at particular times while family-friendly filters block access to inappropriate content
+    Clean, modern design complements any space and can be set up on a table or shelf or mounted on the wall
+    2nd generation of the Google Home Mini", "Compatibility
+Works with Google Assistant:
+Yes
+                             Connectivity
+Wi-Fi:
+Yes
+Bluetooth:
+Bluetooth 5.0
+Connectivity:
+802.11b/g/n/ac (2.4 GHz/5 GHz) Wi-Fi
+                                 Audio Features
+Speaker:
+Yes
+                                     Power
+Max Load:
+15 W
+                               Dimension
+Width:
+9.8 cm
+Height:
+4.2 cm
+Depth:
+9.8 cm
+Weight:
+181 g", "", "https://www.newegg.ca/google-ga00638-ca-802-11b-g-n-ac-wi-fi-bluetooth-5-0-chromecast-built-in/p/N82E16881716013?Description=Google%20Nest%20Mini&cm_re=Google_Nest%20Mini-_-81-716-013-_-Product", "https://www.bestbuy.ca/en-ca/product/google-nest-mini-2nd-gen-smart-speaker-chalk/13962883");
