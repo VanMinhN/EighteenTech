@@ -11,6 +11,12 @@ if ($_SESSION["is_admin"] != true){
   header("location: user.php");
   exit;
 }
+if (!isset ($_GET['page']) ) {
+  $page = "admininfo";
+} else {
+  $page = $_GET['page'];
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -34,20 +40,20 @@ if ($_SESSION["is_admin"] != true){
  -->
   <div class="row" style="margin-top:100px">
 	  <div class="col-xl-3">
-		  <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."admin_sidenav.html"); ?> <!-- Admin SideNav -->
+		  <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."admin_sidenav.php"); ?> <!-- Admin SideNav -->
 	  </div>
 	  <div class="col-xl-9">
-		  <div class="tab-content" id="nav-tabContent">
-      		<div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+		  <div class="tab-content">
+      		<div class="tab-pane fade <?php echo ($page == "admininfo"? 'show active':''); ?>">
 		  		      <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/admin/"; include($IPATH."adminInfo.php"); ?> <!-- Admin info -->
 			    </div>
-          <div class="tab-pane fade" id="list-users" role="tabpanel" aria-labelledby="list-users-list">
+          <div class="tab-pane fade <?php echo ($page == "userman"? 'show active':''); ?>">
             <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/admin/"; include($IPATH."adminUserManagement.php"); ?> <!-- Admin User Management -->
           </div>
-          <div class="tab-pane fade" id="list-themes" role="tabpanel" aria-labelledby="list-themes-list">Themes</div>
-          <div class="tab-pane fade" id="list-products" role="tabpanel" aria-labelledby="list-products-list">Products</div>
-		      <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">Settings</div>
-		      <div class="tab-pane fade" id="list-carousel" role="tabpanel" aria-labelledby="list-carousel-list">Carousel content</div>
+          <div class="tab-pane fade <?php echo ($page == "themes"? 'show active':''); ?>">Themes</div>
+          <div class="tab-pane fade <?php echo ($page == "manageprod"? 'show active':''); ?>">Products</div>
+		      <div class="tab-pane fade <?php echo ($page == "settings"? 'show active':''); ?>">Settings</div>
+		      <div class="tab-pane fade <?php echo ($page == "carousel"? 'show active':''); ?>">Carousel content</div>
     </div>
 	  </div>
 </div>
