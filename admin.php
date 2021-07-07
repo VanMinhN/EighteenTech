@@ -24,6 +24,7 @@ if ($_SESSION["is_admin"] != true){
     		<meta name="author" content="Nitin Ramesh">
    		<meta name="viewport" content="width=device-width, initial-scale=1.0">
   		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <div>
@@ -38,13 +39,15 @@ if ($_SESSION["is_admin"] != true){
 	  <div class="col-xl-9">
 		  <div class="tab-content" id="nav-tabContent">
       		<div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-		  		 <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/admin/"; include($IPATH."admininfo.php"); ?> <!-- Admin info -->
-			</div>
-      <div class="tab-pane fade" id="list-users" role="tabpanel" aria-labelledby="list-users-list">Users</div>
-      <div class="tab-pane fade" id="list-themes" role="tabpanel" aria-labelledby="list-themes-list">Themes</div>
-      <div class="tab-pane fade" id="list-products" role="tabpanel" aria-labelledby="list-products-list">Products</div>
-		<div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">Settings</div>
-		<div class="tab-pane fade" id="list-carousel" role="tabpanel" aria-labelledby="list-carousel-list">Carousel content</div>
+		  		      <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/admin/"; include($IPATH."adminInfo.php"); ?> <!-- Admin info -->
+			    </div>
+          <div class="tab-pane fade" id="list-users" role="tabpanel" aria-labelledby="list-users-list">
+            <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/admin/"; include($IPATH."adminUserManagement.php"); ?> <!-- Admin User Management -->
+          </div>
+          <div class="tab-pane fade" id="list-themes" role="tabpanel" aria-labelledby="list-themes-list">Themes</div>
+          <div class="tab-pane fade" id="list-products" role="tabpanel" aria-labelledby="list-products-list">Products</div>
+		      <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">Settings</div>
+		      <div class="tab-pane fade" id="list-carousel" role="tabpanel" aria-labelledby="list-carousel-list">Carousel content</div>
     </div>
 	  </div>
 </div>
