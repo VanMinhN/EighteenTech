@@ -51,7 +51,9 @@ if (!isset ($_GET['page']) ) {
             <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/admin/"; include($IPATH."adminUserManagement.php"); ?> <!-- Admin User Management -->
           </div>
           <div class="tab-pane fade <?php echo ($page == "themes"? 'show active':''); ?>">Themes</div>
-          <div class="tab-pane fade <?php echo ($page == "manageprod"? 'show active':''); ?>">Products</div>
+          <div class="tab-pane fade <?php echo ($page == "manageprod"? 'show active':''); ?>">
+            <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/admin/"; include($IPATH."adminProductManagement.php"); ?> <!-- Admin Product Management -->
+          </div>
 		      <div class="tab-pane fade <?php echo ($page == "settings"? 'show active':''); ?>">Settings</div>
 		      <div class="tab-pane fade <?php echo ($page == "carousel"? 'show active':''); ?>">Carousel content</div>
     </div>
