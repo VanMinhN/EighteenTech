@@ -12,6 +12,8 @@ CREATE TABLE users (
 );
 /*Insert an admin account*/
 INSERT INTO users (username,emailaddress, first_name, last_name, password, is_admin) VALUES ("rames11a", "rameshnitin99@gmail.com", "Nitin", "Ramesh", "$2y$10$U8EIkwFRA49lcYQ4dHQ4BujLGfA4gtrXOlwpiUno1liO8l2lvbRxe", 1); /*Password: Admin01@ */
+/*Insert 3 dummy accounts*/
+INSERT INTO users ( username, emailaddress, first_name, last_name, password, is_admin) VALUES ( 'adamsmith01', 'adamsmith@gmail.com', 'Adam', 'Smith', '$2y$10$WOJHWt5HD0SwnDJS4EupgOfeUAtcfYZoan8eZsTUtX8gPcB58je2W', 0), ('johndoe', 'johndoe@hotmail.ca', 'John', 'Doe', '$2y$10$Zy0MjIp9MLZoOZgwdoXKDO9KlRvZbKAplb.fNpnPTfjf4ikrC4O7K', 0), ( 'janey_2001', 'janedoe123@yahoo.com', 'Jane', 'Doe', '$2y$10$19hAphj/W8wiQG23TkUhs.HJz8w2a4qJeebnTniVeSaD1WD85//ru', 0);
 
 /*Create schema for product*/
 CREATE TABLE products (
