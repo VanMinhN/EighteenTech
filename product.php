@@ -19,6 +19,23 @@
         } else {
           $pid = htmlspecialchars($_GET['pid']); //to avoid XSS injection
         }
+		
+		//query the database to get the average review score
+		$OverallReview = 0;
+		$query = "select * from reviews where p_id=".$pid;
+		$result = mysqli_query($link, $query);
+		$review_cnt = $result->num_rows;
+		//call and print all forms from database
+		if ($result && ($review_cnt>0)){
+			while($row = mysqli_fetch_assoc($result)){
+				$OverallReview += $row['rating'];
+			}
+			$OverallReview = $OverallReview/$review_cnt;
+		}
+		else{
+			echo "<p>There are no Reviews on this product..</p>";
+		}
+		
         // query to get product info
         $query = "select * from products where p_id=".$pid;
         $result = mysqli_query($link, $query);
@@ -49,6 +66,7 @@
           </div>
    		  <div class="col-xl-8">
           <h2>'.$row["p_name"].'</h2><br/>
+			<p>Average Review Score: '.$OverallReview.'</p>
           <p>'.nl2br($row["p_description"]).'</p>
           <hr/>
   		    <div class="row">
@@ -75,82 +93,56 @@
   		  <div>
   			  <h3>Specification</h3><br/>
           <p>'.nl2br($row['p_specs']).'</p>
+		 </div><hr>
           ';
         }
         ?>
-		<?php
-		$query = "select * from reviews where p_id=".$pid;
-		$result = mysqli_query($link, $query);
-		$review_cnt = $result->num_rows;
-		//send submitted form to sql database
-		if(!empty($_POST['rating']) && !empty($_POST['review']) && isset($_POST['submit'])){
 		
-			
-			// Prepare an insert statement
-			$sql = "INSERT INTO reviews (p_id,id,username,rating,comment) VALUES (?, ?, ?, ?, ?, ?)";
 
-			if($stmt = mysqli_prepare($link, $sql)){
-				// Bind variables to the prepared statement as parameters
-				mysqli_stmt_bind_param($stmt, "ssssss", $param_productid, $param_userid, $param_username, $param_rating, $param_comment);
-
-				// Set parameters
-				$param_productid = $pid;
-				$param_userid = $_SESSION['id'];
-				$param_username = $_SESSION['username'];
-				$param_rating = htmlspecialchars($_POST['rating']); 
-				$param_comment = htmlspecialchars($_POST['review']);
-				
-				// Attempt to execute the prepared statement
-				if(mysqli_stmt_execute($stmt)){
-					// Redirect to login page
-					header("location: product.php");
-				} else{
-					echo "Oops! Something went wrong. Please try again later.";
-				}
-
-				// Close statement
-				mysqli_stmt_close($stmt);
-			}
-		}
-	
-		?>
-		<form action = "product.php" method="post">
-			<div id = "rating">
-				<label>Rating(out of 10):</label>
-				<input type = "number" name="rating" min="0" max ="10">
-			</div>
-			<div id = "review">
-				<label>Review:</label>
-				<textarea name="review" maxlength= "500" placeholder="500 character limit"></textarea>
-			</div>
-			<div id = "submit">
-				<input type="submit" value="Submit" name="submit">
-			</div>
-		</form>
 		<?php
+		echo "<div id='reviews'><h3 >Reviews</h3><br/>";
+		
+		$_SESSION['pid'] = $pid;
+		
+		if(!empty($_SESSION['loggedin'])){
+			echo '
+				<form id="form"action = "review.php" method="post" >
+					<div id = "rating">
+						<label>Rating(out of 10):</label>
+						<input type = "number" name="rating" min="0" max ="10" value="">
+					</div>
+					<div id = "review">
+						<label>Review:</label><br>
+						<textarea name="review" maxlength= "500" placeholder="500 character limit"></textarea>
+					</div>
+					<div id = "submit">
+						<input type="submit" value="Submit" name="submit" onclick="return window.location.reload();">
+					</div>
+				</form>			
+			';
+		}
+		
 		$query = "select * from reviews where p_id=".$pid;
 		$result = mysqli_query($link, $query);
 		$review_cnt = $result->num_rows;
 		//call and print all forms from database
 		if ($result && ($review_cnt>0)){
 			while($row = mysqli_fetch_assoc($result)){
-				echo"
-					<div id='comment'>
-						<p>$row['username']<p><br>
-						<p>$row['comment']</p>
-					</div>
-					<hr>
-				";
 				
+				echo"<hr><div id='comment'>";
+				echo'		<p>'.($row['rating']).'</p>';
+				echo'		<p><b>'.($row['username']).'</b> at '.($row['post_time']).'</p>';
+				echo'		<p>'.($row['comment']).'</p>';
+				echo"</div>";
 			}
 		}
 		else{
 			echo "<p>There are no Reviews on this product..</p>";
 		}
-		
+		echo"</div>";
 		?>
 		
-			 </div>
+			
       </div>
     </div>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
