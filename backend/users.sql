@@ -29,6 +29,20 @@ CREATE TABLE products (
         p_created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
+/*Create table schema for comments/reviews */
+CREATE TABLE reviews(
+	r_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	p_id INT NOT NULL,
+	id INT NOT NULL,
+	username VARCHAR(50) NOT NULL UNIQUE,
+	post_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+	rating INT NOT NULL,
+	comment TEXT(500),
+	FOREIGN KEY(p_id) REFERENCES products(p_id),
+	FOREIGN KEY(id) REFERENCES users(id),
+	FOREIGN KEY(username) REFERENCES users(username)
+);
+
 /*populate products table*/
 INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("101", "UMIDIGI A9 Pro", "https://images-na.ssl-images-amazon.com/images/I/71Du8QCeYcL._AC_SL1500_.jpg", "[Sony 32MP Quad Camera] A9 Pro smartphone with Sony 32MP main camera, 16MP ultra-wide angle, 5MP depth camera and 5MP macro camera. The Sony 32MP camera has incredible light-sensing ability and comes with a 1/2"" large size sensor, supporting Quad Bayer, pixel size up to 1.6μm. Your pictures will come out bright even in low light. With a dramatic 120 ° field of view from a 16MP ultra-wide-angle camera, you can shoot clearer and wider landscapes.
 [Helio P60 Octa-Core Processor&4GB + 64GB] A9 Pro unlocked smartphone is equipped with a high-performance Helio P60 octa-core processor with a maximum clock speed of 2.0GHz, for the seamless gaming experience you never have before in this price range. With up to 6GB + 128GB supported, the advanced LPDDR4X standard and UFS 2.1 flash storage greatly improve overall performance and reduce power consumption. Now web browsing and gaming can be smooth like never before.
