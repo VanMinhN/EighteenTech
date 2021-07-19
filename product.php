@@ -8,7 +8,7 @@
       		<meta name="author" content="Nitin Ramesh">
      		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--FOR THE STARS-->
-	tylesheet">
+
 	<style>
 		/* Base setup */
 		@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
@@ -72,6 +72,7 @@
 		$query = "select * from reviews where p_id=".$pid;
 		$result = mysqli_query($link, $query);
 		$review_cnt = $result->num_rows;
+		$reviewNum = $review_cnt;
 		//call and print all forms from database
 		if ($result && ($review_cnt>0)){
 			while($row = mysqli_fetch_assoc($result)){
@@ -176,7 +177,7 @@
 		
 		if(!empty($_SESSION['loggedin'])){
 			echo '
-				<form id="form"action = "review.php" method="post" >
+				<form id="form" action = "review.php" method="post" >
 					<div id = "rating">
 						<label>Rating:</label><br>
 						<fieldset class="rate" id="product_rating">
@@ -203,7 +204,7 @@
 			';
 		}
 		
-		$query = "select * from reviews where p_id=".$pid;
+		$query = "select * from reviews where p_id=".($pid)." ORDER BY post_time LIMIT 10;";
 		$result = mysqli_query($link, $query);
 		$review_cnt = $result->num_rows;
 		//call and print all forms from database
@@ -226,6 +227,11 @@
 				echo'		<p><b>'.($row['username']).'</b> at '.($row['post_time']).'</p>';
 				echo'		<p>&nbsp&nbsp&nbsp&nbsp&nbsp'.($row['comment']).'</p>';
 				echo"</div>";
+			}
+			
+			if($reviewNum > 10){
+				echo '	<a href="comments.php">See all comments...</a>
+				';
 			}
 		}
 		else{
