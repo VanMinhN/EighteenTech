@@ -7,6 +7,53 @@
       		<meta name="keywords" content="appliances, tech, review, tv, mobile, headphone, laptop, phone">
       		<meta name="author" content="Nitin Ramesh">
      		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--FOR THE STARS-->
+	tylesheet">
+	<style>
+		/* Base setup */
+		@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+		@import url(//pro.fontawesome.com/releases/v5.15.0/css/all.css);
+		
+		/* Ratings widget */
+		.rate {
+			display: inline-block;
+			border: 0;color: #777777;
+		}
+		/* Hide radio */
+		.rate > input {
+			display: none;
+		}
+		/* Order correctly by floating highest to the right */
+		.rate > label {
+			float: right;
+		}
+		/* The star of the show */
+		.rate > label:before {
+			display: inline-block;
+			font-size: 2rem;
+			padding: .3rem .2rem;
+			margin: 0;
+			cursor: pointer;
+			font-family: FontAwesome;
+			content: "\f005 "; /* full star */
+			
+		}
+
+		/* Half star trick */
+		.rate .half:before {
+			content: "\f089 "; /* half star no outline */
+			position: absolute;
+			padding-right: 0;
+		}
+		/* Click + hover color */
+		input:checked ~ label, /* color current and previous stars on checked */
+		label:hover, label:hover ~ label { color: #58d090;  } /* color previous stars on hover */
+
+		/* Hover highlights */
+		input:checked + label:hover, input:checked ~ label:hover, /* highlight current and previous stars */
+		input:checked ~ label:hover ~ label, /* highlight previous selected stars for new rating */
+		label:hover ~ input:checked ~ label /* highlight previous selected stars */ { color: #25a087;  } 	
+	</style>
         <?php
         // Initialize the session
         session_start();
@@ -31,6 +78,17 @@
 				$OverallReview += $row['rating'];
 			}
 			$OverallReview = $OverallReview/$review_cnt;
+		}
+		else{
+			echo "<p>There are no Reviews on this product..</p>";
+		}
+		
+		//send updated overall review in products table
+		$query = "UPDATE products SET p_overallReview=".(round($OverallReview))." WHERE p_id=".$pid;
+		$result = mysqli_query($link, $query);
+
+		//call and print all forms from database
+		if ($result && ($review_cnt>0)){
 		}
 		else{
 			echo "<p>There are no Reviews on this product..</p>";
@@ -65,8 +123,20 @@
           echo '<img src="'.$row['p_image'].'" class="img-fluid" alt="'.$row['p_name'].'" style=" display: block; margin-left: auto; margin-right: auto;max-width: 150px; max-height:250px; overflow: hidden; object-position: 50% 50%; object-fit: contain;">
           </div>
    		  <div class="col-xl-8">
-          <h2>'.$row["p_name"].'</h2><br/>
-			<p>Average Review Score: '.$OverallReview.'</p>
+          <h2>'.$row["p_name"].'</h2>
+			<p id="stars">';
+
+			for($num=0;$num<($OverallReview)/2;$num++){
+					if (($OverallReview/2)-$num == 0.5){
+						echo'<i style="color:#58d090;" class="fas fa-star-half"></i>';
+						
+					}
+					else{
+						echo'<i style="color:#58d090;" class="fas fa-star"></i>';
+					}					
+			}
+			
+		  echo '('.($review_cnt).')</p>
           <p>'.nl2br($row["p_description"]).'</p>
           <hr/>
   		    <div class="row">
@@ -108,8 +178,19 @@
 			echo '
 				<form id="form"action = "review.php" method="post" >
 					<div id = "rating">
-						<label>Rating(out of 10):</label>
-						<input type = "number" name="rating" min="0" max ="10" value="">
+						<label>Rating:</label><br>
+						<fieldset class="rate" id="product_rating">
+							<input type="radio" id="rating10" name="rating" value="10" /><label for="rating10" title="5 stars"></label>
+							<input type="radio" id="rating9" name="rating" value="9" /><label class="half" for="rating9" title="4 1/2 stars"></label>
+							<input type="radio" id="rating8" name="rating" value="8" /><label for="rating8" title="4 stars"></label>
+							<input type="radio" id="rating7" name="rating" value="7" /><label class="half" for="rating7" title="3 1/2 stars"></label>
+							<input type="radio" id="rating6" name="rating" value="6" /><label for="rating6" title="3 stars"></label>
+							<input type="radio" id="rating5" name="rating" value="5" /><label class="half" for="rating5" title="2 1/2 stars"></label>
+							<input type="radio" id="rating4" name="rating" value="4" /><label for="rating4" title="2 stars"></label>
+							<input type="radio" id="rating3" name="rating" value="3" /><label class="half" for="rating3" title="1 1/2 stars"></label>
+							<input type="radio" id="rating2" name="rating" value="2" /><label for="rating2" title="1 star"></label>
+							<input type="radio" id="rating1" name="rating" value="1" /><label class="half" for="rating1" title="1/2 star"></label>
+						</fieldset>
 					</div>
 					<div id = "review">
 						<label>Review:</label><br>
@@ -128,24 +209,39 @@
 		//call and print all forms from database
 		if ($result && ($review_cnt>0)){
 			while($row = mysqli_fetch_assoc($result)){
+				$StarNum = $row['rating']/2;
 				
 				echo"<hr><div id='comment'>";
-				echo'		<p>'.($row['rating']).'</p>';
+				echo'		<p id="stars">';
+				for($num=0;$num<$StarNum;$num++){
+					if ($StarNum-$num == 0.5){
+						echo'<i style="color:#58d090;" class="fas fa-star-half"></i>';
+						
+					}
+					else{
+						echo'<i style="color:#58d090;" class="fas fa-star"></i>';
+					}					
+				}
+				echo'</p>';
 				echo'		<p><b>'.($row['username']).'</b> at '.($row['post_time']).'</p>';
-				echo'		<p>'.($row['comment']).'</p>';
+				echo'		<p>&nbsp&nbsp&nbsp&nbsp&nbsp'.($row['comment']).'</p>';
 				echo"</div>";
 			}
 		}
 		else{
 			echo "<p>There are no Reviews on this product..</p>";
 		}
-		echo"</div>";
+		echo"</div>";	
 		?>
 		
 			
       </div>
     </div>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	
+	<!-- JavaScript to fix the star icons for the reviews and the overall rating of the product-->
+	
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="js/jquery-3.4.1.min.js"></script>
 
 	<!-- Include all compiled plugins (below), or include individual files as needed -->

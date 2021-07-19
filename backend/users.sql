@@ -3,11 +3,11 @@ USE eighteentech; /* Define the database*/
 CREATE TABLE users (
     	 id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     	 username VARCHAR(50) NOT NULL UNIQUE,
-       emailaddress VARCHAR(50) NOT NULL,
+         emailaddress VARCHAR(50) NOT NULL,
 	     first_name VARCHAR(50) NOT NULL,
 	     last_name VARCHAR(50) NOT NULL,
     	 password VARCHAR(255) NOT NULL,
-       is_admin BOOLEAN NOT NULL,
+		 is_admin BOOLEAN NOT NULL,
     	 created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 /*Insert an admin account*/
@@ -22,6 +22,7 @@ CREATE TABLE products (
         p_name VARCHAR(100) NOT NULL UNIQUE,
         p_image VARCHAR(200) NOT NULL UNIQUE,
         p_description LONGTEXT NOT NULL,
+		p_overallReview INT DEFAULT 0 NOT NULL,
         p_specs LONGTEXT NOT NULL,
         p_amazon VARCHAR(200) ,
         p_newegg VARCHAR(200) ,
