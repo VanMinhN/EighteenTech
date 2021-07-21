@@ -12,6 +12,8 @@ CREATE TABLE users (
 );
 /*Insert an admin account*/
 INSERT INTO users (username,emailaddress, first_name, last_name, password, is_admin) VALUES ("rames11a", "rameshnitin99@gmail.com", "Nitin", "Ramesh", "$2y$10$U8EIkwFRA49lcYQ4dHQ4BujLGfA4gtrXOlwpiUno1liO8l2lvbRxe", 1); /*Password: Admin01@ */
+INSERT INTO users (username,emailaddress, first_name, last_name, password, is_admin) VALUES ("corro", "corro@uwindsor.ca", "Charles", "Corro", "$2y$10$U8EIkwFRA49lcYQ4dHQ4BujLGfA4gtrXOlwpiUno1liO8l2lvbRxe", 1); /*Password: Admin01@ */
+
 /*Insert 3 dummy accounts*/
 INSERT INTO users ( username, emailaddress, first_name, last_name, password, is_admin) VALUES ( 'adamsmith01', 'adamsmith@gmail.com', 'Adam', 'Smith', '$2y$10$WOJHWt5HD0SwnDJS4EupgOfeUAtcfYZoan8eZsTUtX8gPcB58je2W', 0), ('johndoe', 'johndoe@hotmail.ca', 'John', 'Doe', '$2y$10$Zy0MjIp9MLZoOZgwdoXKDO9KlRvZbKAplb.fNpnPTfjf4ikrC4O7K', 0), ( 'janey_2001', 'janedoe123@yahoo.com', 'Jane', 'Doe', '$2y$10$19hAphj/W8wiQG23TkUhs.HJz8w2a4qJeebnTniVeSaD1WD85//ru', 0);
 
@@ -44,18 +46,7 @@ CREATE TABLE reviews(
 	FOREIGN KEY(username) REFERENCES users(username)
 );
 
-INSERT INTO `reviews` (`r_id`, `p_id`, `id`, `username`, `post_time`, `rating`, `comment`) VALUES
-(1, 1, 5, 'corro', '2021-07-18 19:45:08', 5, 'great product! Will buy again!'),
-(2, 1, 5, 'corro', '2021-07-18 20:54:53', 5, 'neither great nor that bad. Was average.'),
-(3, 1, 5, 'corro', '2021-07-18 20:55:00', 7, 'I would buy this again'),
-(4, 1, 5, 'corro', '2021-07-18 20:55:10', 1, 'did not live up to my expectations'),
-(5, 1, 5, 'corro', '2021-07-18 20:55:16', 10, 'LOVE THIS PRODUCT'),
-(6, 1, 5, 'corro', '2021-07-18 21:03:37', 9, 'it was okay'),
-(7, 1, 5, 'corro', '2021-07-18 21:30:50', 6, 'great'),
-(8, 1, 5, 'corro', '2021-07-18 21:30:57', 7, 'I would recommend this to all my friends and family!'),
-(9, 1, 5, 'corro', '2021-07-18 21:31:03', 3, 'not impressed'),
-(10, 1, 5, 'corro', '2021-07-18 21:31:10', 9, 'greatness'),
-(11, 1, 5, 'corro', '2021-07-18 21:31:21', 10, 'AMAZINGGGG');
+
 
 
 /*populate products table*/
@@ -2199,3 +2190,16 @@ Depth:
 9.8 cm
 Weight:
 181 g", "", "https://www.newegg.ca/google-ga00638-ca-802-11b-g-n-ac-wi-fi-bluetooth-5-0-chromecast-built-in/p/N82E16881716013?Description=Google%20Nest%20Mini&cm_re=Google_Nest%20Mini-_-81-716-013-_-Product", "https://www.bestbuy.ca/en-ca/product/google-nest-mini-2nd-gen-smart-speaker-chalk/13962883");
+
+INSERT INTO `reviews` (`r_id`, `p_id`, `id`, `username`, `post_time`, `rating`, `comment`) VALUES
+(1, 1, 5, 'corro', '2021-07-18 19:45:08', 5, 'great product! Will buy again!'),
+(2, 1, 5, 'corro', '2021-07-18 20:54:53', 5, 'neither great nor that bad. Was average.'),
+(3, 1, 5, 'corro', '2021-07-18 20:55:00', 7, 'I would buy this again'),
+(4, 1, 5, 'corro', '2021-07-18 20:55:10', 1, 'did not live up to my expectations'),
+(5, 1, 5, 'corro', '2021-07-18 20:55:16', 10, 'LOVE THIS PRODUCT'),
+(6, 1, 5, 'corro', '2021-07-18 21:03:37', 9, 'it was okay'),
+(7, 1, 5, 'corro', '2021-07-18 21:30:50', 6, 'great'),
+(8, 1, 5, 'corro', '2021-07-18 21:30:57', 7, 'I would recommend this to all my friends and family!'),
+(9, 1, 5, 'corro', '2021-07-18 21:31:03', 3, 'not impressed'),
+(10, 1, 5, 'corro', '2021-07-18 21:31:10', 9, 'greatness'),
+(11, 1, 5, 'corro', '2021-07-18 21:31:21', 10, 'AMAZINGGGG');

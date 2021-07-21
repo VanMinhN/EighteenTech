@@ -29,7 +29,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
   //validate email address
   if(empty(trim($_POST["emailaddress"]))){
-      $emailaddress_err = "Please enter a last name.";
+      $emailaddress_err = "Please enter an email address.";
   } elseif(!filter_var(trim($_POST["emailaddress"]), FILTER_VALIDATE_EMAIL)){
       $emailaddress_err = "Invalid email address. ";
   } else{
