@@ -13,6 +13,12 @@
 			document.getElementById("nav_categories").className = "nav-link active";
 			console.log("done");
 		}
+		if(current_page === "/covInfo.php")
+		{
+			console.log("covid-19");
+			document.getElementById("nav_covid19").className = "nav-link active";
+			console.log("done");
+		}
 
 };
 
@@ -28,10 +34,11 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent1">
 		 	<ul class="navbar-nav mr-auto">
-		      <li class="nav-item" > <a class="nav-link" id="nav_aboutus" href="./aboutus.php">About us</a> </li>
-		      <li class="nav-item" > <a class="nav-link" id="nav_categories" href="./categories.php">Categories</a> </li>
+		      		<li class="nav-item" > <a class="nav-link" id="nav_categories" href="./categories.php">Categories</a> </li>
+				<li class="nav-item" > <a class="nav-link" id="nav_covid19" href="./covInfo.php">COVID-19</a> </li>
+				<li class="nav-item" > <a class="nav-link" id="nav_aboutus" href="./aboutus.php">About us</a> </li>
 
-	        </ul>
+	        	</ul>
 
 		    <form class="form-inline my-2 my-lg-0" action="search.php" method="GET">
 		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query" required >

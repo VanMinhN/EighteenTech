@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>EighteenTech</title>
+<title>EighteenTech: About Us</title>
 <meta charset="UTF-8">
   		<meta name="description" content="Technology reviews">
   		<meta name="keywords" content="appliances, tech, review, tv, mobile, headphone, laptop, phone">
