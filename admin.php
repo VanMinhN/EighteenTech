@@ -56,6 +56,9 @@ if (!isset ($_GET['page']) ) {
           </div>
 		      <div class="tab-pane fade <?php echo ($page == "settings"? 'show active':''); ?>">Settings</div>
 		      <div class="tab-pane fade <?php echo ($page == "carousel"? 'show active':''); ?>">Carousel content</div>
+          <div class="tab-pane fade <?php echo ($page == "documentation"? 'show active':''); ?>">
+              <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/admin/"; include($IPATH."adminDocumentation.php"); ?> <!-- Admin Documentation -->
+          </div>
     </div>
 	  </div>
 </div>
