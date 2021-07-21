@@ -19,7 +19,12 @@
 			document.getElementById("nav_covid19").className = "nav-link active";
 			console.log("done");
 		}
-
+		if(current_page === "/FAQ.php")
+		{
+			console.log("FAQ");
+			document.getElementById("nav_faq").className = "nav-link active";
+			console.log("done");
+		}
 };
 
 </script>
@@ -35,8 +40,9 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent1">
 		 	<ul class="navbar-nav mr-auto">
 		      		<li class="nav-item" > <a class="nav-link" id="nav_categories" href="./categories.php">Categories</a> </li>
-				<li class="nav-item" > <a class="nav-link" id="nav_covid19" href="./covInfo.php">COVID-19</a> </li>
-				<li class="nav-item" > <a class="nav-link" id="nav_aboutus" href="./aboutus.php">About us</a> </li>
+							<li class="nav-item" > <a class="nav-link" id="nav_faq" href="./FAQ.php">FAQ</a> </li>
+							<li class="nav-item" > <a class="nav-link" id="nav_covid19" href="./covInfo.php">COVID-19</a> </li>
+							<li class="nav-item" > <a class="nav-link" id="nav_aboutus" href="./aboutus.php">About us</a> </li>
 
 	        	</ul>
 
