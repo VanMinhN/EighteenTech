@@ -18,18 +18,54 @@
   <tbody>
     <tr>
       <th scope="row">PHP</th>
-      <td><span class="badge badge-pill badge-success">Operational</span></td>
-      <td>php version ...</td>
+			<?php
+				//testing php version
+				if(phpversion()){
+					echo '<td><span class="badge badge-pill badge-success">Operational</span></td>';
+					echo "<td>PHP v".phpversion()."</td>";
+				}
+				else{
+					echo '<td><span class="badge badge-pill badge-warning">Not Operational</span></td>';
+					echo "<td>Unable to get PHP version</td>";
+				}
+			?>
+
+    </tr>
+		<tr>
+      <th scope="row">MySQLi extension</th>
+			<?php
+				//testing mysqli extension availability
+				require_once "config.php";
+				if(mysqli_get_client_info($link)){
+					echo '<td><span class="badge badge-pill badge-success">Operational</span></td>';
+					echo "<td>".mysqli_get_client_info($link)."</td>";
+				}
+				else{
+					echo '<td><span class="badge badge-pill badge-warning">Not Operational</span></td>';
+					echo "<td>Unable to find MySQLi extension</td>";
+				}
+			?>
+
     </tr>
     <tr>
       <th scope="row">SQL database</th>
-      <td><span class="badge badge-pill badge-success">Operational</span></td>
-      <td>sql message ...</td>
+			<?php
+				//testing database connection
+			 if($link){
+				 echo '<td><span class="badge badge-pill badge-success">Operational</span></td>';
+				 echo "<td>Connected</td>";
+			 }
+			 else{
+				 echo '<td><span class="badge badge-pill badge-warning">Not Operational</span></td>';
+				 echo "<td>Unable to connect to database</td>";
+			 }
+			 ?>
+
     </tr>
     <tr>
       <th scope="row">Covid-19 dataset</th>
-      <td><span class="badge badge-pill badge-success">Operational</span></td>
-      <td>dataset message ...</td>
+      <td><span class="badge badge-pill badge-warning">Not Operational</span></td>
+      <td>No dataset connected</td>
     </tr>
   </tbody>
 </table>
