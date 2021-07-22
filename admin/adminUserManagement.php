@@ -53,12 +53,16 @@
 
    //display the retrieved result on the webpage
    while ($row = mysqli_fetch_array($result)) {
+		 //censor email addresses
+		 $count = strlen($row['emailaddress']) - 7;
+		 $output = substr_replace($row['emailaddress'], str_repeat('*', $count), 4, $count);
+
        echo '<tr>
               <th scope="row">'.$row['id'].'</th>
               <td>'.$row['username'].'</td>
               <td>'.$row['first_name'].'</td>
               <td>'.$row['last_name'].'</td>
-              <td>'.$row['emailaddress'].'</td>';
+              <td>'.$output.'</td>';
               if($row['is_admin']==1){
                 echo '<td>Yes</td>';
                 if($row['username']!=$_SESSION["username"]){
