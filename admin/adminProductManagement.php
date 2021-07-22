@@ -14,15 +14,35 @@
   </thead>
   <tbody>
   <?php
-  // Initialize the session
+  if($_GET['page']=='manageprod'){// Initialize the session
   session_start();
   // Include config file
   require_once "config.php";
-  //set page number
-  //define total number of results you want per page
+	//set page number
+	if (!isset ($_GET['view']) ) {
+		$view = 1;
+	} else {
+		$view = $_GET['view'];
+	}
+	//get current page
+	$curr_page=$_GET['view'];
+	if($curr_page == null){
+		$curr_page=1;
+	}
+	//define total number of results you want per page
+	//getting data a page
+	$results_per_page = 10;
+	$page_first_result = ($view-1) * $results_per_page;
+	$query = "SELECT p_id, p_name, p_category, p_image FROM products";
+	$result = mysqli_query($link, $query);
+	$number_of_result = mysqli_num_rows($result);
+
+	//determine the total number of pages available
+	$number_of_page = ceil ($number_of_result / $results_per_page);
+//retrieve the selected results from database
 
    //retrieve the selected results from database
-   $query = "SELECT p_id, p_name, p_category, p_image FROM products ";
+   $query = "SELECT p_id, p_name, p_category, p_image FROM products LIMIT " . $page_first_result . ',' . $results_per_page;
    $result = mysqli_query($link, $query);
 
    //display the retrieved result on the webpage
@@ -46,11 +66,29 @@
 
       echo '</tr>';
    }
-
+}
 
 
 
 ?>
 </tbody>
 </table>
+<?php
+if($_GET['page']=='manageprod'){
+echo '<div>
+				<nav aria-label="Page navigation example">
+					<ul class="pagination justify-content-center">';
+for($page = 1; $page<= $number_of_page; $page++) { //pagination
+	if($curr_page ==$page){
+						 $isActive="active";
+	}
+	else{
+		$isActive="";
+	}
+	echo '<li class="page-item '.$isActive.' "><a class="page-link" href = "admin.php?page=manageprod&view=' . $page . '">' . $page . ' </a></li>'; }
+	echo '</ul>
+		</nav>
+	</div>';
+}
+?>
 </div>

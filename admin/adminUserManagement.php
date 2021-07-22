@@ -16,7 +16,7 @@
   </thead>
   <tbody>
   <?php
-  // Initialize the session
+  if($_GET['page']=='userman'){// Initialize the session
   session_start();
   // Include config file
   require_once "config.php";
@@ -93,10 +93,12 @@
 
       echo '</tr>';
    }
+ }
 ?>
 </tbody>
 </table>
 <?php
+if($_GET['page']=='userman'){
 echo '<div>
 				<nav aria-label="Page navigation example">
 					<ul class="pagination justify-content-center">';
@@ -111,5 +113,6 @@ for($page = 1; $page<= $number_of_page; $page++) { //pagination
 	echo '</ul>
 		</nav>
 	</div>';
+}
 ?>
 </div>
