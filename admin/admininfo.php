@@ -18,17 +18,17 @@
   <tbody>
     <tr>
       <th scope="row">PHP</th>
-      <td><span class="badge badge-success">Operational</span></td>
+      <td><span class="badge badge-pill badge-success">Operational</span></td>
       <td>php version ...</td>
     </tr>
     <tr>
       <th scope="row">SQL database</th>
-      <td><span class="badge badge-success">Operational</span></td>
+      <td><span class="badge badge-pill badge-success">Operational</span></td>
       <td>sql message ...</td>
     </tr>
     <tr>
       <th scope="row">Covid-19 dataset</th>
-      <td><span class="badge badge-success">Operational</span></td>
+      <td><span class="badge badge-pill badge-success">Operational</span></td>
       <td>dataset message ...</td>
     </tr>
   </tbody>
