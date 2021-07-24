@@ -1,3 +1,6 @@
+<?php
+include("getDB.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,6 +10,7 @@
       		<meta name="keywords" content="appliances, tech, review, tv, mobile, headphone, laptop, phone">
       		<meta name="author" content="Nitin Ramesh">
      		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link id="ThemeStyle" rel="stylesheet" href="./css/<?= $themefile_name?>.css">
         <?php
         // Initialize the session
         session_start();

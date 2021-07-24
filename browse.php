@@ -1,3 +1,7 @@
+<?php
+include("getDB.php");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +13,8 @@
   		<meta name="author" content="Nitin Ramesh">
  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-	</head>
+    <link id="ThemeStyle" rel="stylesheet" href="./css/<?= $themefile_name?>.css">
+  </head>
 	<body>
 	<div>
 	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."navbar.php"); ?>

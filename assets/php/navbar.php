@@ -13,7 +13,7 @@
 			document.getElementById("nav_categories").className = "nav-link active";
 			console.log("done");
 		}
-
+	}
 };
 
 </script>
