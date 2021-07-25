@@ -18,12 +18,13 @@ CREATE TABLE theme (
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
-/*Insert an admin account*/
+/*Insert 2 admin accounts*/
 INSERT INTO users (username,emailaddress, first_name, last_name, password, is_admin) VALUES ("rames11a", "rameshnitin99@gmail.com", "Nitin", "Ramesh", "$2y$10$U8EIkwFRA49lcYQ4dHQ4BujLGfA4gtrXOlwpiUno1liO8l2lvbRxe", 1); /*Password: Admin01@ */
 INSERT INTO users (username,emailaddress, first_name, last_name, password, is_admin) VALUES ("corro", "corro@uwindsor.ca", "Charles", "Corro", "$2y$10$U8EIkwFRA49lcYQ4dHQ4BujLGfA4gtrXOlwpiUno1liO8l2lvbRxe", 1); /*Password: Admin01@ */
 
-/*Insert 3 dummy accounts*/
+/*Insert 6 dummy accounts*/
 INSERT INTO users ( username, emailaddress, first_name, last_name, password, is_admin) VALUES ( 'adamsmith01', 'adamsmith@gmail.com', 'Adam', 'Smith', '$2y$10$WOJHWt5HD0SwnDJS4EupgOfeUAtcfYZoan8eZsTUtX8gPcB58je2W', 0), ('johndoe', 'johndoe@hotmail.ca', 'John', 'Doe', '$2y$10$Zy0MjIp9MLZoOZgwdoXKDO9KlRvZbKAplb.fNpnPTfjf4ikrC4O7K', 0), ( 'janey_2001', 'janedoe123@yahoo.com', 'Jane', 'Doe', '$2y$10$19hAphj/W8wiQG23TkUhs.HJz8w2a4qJeebnTniVeSaD1WD85//ru', 0);
+INSERT INTO users ( username, emailaddress, first_name, last_name, password, is_admin) VALUES ( 'kmadhavan', 'keerthana@gmail.com', 'Keerthana', 'Madhavan', '$2y$10$WOJHWt5HD0SwnDJS4EupgOfeUAtcfYZoan8eZsTUtX8gPcB58je2W', 0), ('bsohail', 'sohail@hotmail.ca', 'Bilal', 'Sohail', '$2y$10$Zy0MjIp9MLZoOZgwdoXKDO9KlRvZbKAplb.fNpnPTfjf4ikrC4O7K', 0), ( 'vanminh', 'vminh@yahoo.com', 'Van Minh', 'Ngai', '$2y$10$19hAphj/W8wiQG23TkUhs.HJz8w2a4qJeebnTniVeSaD1WD85//ru', 0);
 /*Insert an default Theme*/
 INSERT INTO theme(id,THEMENAME) VALUES(1,'default');
 
@@ -66,7 +67,7 @@ CREATE TABLE reviews(
 
 
 /*populate products table*/
-INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("101", "UMIDIGI A9 Pro", "https://images-na.ssl-images-amazon.com/images/I/71Du8QCeYcL._AC_SL1500_.jpg", "[Sony 32MP Quad Camera] A9 Pro smartphone with Sony 32MP main camera, 16MP ultra-wide angle, 5MP depth camera and 5MP macro camera. The Sony 32MP camera has incredible light-sensing ability and comes with a 1/2"" large size sensor, supporting Quad Bayer, pixel size up to 1.6μm. Your pictures will come out bright even in low light. With a dramatic 120 ° field of view from a 16MP ultra-wide-angle camera, you can shoot clearer and wider landscapes.
+INSERT INTO products(p_overallReview, p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES (5, "101", "UMIDIGI A9 Pro", "https://images-na.ssl-images-amazon.com/images/I/71Du8QCeYcL._AC_SL1500_.jpg", "[Sony 32MP Quad Camera] A9 Pro smartphone with Sony 32MP main camera, 16MP ultra-wide angle, 5MP depth camera and 5MP macro camera. The Sony 32MP camera has incredible light-sensing ability and comes with a 1/2"" large size sensor, supporting Quad Bayer, pixel size up to 1.6μm. Your pictures will come out bright even in low light. With a dramatic 120 ° field of view from a 16MP ultra-wide-angle camera, you can shoot clearer and wider landscapes.
 [Helio P60 Octa-Core Processor&4GB + 64GB] A9 Pro unlocked smartphone is equipped with a high-performance Helio P60 octa-core processor with a maximum clock speed of 2.0GHz, for the seamless gaming experience you never have before in this price range. With up to 6GB + 128GB supported, the advanced LPDDR4X standard and UFS 2.1 flash storage greatly improve overall performance and reduce power consumption. Now web browsing and gaming can be smooth like never before.
 [6.3"" FHD+ full screen android cell phone] UMIDIGI A9 Pro have a cinematic viewing experience with a 19.5:9 aspect ratio 6.3'''' FHD+ Full Screen display. Coupled with in-cell and LTPS technology, it’s a flagship-level display that is of distinct clarity and vivid colour. And we have designed a range of finishes to match your personality and style. The 2.5D glass back with a metal frame makes the phone looks more premium.
 [4150mAh High-capacity Battery] UMIDIGI A9 Pro unlocked phone is powered by a 4150mAh high-capacity battery. It provides excellent power efficiency. you can easily go through 2 days of daily use. Charging port is replaced with new type-C plug, you could have more choice in adapters.
@@ -90,7 +91,7 @@ Manufacturer	‎UMIDIGI
 Manufacturer reference	‎A9PRO
 Parcel Dimensions	‎18.3 x 9.9 x 4.9 cm; 205 Grams
 ASIN	‎B08RDNNRTD", "https://www.amazon.ca/UMIDIGI-Unlocked-4150mAh-Capacity-Smartphone/dp/B08RDNNRTD/ref=sr_1_7?crid=Q70QDUCZ68WM&dchild=1&keywords=cell+phone&qid=1624463067&sprefix=cell%2Caps%2C176&sr=8-7", "https://www.newegg.ca/umidigi-a9-pro-6-3-black/p/23B-009Z-00051", "");
-INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("101", "Samsung Galaxy A10S A107M", "https://images-na.ssl-images-amazon.com/images/I/61OhSCY69kL._AC_SL1000_.jpg", "The Galaxy A10s comes as an upgrade of the Samsung Galaxy A10. The new phone sports an Infinity-V Display and comes with dual rear camera setup. It has also provided features such as depth detection and the ability to add artistic effect to images directly through the Galaxy A10s. Immerse yourself and get a vivid viewing experience with the Galaxy A10''s next-gen Infinity-V Display. HD+ resolution never looked so good. You''ll be able to capture stunning photographs that stand out with its 13MP+2MP Dual Rear + 8MP Front Camera. Even in low light, you''ll be ready to shoot and produce incredible results. An immense advantage for multi-taskers, the Galaxy A10s can run multiple apps without missing a beat thanks to its Octa-core 2.0 GHz Cortex-A53 (chipset: Mediatek MT6762 Helio P22 (12 nm)). Other notable features include an accelerometer, proximity sensor, and virtual light sensing. Does NOT have NFC. With high usage of its stunning camera and multi-tasking ability, it''s a good thing it has a durable 4000 mAh battery that will keep you going throughout your day.", "Brand	‎Samsung
+INSERT INTO products(p_overallReview, p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES (8, "101", "Samsung Galaxy A10S A107M", "https://images-na.ssl-images-amazon.com/images/I/61OhSCY69kL._AC_SL1000_.jpg", "The Galaxy A10s comes as an upgrade of the Samsung Galaxy A10. The new phone sports an Infinity-V Display and comes with dual rear camera setup. It has also provided features such as depth detection and the ability to add artistic effect to images directly through the Galaxy A10s. Immerse yourself and get a vivid viewing experience with the Galaxy A10''s next-gen Infinity-V Display. HD+ resolution never looked so good. You''ll be able to capture stunning photographs that stand out with its 13MP+2MP Dual Rear + 8MP Front Camera. Even in low light, you''ll be ready to shoot and produce incredible results. An immense advantage for multi-taskers, the Galaxy A10s can run multiple apps without missing a beat thanks to its Octa-core 2.0 GHz Cortex-A53 (chipset: Mediatek MT6762 Helio P22 (12 nm)). Other notable features include an accelerometer, proximity sensor, and virtual light sensing. Does NOT have NFC. With high usage of its stunning camera and multi-tasking ability, it''s a good thing it has a durable 4000 mAh battery that will keep you going throughout your day.", "Brand	‎Samsung
 Manufacturer	‎Samsung
 Model	‎A107M
 Part Number	‎SM-A107MBLACK
@@ -112,7 +113,7 @@ Device interface - primary	‎Touchscreen
 Manufacturer	‎Samsung
 Item model number	‎A107M
 ASIN	‎B07XQJ33PL", "https://www.amazon.ca/Samsung-6-2inch-Infinity-V-Display-Camera/dp/B07XQJ33PL/ref=sr_1_11?crid=Q70QDUCZ68WM&dchild=1&keywords=cell+phone&qid=1624463336&sprefix=cell%2Caps%2C176&sr=8-11", "https://www.newegg.ca/p/23B-0049-003U3?Description=Samsung%20Galaxy%20A10S%20A107M&cm_re=Samsung_Galaxy%20A10S%20A107M-_-9SIAZBTENZ2560-_-Product", "https://www.bestbuy.ca/en-ca/product/samsung-galaxy-a10s-a107m-ds-32gb-2gb-32gb-64gb-sd-bundle-factory-unlocked-black/15445015");
-INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("101", "Huawei P40 Lite", "https://images-na.ssl-images-amazon.com/images/I/51EIonlrnbL._AC_SL1008_.jpg", "6.4 inches, LTPS IPS LCD, 101.4 cm2 (~83.5% screen-to-body ratio), 1080 x 2310 pixels (~398 ppi density)
+INSERT INTO products(p_overallReview, p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES (6, "101", "Huawei P40 Lite", "https://images-na.ssl-images-amazon.com/images/I/51EIonlrnbL._AC_SL1008_.jpg", "6.4 inches, LTPS IPS LCD, 101.4 cm2 (~83.5% screen-to-body ratio), 1080 x 2310 pixels (~398 ppi density)
 Network Compatibility: DUAL-SIM (Nano-SIM), SIM CARD 1 AND SIM CARD 2 [ 2G : GSM 850 / 900 / 1800 / 1900 and/or 3G : WCDMA 800(B6) / 800(B19) / 850(B5) / 900(B8) / 1700|2100(B4) / 1900(B2) / 2100(B1) and/or 4G : LTE 700(B12) / 700(B17) / 700(B28) / 800(B18) / 800(B19) / 800(B20) / 850(B5) / 850(B26) / 900(B8) / 1500(B32) / 1700|2100(B4) / 1800(B3) / 1900(B2) / 2100(B1) / 2600(B7) / Band 6 / Band 9 and/or : TD-LTE 1900(B39) / 2100(B34) / 2300(B40) / 2500(B41) / 2600(B38)
 128GB 6GB RAM, NM (Nano Memory), up to 256GB (uses shared SIM slot)
 Android 10, EMUI 10, no Google Play Services, Kirin 810 (7 nm), Octa-core (2x2.27 GHz Cortex-A76 & 6x1.88 GHz Cortex-A55) | GPU: Mali-G52 MP6
@@ -469,7 +470,7 @@ Seller''s Warranty - Parts:
 90 Days
 Seller''s Warranty - Labour:
 90 Days", "https://www.amazon.ca/Samsung-Galaxy-Shine-Unlocked-Phone/dp/B08NRNSHLD/ref=sr_1_10?dchild=1&keywords=Koodo+Apple+iPhone+XR&qid=1624569195&sr=8-10", "", "https://www.bestbuy.ca/en-ca/product/samsung-galaxy-j2-16-gb-black-5-unlocked-phone-4g-lte/14680406");
-INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("102", "Sony MDRZX110 Over-Ear Headphones", "https://images-na.ssl-images-amazon.com/images/I/51eJUpMRnzL._AC_SL1000_.jpg", "Maximizing your personal audio experience has never been easier than with SONY ZX-Series Monitor headphones. Built with comfort and performance in mind, there''s no need to compromise.", "Batteries ‏ : ‎ 1 Lithium ion batteries required.
+INSERT INTO products(p_overallReview, p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES (9, "102", "Sony MDRZX110 Over-Ear Headphones", "https://images-na.ssl-images-amazon.com/images/I/51eJUpMRnzL._AC_SL1000_.jpg", "Maximizing your personal audio experience has never been easier than with SONY ZX-Series Monitor headphones. Built with comfort and performance in mind, there''s no need to compromise.", "Batteries ‏ : ‎ 1 Lithium ion batteries required.
 Is Discontinued By Manufacturer ‏ : ‎ No
 Product Dimensions ‏ : ‎ 14.91 x 4.6 x 19.99 cm; 135 Grams
 Date First Available ‏ : ‎ March 25 2014
@@ -477,7 +478,7 @@ Manufacturer ‏ : ‎ Sony Electronics Inc.
 Place of Business ‏ : ‎ SAN DIEGO, CA, 92127 US
 ASIN ‏ : ‎ B00NJ2M33I
 Item model number ‏ : ‎ MDRZX110/BLK", "https://www.amazon.ca/Sony-MDRZX110-Over-Ear-Headphones-Black/dp/B00NJ2M33I/ref=sr_1_5?dchild=1&keywords=headphones&qid=1624464389&sr=8-5", "https://www.newegg.ca/p/0X6-085D-00348?Description=Sony%20MDRZX110&cm_re=Sony_MDRZX110-_-0X6-085D-00348-_-Product", "https://www.bestbuy.ca/en-ca/product/sony-mdrzx110-over-ear-headphones-black-axgear/15371864");
-INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("102", "Bose QuietComfort 35 Wireless Headphones II", "https://images-na.ssl-images-amazon.com/images/I/81%2BjNVOUsJL._AC_SL1500_.jpg", "What happens when you clear away the noisy distractions of the world? Concentration goes to the next level. You get deeper into your music, your work or whatever you want to focus on. That’s the power of Bose QuietComfort 35 wireless headphones II, the most powerful Bose noise cancelling headphones yet. Put them on and get closer to what you’re most passionate about. They’re Alexa-enabled, so you can enjoy entertainment, get information and manage your day—all without looking at your phone. Adjust your level of noise cancellation between three settings using the Action button or the Bose Connect app. Volume-optimised EQ gives you balanced audio performance at any volume, and a noise-rejecting dual-microphone system provides clearer calls, even in noisy environments. And with easy Bluetooth pairing, 20 hours of battery life and a durable, comfortable fit, you can keep the music or the quiet going all day long. Available in Black, Silver or new, limited-edition Triple Midnight. Included: QuietComfort 35 II, carrying case, charging cable, audio cable for enjoying music without battery power. Audio cable:1.2 m", "Brand	‎BOSE
+INSERT INTO products(p_overallReview, p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES (7, "102", "Bose QuietComfort 35 Wireless Headphones II", "https://images-na.ssl-images-amazon.com/images/I/81%2BjNVOUsJL._AC_SL1500_.jpg", "What happens when you clear away the noisy distractions of the world? Concentration goes to the next level. You get deeper into your music, your work or whatever you want to focus on. That’s the power of Bose QuietComfort 35 wireless headphones II, the most powerful Bose noise cancelling headphones yet. Put them on and get closer to what you’re most passionate about. They’re Alexa-enabled, so you can enjoy entertainment, get information and manage your day—all without looking at your phone. Adjust your level of noise cancellation between three settings using the Action button or the Bose Connect app. Volume-optimised EQ gives you balanced audio performance at any volume, and a noise-rejecting dual-microphone system provides clearer calls, even in noisy environments. And with easy Bluetooth pairing, 20 hours of battery life and a durable, comfortable fit, you can keep the music or the quiet going all day long. Available in Black, Silver or new, limited-edition Triple Midnight. Included: QuietComfort 35 II, carrying case, charging cable, audio cable for enjoying music without battery power. Audio cable:1.2 m", "Brand	‎BOSE
 Manufacturer	‎BOSE
 Place of Business	‎STOW, MA, 01775 US
 Model	‎789564-0010
@@ -505,7 +506,7 @@ Manufacturer	‎BOSE
 Item model number	‎789564-0010
 Product Dimensions	‎8.13 x 17.02 x 18.03 cm; 235.87 Grams
 ASIN	‎B0756CYWWD", "https://www.amazon.ca/QuietComfort-Wireless-Headphones-Cancelling-Control/dp/B0756CYWWD/ref=sxin_11?asc_contentid=amzn1.osa.6cc9943b-610a-4b4d-8175-0b7a22e19b11.A2EUQ1WTGCTBG2.en_CA&asc_contenttype=article&ascsubtag=amzn1.osa.6cc9943b-610a-4b4d-8175-0b7a22e19b11.A2EUQ1WTGCTBG2.en_CA&creativeASIN=B0756CYWWD&cv_ct_cx=headphones&cv_ct_id=amzn1.osa.6cc9943b-610a-4b4d-8175-0b7a22e19b11.A2EUQ1WTGCTBG2.en_CA&cv_ct_pg=search&cv_ct_we=asin&cv_ct_wn=osp-single-source-earns-comm&dchild=1&keywords=headphones&linkCode=oas&pd_rd_i=B0756CYWWD&pd_rd_r=eb364dd6-9075-41f0-939a-64298aab5992&pd_rd_w=hwCac&pd_rd_wg=9Os7o&pf_rd_p=fd4969f1-ce1a-42e7-85d6-f4cb7192108a&pf_rd_r=RRPWDR8K5QMK80DNGBSF&qid=1624464576&sr=1-1-64f3a41a-73ca-403a-923c-8152c45485fe&tag=bestcontca-20", "https://www.newegg.ca/black-bose-789564-0010-wireless/p/N82E16826627080?Description=Bose%20QuietComfort%2035&cm_re=Bose_QuietComfort%2035-_-26-627-080-_-Product", "https://www.newegg.ca/black-bose-789564-0010-wireless/p/N82E16826627080?Description=Bose%20QuietComfort%2035&cm_re=Bose_QuietComfort%2035-_-26-627-080-_-Product");
-INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("102", "Sanyun SW208 3"" Active Bluetooth Bookshelf Speakers", "https://images-na.ssl-images-amazon.com/images/I/81PdWvZcOBL._AC_SL1500_.jpg", "【SMALL HIFI BOOKSHELF SPEAKERS】SW-208 is a small bookshelf speaker with HiFi sound quality. It adopts standard bookshelf speaker system design, i.e. direct/reflective speaker system. Can be placed at will, can easily create a rich stereo sense and strong sound pressure.
+INSERT INTO products(p_overallReview, p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES (5, "102", "Sanyun SW208 3"" Active Bluetooth Bookshelf Speakers", "https://images-na.ssl-images-amazon.com/images/I/81PdWvZcOBL._AC_SL1500_.jpg", "【SMALL HIFI BOOKSHELF SPEAKERS】SW-208 is a small bookshelf speaker with HiFi sound quality. It adopts standard bookshelf speaker system design, i.e. direct/reflective speaker system. Can be placed at will, can easily create a rich stereo sense and strong sound pressure.
 【30Wx2 CARBON FIBER SEPAKER UNIT】The speaker unit is designed with carbon fiber material and multi-layer voice coil technology, which is proprietary by Sanyun Company. It has excellent sound performance, warm and thick medium frequency, deep and powerful low frequency, clear and bright high frequency sound characteristics. And the speaker unit has a super durability and stability, can work steadily in any environment.
 【APTX CODEC, 24 bit DAC AND BLUETOOTH 5.0】When connecting with USB cable, aptX Codec and the built-in 24 bit DAC can obtain the digital audio signal directly, which can provide 3D surround sound and higher fidelity sound quality, especially suitable for games. Bluetooth 5.0 connection, stable transmission.
 【TREBLE AND BASS ADJUSTMENT】To achieve true HiFi sound quality, set the total volume, treble and bass adjustment knobs on the side of main speaker. Please adjust the most suitable sound according to your preferences, or adjust the best sound effect according to different sound types.
@@ -738,7 +739,7 @@ Impedance: 32 Ohm
 Sensitivity: 100 dBm
 Colour: Black
 Weight: 1000 g", "", "https://www.newegg.ca/p/1VH-000R-000P9?Description=Sony%20WH-RF400&cm_re=Sony_WH-RF400-_-9SIAKUCD3H5704-_-Product", "https://www.bestbuy.ca/en-ca/product/sony-wh-rf400-over-ear-sound-isolating-rf-headphones-black/13029605");
-INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("103", "Canon PowerShot SX540", "https://images-na.ssl-images-amazon.com/images/I/81l6xdQOHyL._AC_SL1500_.jpg", "Make the most of those special events with the Canon 20.3 Megapixel Powershot SX540 HS Digital Camera. It features 20.3 megapixels, 1080p Full HD video, and 50x optical zoom for the highest quality images and videos. Plus, the story highlights feature helps you recap your favorite days and events.", "Batteries ‏ : ‎ 1 Lithium ion batteries required. (included)
+INSERT INTO products(p_overallReview, p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES (4, "103", "Canon PowerShot SX540", "https://images-na.ssl-images-amazon.com/images/I/81l6xdQOHyL._AC_SL1500_.jpg", "Make the most of those special events with the Canon 20.3 Megapixel Powershot SX540 HS Digital Camera. It features 20.3 megapixels, 1080p Full HD video, and 50x optical zoom for the highest quality images and videos. Plus, the story highlights feature helps you recap your favorite days and events.", "Batteries ‏ : ‎ 1 Lithium ion batteries required. (included)
 Is Discontinued By Manufacturer ‏ : ‎ No
 Product Dimensions ‏ : ‎ 4.7 x 11.94 x 8.13 cm; 442.25 Grams
 Date First Available ‏ : ‎ Jan. 5 2016
@@ -746,7 +747,7 @@ Manufacturer ‏ : ‎ Canon Canada (Direct)
 Place of Business ‏ : ‎ BRAMPTON, ON, L6Y 5Z7 CA
 ASIN ‏ : ‎ B019UDIAI6
 Item model number ‏ : ‎ 1067C001", "https://www.amazon.ca/Canon-PowerShot-SX540-Optical-Built/dp/B019UDIAI6/ref=sr_1_16?dchild=1&keywords=cameras&qid=1624465037&sr=8-16", "https://www.newegg.ca/canon-powershot-sx540-hs-slr-style/p/N82E16830120835?Description=Canon%20PowerShot%20SX540&cm_re=Canon_PowerShot%20SX540-_-30-120-835-_-Product", "https://www.bestbuy.ca/en-ca/product/canon-canon-powershot-sx540-hs-wifi-20-3mp-50x-optical-zoom-digital-camera-black-1067c001/10406701");
-INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("103", "Canon PowerShot SX420", "https://images-na.ssl-images-amazon.com/images/I/61xQRROBrRL._AC_SL1200_.jpg", "The Canon Powershot SX420 IS Digital Camera packs a super zoom in a small package. With 20.0 megapixels a 3 in. LCD screen and 720p HD video this camera sacrificing nothing in quality. Plus the smart auto selects and scene modes provide freedom and creativity.SUPPORTED OPERATING SYSTEM:Windows 10 / 8.1 / 8 / 7 SP1 Mac OS X 10.9 / 10.10 / 10.11 For Wi-Fi connection to a PC: Windows 10 / 8.1 / 8 / 7 SP1 Mac OS X 10.9 / 10.10 For Image Transfer Utility: Windows 10 / 8.1 / 8 / 7 SP1 Mac OS X 10.9 / 10.10 / 10.11 PC & Macintosh
+INSERT INTO products(p_overallReview, p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES (8, "103", "Canon PowerShot SX420", "https://images-na.ssl-images-amazon.com/images/I/61xQRROBrRL._AC_SL1200_.jpg", "The Canon Powershot SX420 IS Digital Camera packs a super zoom in a small package. With 20.0 megapixels a 3 in. LCD screen and 720p HD video this camera sacrificing nothing in quality. Plus the smart auto selects and scene modes provide freedom and creativity.SUPPORTED OPERATING SYSTEM:Windows 10 / 8.1 / 8 / 7 SP1 Mac OS X 10.9 / 10.10 / 10.11 For Wi-Fi connection to a PC: Windows 10 / 8.1 / 8 / 7 SP1 Mac OS X 10.9 / 10.10 For Image Transfer Utility: Windows 10 / 8.1 / 8 / 7 SP1 Mac OS X 10.9 / 10.10 / 10.11 PC & Macintosh
 Shooting Capacity: Approx. 195 shots Approx. 260 shots in ECO Mode. Video Recording Time: Approx. 50 min.", "Batteries ‏ : ‎ 1 C batteries required. (included)
 Is Discontinued By Manufacturer ‏ : ‎ No
 Product Dimensions ‏ : ‎ 8.64 x 10.41 x 6.86 cm; 326.02 Grams
@@ -755,7 +756,7 @@ Manufacturer ‏ : ‎ Canon Canada (Direct)
 Place of Business ‏ : ‎ BRAMPTON, ON, L6Y 5Z7 CA
 ASIN ‏ : ‎ B019UDI5PO
 Item model number ‏ : ‎ 1068C001", "https://www.amazon.ca/Canon-PowerShot-SX420-Optical-Built/dp/B019UDI5PO/ref=bmx_m727cf0o_1/132-7245197-5750229?pd_rd_w=vxuYc&pf_rd_p=c8dace55-4212-4299-be96-0cdf9dabee5e&pf_rd_r=95TJAFE4D2960HCRXGAM&pd_rd_r=cbea9756-609c-4b93-bcf4-b842a6de63a3&pd_rd_wg=j9VpW&pd_rd_i=B019UDI5PO&psc=1", "https://www.newegg.ca/p/0UP-000F-01634?Description=Canon%20PowerShot%20SX420&cm_re=Canon_PowerShot%20SX420-_-9SIAKXCEEP6488-_-Product", "https://www.bestbuy.ca/en-ca/product/canon-canon-powershot-sx420-is-wifi-20-0mp-42x-optical-zoom-digital-camera-black-1068c001/10406705");
-INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("103", "Canon PowerShot SX730 HS", "https://images-na.ssl-images-amazon.com/images/I/71t9FCz-4yL._AC_SL1500_.jpg", "A versatile and compact point-and-shoot, the black PowerShot SX730 HS from Canon combines a wide-reaching zoom with apt multimedia recording capabilities. Employing a 20.3MP 1/ 2.3"" High-Sensitivity CMOS sensor and DIGIC 6 image processor, smooth image quality is afforded along with enhanced low-light sensitivity and minimal noise when working with sensitivities up to ISO 3200. The sensor and processor also enable shooting continuously at a rate of 5.9 fps as well as recording Full HD 1080p/60 video. Benefitting the imaging capabilities is a 40x zoom lens, which covers a 24-960mm equivalent focal length range, to suit photographing in a wide variety of situations.
+INSERT INTO products(p_overallReview, p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES (5, "103", "Canon PowerShot SX730 HS", "https://images-na.ssl-images-amazon.com/images/I/71t9FCz-4yL._AC_SL1500_.jpg", "A versatile and compact point-and-shoot, the black PowerShot SX730 HS from Canon combines a wide-reaching zoom with apt multimedia recording capabilities. Employing a 20.3MP 1/ 2.3"" High-Sensitivity CMOS sensor and DIGIC 6 image processor, smooth image quality is afforded along with enhanced low-light sensitivity and minimal noise when working with sensitivities up to ISO 3200. The sensor and processor also enable shooting continuously at a rate of 5.9 fps as well as recording Full HD 1080p/60 video. Benefitting the imaging capabilities is a 40x zoom lens, which covers a 24-960mm equivalent focal length range, to suit photographing in a wide variety of situations.
 
 Intelligent IS complements this reach by minimizing the appearance of camera shake for sharper handheld shooting. Sleek and pocketable, the SX730 HS is also characterized by its 3.0"" 922k-dot tilting LCD monitor, which is perfect for shooting from low angles or taking well-composed selfies, and built-in Wi-Fi with NFC and Bluetooth connectivity allow you to wirelessly share imagery and remotely control the camera from a paired smartphone or tablet.", "Batteries ‏ : ‎ 1 A batteries required. (included)
 Is Discontinued By Manufacturer ‏ : ‎ No
@@ -2207,20 +2208,46 @@ Depth:
 Weight:
 181 g", "", "https://www.newegg.ca/google-ga00638-ca-802-11b-g-n-ac-wi-fi-bluetooth-5-0-chromecast-built-in/p/N82E16881716013?Description=Google%20Nest%20Mini&cm_re=Google_Nest%20Mini-_-81-716-013-_-Product", "https://www.bestbuy.ca/en-ca/product/google-nest-mini-2nd-gen-smart-speaker-chalk/13962883");
 
+/*Sample set of ratings*/
 INSERT INTO `reviews` (`r_id`, `p_id`, `id`, `username`, `post_time`, `rating`, `comment`) VALUES
 (1, 1, 5, 'corro', '2021-07-18 19:45:08', 5, 'great product! Will buy again!'),
-(2, 1, 5, 'corro', '2021-07-18 20:54:53', 5, 'neither great nor that bad. Was average.'),
-(3, 1, 5, 'corro', '2021-07-18 20:55:00', 7, 'I would buy this again'),
-(4, 1, 5, 'corro', '2021-07-18 20:55:10', 1, 'did not live up to my expectations'),
-(5, 1, 5, 'corro', '2021-07-18 20:55:16', 10, 'LOVE THIS PRODUCT'),
-(6, 1, 5, 'corro', '2021-07-18 21:03:37', 9, 'it was okay'),
-(7, 1, 5, 'corro', '2021-07-18 21:30:50', 6, 'great'),
-(8, 1, 5, 'corro', '2021-07-18 21:30:57', 7, 'I would recommend this to all my friends and family!'),
-(9, 1, 5, 'corro', '2021-07-18 21:31:03', 3, 'not impressed'),
-(10, 1, 5, 'corro', '2021-07-18 21:31:10', 9, 'greatness'),
-(11, 1, 5, 'corro', '2021-07-18 21:31:21', 10, 'AMAZINGGGG');
+(2, 2, 5, 'corro', '2021-07-18 20:54:53', 5, 'neither great nor that bad. Was average.'),
+(3, 3, 5, 'corro', '2021-07-18 20:55:00', 7, 'I would buy this again'),
+(4, 1, 5, 'rames11a', '2021-07-18 20:55:10', 1, 'did not live up to my expectations'),
+(5, 2, 5, 'rames11a', '2021-07-18 20:55:16', 10, 'LOVE THIS PRODUCT'),
+(6, 3, 5, 'rames11a', '2021-07-18 21:03:37', 9, 'it was okay'),
+(7, 1, 5, 'adamsmith01', '2021-07-18 21:30:50', 6, 'great'),
+(8, 2, 5, 'adamsmith01', '2021-07-18 21:30:57', 7, 'I would recommend this to all my friends and family!'),
+(9, 3, 5, 'adamsmith01', '2021-07-18 21:31:03', 3, 'not impressed'),
+(10, 1, 5, 'johndoe', '2021-07-18 21:31:10', 9, 'greatness'),
+(11, 2, 5, 'johndoe', '2021-07-18 21:31:21', 10, 'AMAZINGGGG'),
+(12, 3, 5, 'johndoe', '2021-07-18 21:31:03', 3, 'not impressed'),
+(13, 11, 5, 'janey_2001', '2021-07-18 20:55:16', 10, 'LOVE THIS PRODUCT'),
+(14, 12, 5, 'janey_2001', '2021-07-18 21:03:37', 9, 'it was okay'),
+(15, 13, 5, 'janey_2001', '2021-07-18 21:31:03', 3, 'not impressed'),
+(16, 11, 5, 'kmadhavan', '2021-07-18 21:31:10', 9, 'greatness'),
+(17, 12, 5, 'kmadhavan', '2021-07-18 21:31:21', 10, 'AMAZINGGGG'),
+(18, 13, 5, 'kmadhavan', '2021-07-18 21:31:03', 3, 'not impressed'),
+(19, 11, 5, 'bsohail', '2021-07-18 20:55:00', 7, 'I would buy this again'),
+(20, 12, 5, 'bsohail', '2021-07-18 20:55:10', 1, 'did not live up to my expectations'),
+(21, 13, 5, 'bsohail', '2021-07-18 20:55:16', 10, 'LOVE THIS PRODUCT'),
+(22, 21, 5, 'corro', '2021-07-18 19:45:08', 5, 'great product! Will buy again!'),
+(23, 22, 5, 'corro', '2021-07-18 20:54:53', 5, 'neither great nor that bad. Was average.'),
+(24, 23, 5, 'corro', '2021-07-18 20:55:00', 8, 'I would buy this again'),
+(25, 21, 5, 'rames11a', '2021-07-18 20:55:10', 1, 'did not live up to my expectations'),
+(26, 22, 5, 'rames11a', '2021-07-18 20:55:16', 10, 'LOVE THIS PRODUCT'),
+(27, 23, 5, 'rames11a', '2021-07-18 21:03:37', 6, 'it was okay'),
+(28, 21, 5, 'adamsmith01', '2021-07-18 21:30:50', 6, 'great'),
+(29, 22, 5, 'adamsmith01', '2021-07-18 21:30:57', 7, 'I would recommend this to all my friends and family!'),
+(30, 23, 5, 'adamsmith01', '2021-07-18 21:31:03', 3, 'not impressed'),
+(31, 22, 5, 'johndoe', '2021-07-18 21:31:21', 10, 'AMAZINGGGG'),
+(32, 23, 5, 'johndoe', '2021-07-18 21:31:03', 3, 'not impressed'),
+(33, 31, 5, 'janey_2001', '2021-07-18 20:55:16', 10, 'LOVE THIS PRODUCT'),
+(34, 32, 5, 'janey_2001', '2021-07-18 21:03:37', 9, 'it was okay'),
+(35, 33, 5, 'janey_2001', '2021-07-18 21:31:03', 3, 'not impressed'),
+(36, 31, 5, 'kmadhavan', '2021-07-18 21:31:10', 9, 'greatness');
 
-
+/*Sample images for front page carousel*/
 INSERT INTO `carousel` (`c_id`, `c_image`, `c_created_at`) VALUES
 (1,'https://mdbootstrap.com/img/Photos/Others/clothes(5)-crop.jpg' ,'2021-07-24 22:07:08'),
 (2, 'https://mdbootstrap.com/img/Photos/Others/clothes(4)-crop.jpg','2021-07-24 22:10:35'),
