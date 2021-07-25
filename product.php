@@ -1,3 +1,6 @@
+<?php
+include("getDB.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,6 +10,7 @@
       		<meta name="keywords" content="appliances, tech, review, tv, mobile, headphone, laptop, phone">
       		<meta name="author" content="Nitin Ramesh">
      		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			 <link id="ThemeStyle" rel="stylesheet" href="./css/<?= $themefile_name?>.css">
 	<!--FOR THE STARS-->
 
 	<style>
@@ -109,7 +113,7 @@
           echo '  <!-- Bootstrap -->
         	       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
                  </head>
-                 <body>
+                 <body class="productBODY">
                   <div>';
           $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."navbar.php");
           echo '</div>

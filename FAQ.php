@@ -1,3 +1,6 @@
+<?php
+include("getDB.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,8 +12,9 @@
   		<meta name="author" content="Nitin Ramesh">
  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<link id="ThemeStyle" rel="stylesheet" href="./css/<?= $themefile_name?>.css">
 	</head>
-	<body>
+	<body class="faqBody">
 	<div>
 	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."navbar.php"); ?>
 	</div>
@@ -47,7 +51,7 @@
 		    </div>
 			 <div class="card">
 			    <div class="card-header" role="tab" id="headingFour1">
-			      <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseFour1" role="button" aria-expanded="false" aria-controls="collapseFour1"> Q4 </a> </h5>
+			      <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseFour1" role="button" aria-expanded="false" aria-controls="collapseFour1"> Q4: </a> </h5>
 		        </div>
 			    <div id="collapseFour1" class="collapse" role="tabpanel" aria-labelledby="headingFour1" data-parent="#accordion1">
 			      <div class="card-body">Content for Accordion Panel 4</div>

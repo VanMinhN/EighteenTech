@@ -1,4 +1,5 @@
 <?php
+include("getDB.php");
 // Initialize the session
 session_start();
 
@@ -108,7 +109,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   		<meta name="author" content="Nitin Ramesh">
  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-	</head>
+        <link id="ThemeStyle" rel="stylesheet" href="./css/<?= $themefile_name?>.css">
+    </head>
 	<body style="background-color: #f0f0f0">
 	<div class="container">
 	<div class="card" style=" position: fixed;

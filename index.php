@@ -1,31 +1,56 @@
 <?php
+
+include("getDB.php");
+
 session_start();
 // Include config file
 require_once "config.php";
 $result = $link->query("SELECT c_image FROM carousel");
+
 ?>
 <!DOCTYPE html>
 <html>
 
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>EighteenTech</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="Technology reviews">
-  <meta name="keywords" content="appliances, tech, review, tv, mobile, headphone, laptop, phone">
-  <meta name="author" content="Nitin Ramesh">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-</head>
 
-<body>
-  <div>
-    <?php $IPATH = $_SERVER["DOCUMENT_ROOT"] . "/assets/php/";
-    include($IPATH . "navbar.php"); ?>
-    <!-- Navbar -->
-  </div>
-  <div class="container" style="margin-top: 100px">
-    <div class="container mt-3">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>EighteenTech</title>
+<meta charset="UTF-8">
+  		<meta name="description" content="Technology reviews">
+  		<meta name="keywords" content="appliances, tech, review, tv, mobile, headphone, laptop, phone">
+  		<meta name="author" content="Nitin Ramesh">
+ 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">	
+  <link id="ThemeStyle" rel="stylesheet" href="./css/<?= $themefile_name?>.css">
+</head>
+	<body class="bodyIndex">
+		<div>
+	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."navbar.php"); ?> <!-- Navbar -->
+		</div>
+<?php
+
+  if($themefile_name=="halloween")
+  {
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<div>";
+      echo "<h1 class='halloween_text'> Happy Halloween </h1>";
+      echo "</div";
+  }else if($themefile_name == "christmas"){
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<div>";
+      echo "<h1 class='christmas_text'> Merry Christmas </h1>";
+      echo "</div";
+  }
+
+?>
+	<div class="container" style="margin-top: 100px">
+	  <div class="container mt-3">
       <div class="row">
         <div class="col-12">
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">

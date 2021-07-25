@@ -1,0 +1,54 @@
+body {
+  background: white;
+  padding: 10px;
+}
+
+.aboutus_title {
+  color: green;
+}
+
+.product_title {
+  color: green;
+  text-align: center;
+}
+
+.card {
+  border: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.card:hover {
+  background-color: #3bd985;
+}
+
+.nav-item:hover {
+  background-color: #3bd985;
+}
+.col-sm-4 {
+  padding-bottom: 10px;
+}
+.row {
+  margin-bottom: 10px;
+}
+
+.btn-lg {
+  text-align: center;
+  width: 100%;
+  border-color: #42f596;
+}
+.btn-lg:hover {
+  border-color: #3bd985;
+  background-color: #3bd985;
+}
+.row {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  padding-bottom: 1em;
+}
+.col-xl-4 {
+  padding-bottom: 1em;
+}
+
+.fixed-bottom {
+  text-align: center;
+}

@@ -1,7 +1,7 @@
 <?php
 // Initialize the session
 session_start();
-
+include("getDB.php");
 // Check if the user is logged in, if not then redirect him to login page
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login.php");
@@ -24,12 +24,16 @@ if ($_SESSION["is_admin"] == true){
     		<meta name="author" content="Nitin Ramesh">
    		<meta name="viewport" content="width=device-width, initial-scale=1.0">
   		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <link id="ThemeStyle" rel="stylesheet" href="./css/<?= $themefile_name?>.css">
 </head>
-<body>
+<body class="userBODY">
   <div>
   <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."navbar.php"); ?> <!-- Navbar -->
 </div>
-  <div class="container" style="margin-top: 100px">
+  <div class="container" style="margin-top: 100px; display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;">
     <h2>User Information</h2>
     <p >Name: <b><?php echo htmlspecialchars($_SESSION["first_name"])." ".htmlspecialchars($_SESSION["last_name"]); ?></b></p>
     <p >Email address: <b><?php echo htmlspecialchars($_SESSION["emailaddress"]); ?></b></p>

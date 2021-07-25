@@ -1,3 +1,6 @@
+<?php
+include("getDB.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,19 +12,20 @@
   		<meta name="author" content="Nitin Ramesh">
  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-	</head>
-	<body>
+    <link id="ThemeStyle" rel="stylesheet" href="./css/<?= $themefile_name?>.css">
+  </head>
+	<body class="aboutusBody">
 	<div>
 	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."navbar.php"); ?>
 	</div>
-	 <div class="container" style="margin-top: 100px">
+	 <div class="container" style="margin-top: 60px">
 		<div class="row">
 			<div class="col-lg-12 mb-4 mt-2 text-center">
             <h2>About this website</h2>
           </div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero lacus, interdum ut tortor id, pharetra porta risus. Quisque vel augue tincidunt, pulvinar ante eu, cursus orci. Proin nec bibendum metus. Nunc semper tellus id sodales congue. Quisque quis nunc augue. Sed scelerisque dolor quis dictum condimentum. Morbi nec quam risus. Etiam et arcu luctus, pulvinar lacus eget, vehicula lacus. Quisque mattis orci id augue gravida scelerisque. Ut convallis, velit et tincidunt efficitur, lectus leo ornare elit, sed tempus nibh eros ornare magna. Proin id tempor sem, quis aliquam diam. Pellentesque non orci tellus. Suspendisse pharetra mi erat, sit amet auctor diam imperdiet sed. Aliquam elementum convallis lacus, eu vulputate nunc dictum eu.<br/><br/>
+			<p class="aboutus_pagebg"> Welcome to our technology products review website: EighteenTech. Our website has various reviews from users for different product catogories that are available on BestBuy, NewEgg, Amazon. If you navigate to our Categories page you can find reviews for Cell Phones, Headphonees & Speakers, Cameras, TV & Home Theatres & Wearablee Technology and Smart Home. For each product you can see product specification, users review and ratings and a link to buy. <br/><br/>
 
-			Cras luctus mauris vitae lorem scelerisque tempus. Morbi varius velit a mollis condimentum. Fusce quis tellus vel magna finibus euismod. In eu tincidunt tellus. Fusce orci metus, tempus imperdiet ligula ac, sodales rhoncus ex. Nam ac placerat dui, non tincidunt est. In quis purus odio.</p>
+			</p>
 		</div>
         <div class="row">
           <div class="col-lg-12 mb-4 mt-2 text-center">
@@ -32,40 +36,41 @@
       <div class="container ">
         <div class="row">
           <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-            <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="./images/Carousel_Placeholder.png" data-holder-rendered="true">
-            <h3>Lorem ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="./images/nitin.png" data-holder-rendered="true">
+            <h3>Nitin Ramesh </h3>
+            <p class="aboutus_title">CS student</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+            <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="./images/Charles.png" data-holder-rendered="true">
+            <h3>Charles Corro</h3>
+            <p class="aboutus_title">CS student</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+            <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="./images/Keerthana.png" data-holder-rendered="true">
+            <h3>Keerthana Madhaven</h3>
+            <p class="aboutus_title">CS student</p>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 text-center">
             <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="./images/Carousel_Placeholder.png" data-holder-rendered="true">
-            <h3>Lorem ipsum dolor</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <h3>Bilal Sohail</h3>
+            <p class="aboutus_title">CS student</p>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-            <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="./images/Carousel_Placeholder.png" data-holder-rendered="true">
-            <h3>Lorem ipsum dolor</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-            <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="./images/Carousel_Placeholder.png" data-holder-rendered="true">
-            <h3>Lorem ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-            <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="./images/Carousel_Placeholder.png" data-holder-rendered="true">
-            <h3>Lorem ipsum dolor</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-            <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="./images/Carousel_Placeholder.png" data-holder-rendered="true">
-            <h3>Lorem ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="./images/Minh.png" data-holder-rendered="true">
+            <h3>Van Minh Ngai</h3>
+            <p class="aboutus_title">CS student</p>
           </div>
         </div>
+        <br>
+      <br>
+      <br>
 
 
       </div>
 		<div>
+      <br>
+      <br>
+      <br>
 	<?php include($IPATH."footer.html"); ?> <!-- Footer -->
 		</div>
 <script src="js/jquery-3.4.1.min.js"></script>

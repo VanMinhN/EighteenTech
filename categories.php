@@ -1,3 +1,6 @@
+<?php
+include("getDB.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,29 +12,12 @@
   		<meta name="author" content="Nitin Ramesh">
  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-
+		<link id="ThemeStyle" rel="stylesheet" href="./css/<?= $themefile_name?>.css">
 		<style>
-			.btn-lg{
-				text-align: center;
-				width: 100%;
-				border-color: #42f596;
-			}
-			.btn-lg:hover{
-
-				border-color: #3bd985;
-				background-color: #3bd985;
-			}
-			.row{
-				border-collapse:separate;
-                border-spacing:0 15px;
-				padding-bottom: 1em;
-			}
-			.col-xl-4{
-				padding-bottom: 1em;
-			}
+			
 		</style>
 	</head>
-	<body>
+	<body class="categoriesBody">
 	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."navbar.php"); ?>
 		<div class="container" style="margin-top: 100px">
 			<h2 class="text-center">Pick a category to start browsing</h2><br/><br/>

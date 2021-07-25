@@ -1,0 +1,180 @@
+.bodyIndex {
+  background-image: url('https://i.imgur.com/4DtBUrd.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.categoriesBody {
+  background-image: url('https://i.imgur.com/4DtBUrd.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.browseBODY {
+  background-image: url('https://i.imgur.com/4DtBUrd.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.productBODY {
+  background-image: url('https://i.imgur.com/4DtBUrd.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.searchBODY {
+  background-image: url('https://i.imgur.com/4DtBUrd.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.faqBody {
+  background-image: url('https://i.imgur.com/4DtBUrd.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.aboutusBody {
+  background-image: url('https://i.imgur.com/4DtBUrd.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.covinfoBody {
+  background-image: url('https://i.imgur.com/4DtBUrd.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.userBODY {
+  background-image: url('https://i.imgur.com/4DtBUrd.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.aboutus_title {
+  color: orangered;
+}
+
+.product_title {
+  color: black;
+  text-align: center;
+}
+
+.card {
+  border: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.card:hover {
+  background-color: red;
+}
+
+.nav-item:hover {
+  background-color: red;
+}
+
+/* .btn-lg:hover {
+  border-color: orangered;
+  background-color: orange;
+} */
+.col-sm-4 {
+  padding-bottom: 10px;
+}
+.row {
+  margin-bottom: 10px;
+}
+.christmas_text {
+  color: Red;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  /*display: inline-block;*/
+  /* position: relative; */
+  font-family: 'Merriweather', serif;
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
+  -webkit-mask-size: 200%;
+  animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+.card-title {
+  color: orange;
+  font-family: 'Aladin', cursive;
+}
+
+.btn-lg {
+  text-align: center;
+  width: 100%;
+  border-color: orangered;
+}
+.btn-lg:hover {
+  border-color: orangered;
+  background-color: red;
+}
+.row {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  padding-bottom: 1em;
+}
+.col-xl-4 {
+  padding-bottom: 1em;
+}
+
+.btn-outline-success {
+  border-color: orangered;
+}
+.btn-outline-success:hover {
+  background-color: red;
+}
+
+.dropdown-item:hover {
+  background-color: red;
+}
+
+.footer_text {
+  color: orangered;
+}
+
+.btn-primary {
+  color: black;
+  background-color: red;
+}
+.btn-primary:hover {
+  background-color: rgba(255, 255, 255, 0.338);
+}
+
+.fixed {
+  text-align: center;
+}
+
+.mb-0 {
+  color: red;
+}
+
+/* .aboutus_pagebg {
+  background-color: white;
+} */
+
+.nobg {
+  background-color: rgba(255, 255, 255, 0.098);
+}
