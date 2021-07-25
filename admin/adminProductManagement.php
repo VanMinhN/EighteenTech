@@ -2,7 +2,7 @@
 	<h2>Product management</h2>
 
   <hr>
-	<?php	  
+	<?php
 		if(!empty($_POST['newProdName'])&&!empty($_POST['newProdImg'])&&!empty($_POST['newProdDescription'])&&!empty($_POST['newProdSpecs'])){
 			$ProdName = htmlspecialchars(trim($_POST['newProdName']));
 			$ProdImg =	htmlspecialchars(trim($_POST['newProdImg']));
@@ -12,17 +12,17 @@
 			$AmazonLink = htmlspecialchars(trim($_POST['newAmazonLink']));
 			$BBLink = htmlspecialchars(trim($_POST['newBBLink']));
 			$NeweggLink = htmlspecialchars(trim($_POST['newNeweggLink']));
-			
+
 			$Imgpattern = '/(https?:\/\/.*\.(?:png|jpg))/i';
-		
+
 			if(preg_match($Imgpattern,$ProdImg) &&
 			   (filter_var($AmazonLink, FILTER_VALIDATE_URL) || empty($AmazonLink)) &&
 			   (filter_var($NeweggLink, FILTER_VALIDATE_URL)  || empty($NeweggLink)) &&
 			   (filter_var($BBLink, FILTER_VALIDATE_URL)  || empty($BBLink))){
-			
+
 				// Prepare an insert statement
 				$sql = "INSERT INTO products (p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES (?,?,?,?,?,?,?,?)";
-				
+
 				if($stmt = mysqli_prepare($link, $sql)){
 					// Bind variables to the prepared statement as parameters
 					mysqli_stmt_bind_param($stmt, "ssssssss",$param_cat , $param_name, $param_image, $param_description, $param_specs, $param_amazon, $param_newegg,$param_bestbuy);
@@ -36,16 +36,16 @@
 					$param_amazon = $AmazonLink;
 					$param_newegg = $NeweggLink;
 					$param_bestbuy = $BBLink;
-					
+
 					// Attempt to execute the prepared statement
 					if(mysqli_stmt_execute($stmt)){
-						
-						echo "<p style='color:Green;'> Item Added!<br></p>";			
-						
+
+						echo "<p style='color:Green;'> Item Added!<br></p>";
+
 					} else{
 						echo "<p style='color:red;'>Oops! Something went wrong. <br>";
 						echo "Error: " . $sql . "<br>" . mysqli_error($link);
-						echo "</p>"; 
+						echo "</p>";
 					}
 
 
@@ -66,10 +66,10 @@
 			    if(!filter_var($NeweggLink, FILTER_VALIDATE_URL)){
 					echo"<p style='color:red;'>*Improper input for Product Newegg Link*</p>";
 					echo $NeweggLink;
-				}	
-			}		
-			
-			
+				}
+			}
+
+
 		}
 		else{
 			if(empty($_POST['newProdName']) && isset($_POST['Submit'])){
@@ -83,9 +83,9 @@
 			}
 			if(empty($_POST['newProdSpecs']) && isset($_POST['Submit'])){
 				echo"<p style='color:red;'>*Product Specifications Required*</p>";
-			}	
+			}
 		}
-	  
+
 	  ?>
 	<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#addNewProduct" >
 		Add new product
@@ -180,8 +180,8 @@
 				<button type="submit" class="btn btn-primary" name="Submit">Submit</button>
 			  </div>
 			</form>
-	  
-			
+
+
 
     </div>
   </div>
@@ -193,7 +193,7 @@
     });
     </script>
 <?php endif; ?>
-
+</div>
 	<hr>
 	<table class="table table-hover">
 		<thead>

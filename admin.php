@@ -66,7 +66,7 @@ if (!isset($_GET['page'])) {
           include($IPATH . "adminProductManagement.php"); ?>
           <!-- Admin Product Management -->
         </div>
-        <div class="tab-pane fade <?php echo ($page == "settings" ? 'show active' : ''); ?>">Settings</div>
+        
         <div class="tab-pane fade <?php echo ($page == "carousel" ? 'show active' : ''); ?>">
           <?php $IPATH = $_SERVER["DOCUMENT_ROOT"] . "/admin/";
           include($IPATH . "carouselManagement.php"); ?>

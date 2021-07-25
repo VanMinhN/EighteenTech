@@ -14,7 +14,7 @@ if (!isset ($_GET['page']) ) {
   $adminpage = "admininfo";
 } else {
   $adminpage = $_GET['page'];
-  if($adminpage!="admininfo" && $adminpage!="userman" && $adminpage!="themes"  && $adminpage!="carousel" && $adminpage!="manageprod" && $adminpage!="settings" && $adminpage!="documentation"){
+  if($adminpage!="admininfo" && $adminpage!="userman" && $adminpage!="themes"  && $adminpage!="carousel" && $adminpage!="manageprod" && $adminpage!="documentation"){
     header("location: admin.php");
   }
 }
@@ -27,6 +27,5 @@ if (!isset ($_GET['page']) ) {
       <a class="list-group-item list-group-item-action <?php echo ($adminpage == "carousel"? 'active':''); ?>"  href="./admin.php?page=carousel" role="tab">Carousel</a>
       <a class="list-group-item list-group-item-action <?php echo ($adminpage == "manageprod"? 'active':''); ?>"  href="./admin.php?page=manageprod" role="tab">Products</a>
       <div class="dropdown-divider"></div>
-      <a class="list-group-item list-group-item-action <?php echo ($adminpage == "settings"? 'active':''); ?>" href="./admin.php?page=settings" role="tab">Settings</a>
       <a class="list-group-item list-group-item-action <?php echo ($adminpage == "documentation"? 'active':''); ?>" href="./admin.php?page=documentation" role="tab">Documentation</a>
     </div>

@@ -5,7 +5,7 @@ require_once "config.php";
 $msg = '';
 if (isset($_POST['upload'])) {
     $imagelink = $_POST['image'];
-    //counting the number of rows 
+    //counting the number of rows
     $len = $link->query("SELECT COUNT(c_image) FROM carousel");
     $row = mysqli_fetch_array($len);
     $total = $row[0];
@@ -14,7 +14,7 @@ if (isset($_POST['upload'])) {
     //checking if the link is valid
     if (preg_match($pattern, $imagelink)) {
         if ((int)$total < 6) {
-            //inserting into sql database 
+            //inserting into sql database
             $sql = $link->query("INSERT INTO carousel (c_image) VALUES ('$imagelink')");
 
             if ($sql) {
@@ -55,7 +55,7 @@ if (isset($_POST['upload'])) {
         <tbody>
             <?php
             // Initialize the session
-
+if ($_GET['page'] == 'carousel') {
             //retrieve the selected results from database
             $query = "SELECT c_id, c_image FROM carousel";
             $result = mysqli_query($link, $query);
@@ -77,6 +77,7 @@ if (isset($_POST['upload'])) {
                       </td>';
                 echo '</tr>';
             }
+          }
 
             ?>
         </tbody>
