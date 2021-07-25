@@ -32,6 +32,12 @@ CREATE TABLE products (
         p_created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE TABLE carousel (
+    c_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    c_image VARCHAR(255) NOT NULL,
+    c_created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
 /*Create table schema for comments/reviews */
 CREATE TABLE reviews(
 	r_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -41,9 +47,9 @@ CREATE TABLE reviews(
 	post_time DATETIME DEFAULT CURRENT_TIMESTAMP,
 	rating INT NOT NULL,
 	comment TEXT(500),
-	FOREIGN KEY(p_id) REFERENCES products(p_id),
-	FOREIGN KEY(id) REFERENCES users(id),
-	FOREIGN KEY(username) REFERENCES users(username)
+	FOREIGN KEY(p_id) REFERENCES products(p_id) ON DELETE CASCADE,
+	FOREIGN KEY(id) REFERENCES users(id) ON DELETE CASCADE,
+	FOREIGN KEY(username) REFERENCES users(username) ON DELETE CASCADE
 );
 
 
@@ -2203,3 +2209,9 @@ INSERT INTO `reviews` (`r_id`, `p_id`, `id`, `username`, `post_time`, `rating`, 
 (9, 1, 5, 'corro', '2021-07-18 21:31:03', 3, 'not impressed'),
 (10, 1, 5, 'corro', '2021-07-18 21:31:10', 9, 'greatness'),
 (11, 1, 5, 'corro', '2021-07-18 21:31:21', 10, 'AMAZINGGGG');
+
+
+INSERT INTO `carousel` (`c_id`, `c_image`, `c_created_at`) VALUES 
+(1,'https://mdbootstrap.com/img/Photos/Others/clothes(5)-crop.jpg' ,'2021-07-24 22:07:08'),
+(2, 'https://mdbootstrap.com/img/Photos/Others/clothes(4)-crop.jpg','2021-07-24 22:10:35'),
+(3,'https://mdbootstrap.com/img/Photos/Others/clothes(3)-crop.jpg' ,'2021-07-24 22:13:42');
