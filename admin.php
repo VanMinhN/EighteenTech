@@ -103,7 +103,7 @@ function console_log( $data ){
 	  <div class="col-xl-9">
 		  <div class="tab-content">
       		<div class="tab-pane fade <?php echo ($page == "admininfo"? 'show active':''); ?>">
-		  		      <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/admin/"; include($IPATH."adminInfo.php"); ?> <!-- Admin info -->
+		  		      <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/admin/"; include($IPATH."admininfo.php"); ?> <!-- Admin info -->
 			    </div>
           <div class="tab-pane fade <?php echo ($page == "userman"? 'show active':''); ?>">
             <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/admin/"; include($IPATH."adminUserManagement.php"); ?> <!-- Admin User Management -->
