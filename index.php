@@ -14,10 +14,32 @@ include("getDB.php");
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">	
   <link id="ThemeStyle" rel="stylesheet" href="./css/<?= $themefile_name?>.css">
 </head>
-	<body>
+	<body class="bodyIndex">
 		<div>
 	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."navbar.php"); ?> <!-- Navbar -->
 		</div>
+<?php
+
+  if($themefile_name=="halloween")
+  {
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<div>";
+      echo "<h1 class='halloween_text'> Happy Halloween </h1>";
+      echo "</div";
+  }else if($themefile_name == "christmas"){
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<div>";
+      echo "<h1 class='christmas_text'> Merry Christmas </h1>";
+      echo "</div";
+  }
+
+?>
 	<div class="container" style="margin-top: 100px">
 	  <div class="container mt-3">
       <div class="row">

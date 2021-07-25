@@ -15,7 +15,7 @@ include("getDB.php");
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link id="ThemeStyle" rel="stylesheet" href="./css/<?= $themefile_name?>.css">
   </head>
-	<body>
+	<body class="browseBODY">
 	<div>
 	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."navbar.php"); ?>
 	</div>
@@ -98,8 +98,8 @@ include("getDB.php");
     echo ' <div class="col-sm-4">
             <a class=" text-decoration-none" href="product.php?pid='.$row['p_id'].'">
               <div class="card" style="height: 300px">
-                <img class="card-img-top" src="'.$row['p_image'].'" style=" display: block; margin-left: auto; margin-right: auto;max-width: 150px; max-height:250px; overflow: hidden; object-position: 50% 50%; object-fit: contain;" alt="'.$row['p_name'].'">
-                <h5 class="card-title">'.$row['p_name'].'</h5>
+                <img class="card-img-top" src="'.$row['p_image'].'" style=" display: block; margin: auto; max-width: 200px; max-height:200px; overflow: hidden; object-position: 50% 50%; object-fit: contain;" alt="'.$row['p_name'].'">
+                <div> <h5 class="product_title">'.$row['p_name'].'</h5> </div>
               </div>
               </a>
             </div>';

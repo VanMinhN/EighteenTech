@@ -3,11 +3,11 @@ USE eighteentech; /* Define the database*/
 CREATE TABLE users (
     	 id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     	 username VARCHAR(50) NOT NULL UNIQUE,
-       emailaddress VARCHAR(50) NOT NULL,
+         emailaddress VARCHAR(50) NOT NULL,
 	     first_name VARCHAR(50) NOT NULL,
 	     last_name VARCHAR(50) NOT NULL,
     	 password VARCHAR(255) NOT NULL,
-       is_admin BOOLEAN NOT NULL,
+		 is_admin BOOLEAN NOT NULL,
     	 created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -20,6 +20,8 @@ CREATE TABLE theme (
 
 /*Insert an admin account*/
 INSERT INTO users (username,emailaddress, first_name, last_name, password, is_admin) VALUES ("rames11a", "rameshnitin99@gmail.com", "Nitin", "Ramesh", "$2y$10$U8EIkwFRA49lcYQ4dHQ4BujLGfA4gtrXOlwpiUno1liO8l2lvbRxe", 1); /*Password: Admin01@ */
+INSERT INTO users (username,emailaddress, first_name, last_name, password, is_admin) VALUES ("corro", "corro@uwindsor.ca", "Charles", "Corro", "$2y$10$U8EIkwFRA49lcYQ4dHQ4BujLGfA4gtrXOlwpiUno1liO8l2lvbRxe", 1); /*Password: Admin01@ */
+
 /*Insert 3 dummy accounts*/
 INSERT INTO users ( username, emailaddress, first_name, last_name, password, is_admin) VALUES ( 'adamsmith01', 'adamsmith@gmail.com', 'Adam', 'Smith', '$2y$10$WOJHWt5HD0SwnDJS4EupgOfeUAtcfYZoan8eZsTUtX8gPcB58je2W', 0), ('johndoe', 'johndoe@hotmail.ca', 'John', 'Doe', '$2y$10$Zy0MjIp9MLZoOZgwdoXKDO9KlRvZbKAplb.fNpnPTfjf4ikrC4O7K', 0), ( 'janey_2001', 'janedoe123@yahoo.com', 'Jane', 'Doe', '$2y$10$19hAphj/W8wiQG23TkUhs.HJz8w2a4qJeebnTniVeSaD1WD85//ru', 0);
 /*Insert an default Theme*/
@@ -32,12 +34,30 @@ CREATE TABLE products (
         p_name VARCHAR(100) NOT NULL UNIQUE,
         p_image VARCHAR(200) NOT NULL UNIQUE,
         p_description LONGTEXT NOT NULL,
+		p_overallReview INT DEFAULT 0 NOT NULL,
         p_specs LONGTEXT NOT NULL,
         p_amazon VARCHAR(200) ,
         p_newegg VARCHAR(200) ,
         p_bestbuy VARCHAR(200) ,
         p_created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
+
+/*Create table schema for comments/reviews */
+CREATE TABLE reviews(
+	r_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	p_id INT NOT NULL,
+	id INT NOT NULL,
+	username VARCHAR(50) NOT NULL,
+	post_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+	rating INT NOT NULL,
+	comment TEXT(500),
+	FOREIGN KEY(p_id) REFERENCES products(p_id),
+	FOREIGN KEY(id) REFERENCES users(id),
+	FOREIGN KEY(username) REFERENCES users(username)
+);
+
+
+
 
 /*populate products table*/
 INSERT INTO products(p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES ("101", "UMIDIGI A9 Pro", "https://images-na.ssl-images-amazon.com/images/I/71Du8QCeYcL._AC_SL1500_.jpg", "[Sony 32MP Quad Camera] A9 Pro smartphone with Sony 32MP main camera, 16MP ultra-wide angle, 5MP depth camera and 5MP macro camera. The Sony 32MP camera has incredible light-sensing ability and comes with a 1/2"" large size sensor, supporting Quad Bayer, pixel size up to 1.6μm. Your pictures will come out bright even in low light. With a dramatic 120 ° field of view from a 16MP ultra-wide-angle camera, you can shoot clearer and wider landscapes.
@@ -2180,3 +2200,16 @@ Depth:
 9.8 cm
 Weight:
 181 g", "", "https://www.newegg.ca/google-ga00638-ca-802-11b-g-n-ac-wi-fi-bluetooth-5-0-chromecast-built-in/p/N82E16881716013?Description=Google%20Nest%20Mini&cm_re=Google_Nest%20Mini-_-81-716-013-_-Product", "https://www.bestbuy.ca/en-ca/product/google-nest-mini-2nd-gen-smart-speaker-chalk/13962883");
+
+INSERT INTO `reviews` (`r_id`, `p_id`, `id`, `username`, `post_time`, `rating`, `comment`) VALUES
+(1, 1, 5, 'corro', '2021-07-18 19:45:08', 5, 'great product! Will buy again!'),
+(2, 1, 5, 'corro', '2021-07-18 20:54:53', 5, 'neither great nor that bad. Was average.'),
+(3, 1, 5, 'corro', '2021-07-18 20:55:00', 7, 'I would buy this again'),
+(4, 1, 5, 'corro', '2021-07-18 20:55:10', 1, 'did not live up to my expectations'),
+(5, 1, 5, 'corro', '2021-07-18 20:55:16', 10, 'LOVE THIS PRODUCT'),
+(6, 1, 5, 'corro', '2021-07-18 21:03:37', 9, 'it was okay'),
+(7, 1, 5, 'corro', '2021-07-18 21:30:50', 6, 'great'),
+(8, 1, 5, 'corro', '2021-07-18 21:30:57', 7, 'I would recommend this to all my friends and family!'),
+(9, 1, 5, 'corro', '2021-07-18 21:31:03', 3, 'not impressed'),
+(10, 1, 5, 'corro', '2021-07-18 21:31:10', 9, 'greatness'),
+(11, 1, 5, 'corro', '2021-07-18 21:31:21', 10, 'AMAZINGGGG');

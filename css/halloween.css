@@ -1,0 +1,166 @@
+.bodyIndex {
+  background-image: url('https://i.imgur.com/QOFTPXz.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+}
+
+.categoriesBody {
+  background-image: url('https://i.imgur.com/QOFTPXz.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.faqBody {
+  background-image: url('https://i.imgur.com/QOFTPXz.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.aboutusBody {
+  background-image: url('https://i.imgur.com/QOFTPXz.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.covinfoBody {
+  background-image: url('https://i.imgur.com/QOFTPXz.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.userBODY {
+  background-image: url('https://i.imgur.com/QOFTPXz.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.browseBODY {
+  background-image: url('https://i.imgur.com/QOFTPXz.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.productBODY {
+  background-image: url('https://i.imgur.com/QOFTPXz.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.searchBODY {
+  background-image: url('https://i.imgur.com/QOFTPXz.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.aboutus_title {
+  color: orangered;
+}
+
+.product_title {
+  color: black;
+  text-align: center;
+}
+
+.card {
+  border: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.card:hover {
+  background-color: orange;
+}
+
+.nav-item:hover {
+  background-color: orange;
+}
+
+/* .btn-lg:hover {
+  border-color: orangered;
+  background-color: orange;
+} */
+.col-sm-4 {
+  padding-bottom: 10px;
+}
+.row {
+  margin-bottom: 10px;
+}
+.halloween_text {
+  color: orange;
+  font-family: 'Aladin', cursive;
+  font-size: 48px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  -webkit-perspective: 400px;
+  -moz-perspective: 400px;
+  -ms-perspective: 400px;
+  -o-perspective: 400px;
+  perspective: 400px;
+}
+
+.card-title {
+  color: orange;
+  font-family: 'Aladin', cursive;
+}
+
+.btn-lg {
+  text-align: center;
+  width: 100%;
+  border-color: orangered;
+}
+.btn-lg:hover {
+  border-color: orangered;
+  background-color: orange;
+}
+.row {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  padding-bottom: 1em;
+}
+.col-xl-4 {
+  padding-bottom: 1em;
+}
+
+.btn-outline-success {
+  border-color: orangered;
+}
+.btn-outline-success:hover {
+  background-color: orange;
+}
+
+.dropdown-item:hover {
+  background-color: orange;
+}
+
+.footer_text {
+  color: orangered;
+}
+
+.btn-primary {
+  color: black;
+  background-color: orange;
+}
+.btn-primary:hover {
+  background-color: rgba(255, 255, 255, 0.338);
+}
+
+.fixed {
+  text-align: center;
+}
+
+.mb-0 {
+  color: orange;
+}
+
+/* .aboutus_pagebg {
+  background-color: white;
+} */
+
+.nobg {
+  background-color: rgba(255, 255, 255, 0.098);
+}

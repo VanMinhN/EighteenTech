@@ -4,7 +4,8 @@ Basic template.
 
 ## To do
 
-* Create admin product management page
+* Develop "Add New Product" functionality (Admin side)
+* Add functionality for products actions (Admin side)
 
 ## How to run
 

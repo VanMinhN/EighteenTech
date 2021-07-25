@@ -105,8 +105,8 @@ function console_log( $data ){
             <form action="./admin.php" method="post">
               <select name="ThemeMode" id="ThemeMode">
                 <option value="default" <?= $themefile_name === "default"? "selected": ""?>>Default</option>
-                <option value="black"<?= $themefile_name === "black"? "selected": ""?>>Black</option>
-                <option value="red"<?= $themefile_name === "red"? "selected": ""?>>Red</option>
+                <option value="halloween"<?= $themefile_name === "halloween"? "selected": ""?>>Halloween</option>
+                <option value="christmas"<?= $themefile_name === "christmas"? "selected": ""?>>Christmas</option>
               </select>        
               <input type ="submit" value="Save Theme">
             </form>
@@ -117,6 +117,9 @@ function console_log( $data ){
           </div>
 		      <div class="tab-pane fade <?php echo ($page == "settings"? 'show active':''); ?>">Settings</div>
 		      <div class="tab-pane fade <?php echo ($page == "carousel"? 'show active':''); ?>">Carousel content</div>
+          <div class="tab-pane fade <?php echo ($page == "documentation"? 'show active':''); ?>">
+              <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/admin/"; include($IPATH."adminDocumentation.php"); ?> <!-- Admin Documentation -->
+          </div>
     </div>
 	  </div>
 </div>
