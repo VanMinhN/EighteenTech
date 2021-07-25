@@ -4,8 +4,7 @@ Basic template.
 
 ## To do
 
-* Develop "Add New Product" functionality (Admin side)
-* Add functionality for products actions (Admin side)
+* COVID-19 page 
 
 ## How to run
 
