@@ -1,9 +1,91 @@
-
 <div class="container">
 	<h2>Product management</h2>
   <hr>
+	<?php	  
+		if(!empty($_POST['newProdName'])&&!empty($_POST['newProdImg'])&&!empty($_POST['newProdDescription'])&&!empty($_POST['newProdSpecs'])){
+			$ProdName = htmlspecialchars(trim($_POST['newProdName']));
+			$ProdImg =	htmlspecialchars(trim($_POST['newProdImg']));
+			$ProdCat = htmlspecialchars(trim($_POST['newProductCategory']));
+			$ProdDes = htmlspecialchars(trim($_POST['newProdDescription']));
+			$ProdSpecs = htmlspecialchars(trim($_POST['newProdSpecs']));
+			$AmazonLink = htmlspecialchars(trim($_POST['newAmazonLink']));
+			$BBLink = htmlspecialchars(trim($_POST['newBBLink']));
+			$NeweggLink = htmlspecialchars(trim($_POST['newNeweggLink']));
+			
+			$Imgpattern = '/(https?:\/\/.*\.(?:png|jpg))/i';
+		
+			if(preg_match($Imgpattern,$ProdImg) &&
+			   (filter_var($AmazonLink, FILTER_VALIDATE_URL) || empty($AmazonLink)) &&
+			   (filter_var($NeweggLink, FILTER_VALIDATE_URL)  || empty($NeweggLink)) &&
+			   (filter_var($BBLink, FILTER_VALIDATE_URL)  || empty($BBLink))){
+			
+				// Prepare an insert statement
+				$sql = "INSERT INTO products (p_category, p_name, p_image, p_description,p_specs, p_amazon, p_newegg, p_bestbuy) VALUES (?,?,?,?,?,?,?,?)";
+				
+				if($stmt = mysqli_prepare($link, $sql)){
+					// Bind variables to the prepared statement as parameters
+					mysqli_stmt_bind_param($stmt, "ssssssss",$param_cat , $param_name, $param_image, $param_description, $param_specs, $param_amazon, $param_newegg,$param_bestbuy);
 
-	<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#addNewProduct">
+					// Set parameters
+					$param_cat = $ProdCat;
+					$param_name = $ProdName;
+					$param_image = $ProdImg;
+					$param_description = $ProdDes;
+					$param_specs = $ProdSpecs;
+					$param_amazon = $AmazonLink;
+					$param_newegg = $NeweggLink;
+					$param_bestbuy = $BBLink;
+					
+					// Attempt to execute the prepared statement
+					if(mysqli_stmt_execute($stmt)){
+						
+						echo "<p style='color:Green;'> Item Added!<br></p>";			
+						
+					} else{
+						echo "<p style='color:red;'>Oops! Something went wrong. <br>";
+						echo "Error: " . $sql . "<br>" . mysqli_error($link);
+						echo "</p>"; 
+					}
+
+					// Close statement
+					mysqli_stmt_close($stmt);
+				}
+			}
+			else{
+				if(!preg_match($Imgpattern,$ProdImg)){
+					echo"<p style='color:red;'>*Improper input for Product Image Link*</p>";
+				}
+			    if(!filter_var($AmazonLink, FILTER_VALIDATE_URL)){
+					echo"<p style='color:red;'>*Improper input for Product Amazon Link*</p>";
+				}
+			    if(!filter_var($BBLink, FILTER_VALIDATE_URL)){
+					echo"<p style='color:red;'>*Improper input for Product BestBuy Link*</p>";
+				}
+			    if(!filter_var($NeweggLink, FILTER_VALIDATE_URL)){
+					echo"<p style='color:red;'>*Improper input for Product Newegg Link*</p>";
+					echo $NeweggLink;
+				}	
+			}		
+			
+			
+		}
+		else{
+			if(empty($_POST['newProdName']) && isset($_POST['Submit'])){
+				echo"<p style='color:red;'>*Product Name Required*</p>";
+			}
+			if(empty($_POST['newProdImg']) && isset($_POST['Submit'])){
+				echo"<p style='color:red;'>*Product Image Required*</p>";
+			}
+			if(empty($_POST['newProdDescription']) && isset($_POST['Submit'])){
+				echo"<p style='color:red;'>*Product Description Required*</p>";
+			}
+			if(empty($_POST['newProdSpecs']) && isset($_POST['Submit'])){
+				echo"<p style='color:red;'>*Product Specifications Required*</p>";
+			}	
+		}
+	  
+	  ?>
+	<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#addNewProduct" >
 		Add new product
 	</button>
 	<div class="modal" id="addNewProduct" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -15,14 +97,14 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-			<form>
+	  <form method="POST" action="">
 
-      <div class="modal-body">
+			<div class="modal-body">
 				<div class="row">
     			<div class="col">
 						<label for="newProductName">Product Name</label>
 						<div class="input-group mb-3">
-							<input type="text" class="form-control" id="newProductName" >
+							<input type="text" class="form-control" id="newProductName" name="newProdName">
 						</div>
     			</div>
     			<div class="col">
@@ -31,19 +113,31 @@
 							<div class="input-group-prepend">
 		    				<span class="input-group-text" id="newProductImage1">🔗</span>
 		  				</div>
-		    			<input type="text" class="form-control" id="newProductImage" aria-describedby="newProductImage1">
+		    			<input name="newProdImg" type="text" class="form-control" id="newProductImage" aria-describedby="newProductImage1">
 		  			</div>
     			</div>
   			</div>
 
 				<label for="newProductDescription">Product Description</label>
 				<div class="input-group">
-  				<textarea id="newProductDescription" class="form-control"></textarea>
+  				<textarea id="newProductDescription" class="form-control" name="newProdDescription"></textarea>
 				</div>
 				<br>
 				<label for="newProductSpecs">Product Specifications</label>
 				<div class="input-group">
-  				<textarea id="newProductSpecs" class="form-control"></textarea>
+  				<textarea id="newProductSpecs" class="form-control" name="newProdSpecs"></textarea>
+				</div>
+				<br>
+				<label for "newProductCategory">Product Category</label>
+				<div class="input-group">
+					<select name="newProductCategory" id="newProductCategory">
+						<option value="101">Cellphones</option>
+						<option value="102">Headphones & Speakers</option>
+						<option value="103">Cameras</option>
+						<option value="104">TVs & Home Theatres</option>
+						<option value="105">Wearable Technology</option>
+						<option value="106">Smart Home</option>
+					</select>
 				</div>
 				<br>
 				<div class="row">
@@ -53,7 +147,7 @@
 							<div class="input-group-prepend">
 		    				<span class="input-group-text" id="newProductAmazon1">🔗</span>
 		  				</div>
-		    			<input type="text" class="form-control" id="newProductAmazon" aria-describedby="newProductAmazon1">
+		    			<input name="newAmazonLink" type="text" class="form-control" id="newProductAmazon" aria-describedby="newProductAmazon1">
 		  			</div>
 					</div>
 					<div class="col">
@@ -62,7 +156,7 @@
 							<div class="input-group-prepend">
 		    				<span class="input-group-text" id="newProductBestBuy1">🔗</span>
 		  				</div>
-		    			<input type="text" class="form-control" id="newProductBestBuy" aria-describedby="newProductBestBuy1">
+		    			<input name="newBBLink" type="text" class="form-control" id="newProductBestBuy" aria-describedby="newProductBestBuy1">
 		  			</div>
 					</div>
 					<div class="col">
@@ -71,21 +165,29 @@
 							<div class="input-group-prepend">
 		    				<span class="input-group-text" id="newProductNewegg1">🔗</span>
 		  				</div>
-		    			<input type="text" class="form-control" id="newProductNewegg" aria-describedby="newProductNewegg1">
+		    			<input name="newNeweggLink" type="text" class="form-control" id="newProductNewegg" aria-describedby="newProductNewegg1">
 		  			</div>
 					</div>
 				</div>
 
-      </div>
-      <div class="modal-footer">
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </div>
-		</form>
+			  </div>
+			  <div class="modal-footer">
+				<button type="submit" class="btn btn-primary" name="Submit">Submit</button>
+			  </div>
+			</form>
+	  
+			
 
     </div>
   </div>
 </div>
-
+<?php if(!empty($succMsg)): ?>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("#response").modal("show");
+    });
+    </script>
+<?php endif; ?>
 	<hr>
   <table class="table table-hover">
   <thead>
