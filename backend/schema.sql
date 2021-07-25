@@ -11,7 +11,7 @@ CREATE TABLE users (
     	 created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
-Create schema for themes
+/*Create schema for themes*/
 CREATE TABLE theme (
     id INT NOT NULL PRIMARY KEY,
     THEMENAME VARCHAR(255) NOT NULL UNIQUE,
@@ -2221,7 +2221,7 @@ INSERT INTO `reviews` (`r_id`, `p_id`, `id`, `username`, `post_time`, `rating`, 
 (11, 1, 5, 'corro', '2021-07-18 21:31:21', 10, 'AMAZINGGGG');
 
 
-INSERT INTO `carousel` (`c_id`, `c_image`, `c_created_at`) VALUES 
+INSERT INTO `carousel` (`c_id`, `c_image`, `c_created_at`) VALUES
 (1,'https://mdbootstrap.com/img/Photos/Others/clothes(5)-crop.jpg' ,'2021-07-24 22:07:08'),
 (2, 'https://mdbootstrap.com/img/Photos/Others/clothes(4)-crop.jpg','2021-07-24 22:10:35'),
 (3,'https://mdbootstrap.com/img/Photos/Others/clothes(3)-crop.jpg' ,'2021-07-24 22:13:42');

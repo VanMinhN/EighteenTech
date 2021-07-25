@@ -83,7 +83,7 @@ function console_log( $data ){
   		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link id="ThemeStyle" rel="stylesheet" href="./css/<?= $themefile_name?>.css">
-      
+
 
 </head>
 
@@ -114,7 +114,7 @@ function console_log( $data ){
                 <option value="default" <?= $themefile_name === "default"? "selected": ""?>>Default</option>
                 <option value="halloween"<?= $themefile_name === "halloween"? "selected": ""?>>Halloween</option>
                 <option value="christmas"<?= $themefile_name === "christmas"? "selected": ""?>>Christmas</option>
-              </select>        
+              </select>
               <input type ="submit" value="Save Theme">
             </form>
             <script type="text/javascript" src="./js/theme.js"></script>
@@ -123,7 +123,9 @@ function console_log( $data ){
             <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/admin/"; include($IPATH."adminProductManagement.php"); ?> <!-- Admin Product Management -->
           </div>
 		      <div class="tab-pane fade <?php echo ($page == "settings"? 'show active':''); ?>">Settings</div>
-		      <div class="tab-pane fade <?php echo ($page == "carousel"? 'show active':''); ?>">Carousel content</div>
+		      <div class="tab-pane fade <?php echo ($page == "carousel"? 'show active':''); ?>">
+            <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/admin/"; include($IPATH."carouselManagement.php"); ?> <!-- Admin Documentation -->
+          </div>
           <div class="tab-pane fade <?php echo ($page == "documentation"? 'show active':''); ?>">
               <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/admin/"; include($IPATH."adminDocumentation.php"); ?> <!-- Admin Documentation -->
           </div>
