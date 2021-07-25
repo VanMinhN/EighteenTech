@@ -1,9 +1,18 @@
 <?php
+
 include("getDB.php");
+
+session_start();
+// Include config file
+require_once "config.php";
+$result = $link->query("SELECT c_image FROM carousel");
+
 ?>
 <!DOCTYPE html>
 <html>
+
 <head>
+
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>EighteenTech</title>
 <meta charset="UTF-8">
@@ -46,47 +55,49 @@ include("getDB.php");
         <div class="col-12">
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-              <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleControls" data-slide-to="1"></li>
-              <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+              <?php
+              $i = 0;
+              foreach ($result as $row) {
+                $actives = '';
+                if ($i == 0) {
+                  $actives = 'active';
+                }
+              ?>
+                <li data-target="#carouselExampleControls" data-slide-to="<?= $i; ?>" class="<?= $actives ?>"></li>
+              <?php $i++;
+              } ?>
             </ol>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="./images/Carousel_Placeholder.png" alt="First slide" >
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Item 1 Heading</h5>
-                  <p>Item 1 Description</p>
+              <?php
+              $i = 0;
+              foreach ($result as $row) {
+                $actives = '';
+                if ($i == 0) {
+                  $actives = 'active';
+                }
+              ?>
+                <div class="carousel-item <?= $actives; ?>">
+                  <img class="d-block w-100" src="<?= $row['c_image'] ?>">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./images/Carousel_Placeholder.png" alt="Second slide">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Item 2 Heading</h5>
-                  <p>Item 2 Description</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./images/Carousel_Placeholder.png" alt="Third slide">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Item 3 Heading</h5>
-                  <p>Item 3 Description</p>
-                </div>
-              </div>
+              <?php $i++;
+              } ?>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
             </a>
           </div>
         </div>
       </div>
       <hr>
     </div>
-		<hr>
+    <hr>
     <h2 class="text-center">RECOMMENDED PRODUCTS</h2>
     <hr>
     <div class="container">
@@ -155,12 +166,14 @@ include("getDB.php");
         </div>
       </div>
     </div>
-</div>
-<div>
-	<?php include($IPATH."footer.html"); ?> <!-- Footer -->
-		</div>
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap-4.4.1.js"></script>
-	</body>
+  </div>
+  <div>
+    <?php include($IPATH . "footer.html"); ?>
+    <!-- Footer -->
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.4.1.js"></script>
+</body>
+
 </html>
