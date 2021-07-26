@@ -51,7 +51,7 @@ include("getDB.php");
             <p class="aboutus_title">CS student</p>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-            <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="./images/Carousel_Placeholder.png" data-holder-rendered="true">
+            <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="./images/Bilal.png" data-holder-rendered="true">
             <h3>Bilal Sohail</h3>
             <p class="aboutus_title">CS student</p>
           </div>
