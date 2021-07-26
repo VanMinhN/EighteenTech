@@ -13,44 +13,46 @@ $result = $link->query("SELECT c_image FROM carousel");
 
 <head>
 
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>EighteenTech</title>
-<meta charset="UTF-8">
-  		<meta name="description" content="Technology reviews">
-  		<meta name="keywords" content="appliances, tech, review, tv, mobile, headphone, laptop, phone">
-  		<meta name="author" content="Nitin Ramesh">
- 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">	
-  <link id="ThemeStyle" rel="stylesheet" href="./css/<?= $themefile_name?>.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>EighteenTech</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Technology reviews">
+  <meta name="keywords" content="appliances, tech, review, tv, mobile, headphone, laptop, phone">
+  <meta name="author" content="Nitin Ramesh">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link id="ThemeStyle" rel="stylesheet" href="./css/<?= $themefile_name ?>.css">
 </head>
-	<body class="bodyIndex">
-		<div>
-	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."navbar.php"); ?> <!-- Navbar -->
-		</div>
-<?php
 
-  if($themefile_name=="halloween")
-  {
+<body class="bodyIndex">
+  <div>
+    <?php $IPATH = $_SERVER["DOCUMENT_ROOT"] . "/assets/php/";
+    include($IPATH . "navbar.php"); ?>
+    <!-- Navbar -->
+  </div>
+  <?php
+
+  if ($themefile_name == "halloween") {
     echo "<br>";
     echo "<br>";
     echo "<br>";
     echo "<br>";
     echo "<div>";
-      echo "<h1 class='halloween_text'> Happy Halloween </h1>";
-      echo "</div";
-  }else if($themefile_name == "christmas"){
+    echo "<h1 class='halloween_text'> Happy Halloween </h1>";
+    echo "</div";
+  } else if ($themefile_name == "christmas") {
     echo "<br>";
     echo "<br>";
     echo "<br>";
     echo "<br>";
     echo "<div>";
-      echo "<h1 class='christmas_text'> Merry Christmas </h1>";
-      echo "</div";
+    echo "<h1 class='christmas_text'> Merry Christmas </h1>";
+    echo "</div";
   }
 
-?>
-	<div class="container" style="margin-top: 100px">
-	  <div class="container mt-3">
+  ?>
+  <div class="container" style="margin-top: 100px">
+    <div class="container mt-3">
       <div class="row">
         <div class="col-12">
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -90,7 +92,7 @@ $result = $link->query("SELECT c_image FROM carousel");
             </a>
             <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
+              <span class="sr-only" style="color:gray">Next</span>
             </a>
           </div>
         </div>
@@ -100,71 +102,28 @@ $result = $link->query("SELECT c_image FROM carousel");
     <hr>
     <h2 class="text-center">RECOMMENDED PRODUCTS</h2>
     <hr>
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-4 pb-1 pb-md-0">
-          <div class="card">
-            <img class="card-img-top" src="./images/Carousel_Placeholder.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 pb-1 pb-md-0">
-          <div class="card">
-            <img class="card-img-top" src="./images/Carousel_Placeholder.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 pb-1 pb-md-0">
-          <div class="card">
-            <img class="card-img-top" src="./images/Carousel_Placeholder.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card Title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row text-center mt-4">
-        <div class="col-md-4 pb-1 pb-md-0">
-          <div class="card">
-            <img class="card-img-top" src="./images/Carousel_Placeholder.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 pb-1 pb-md-0">
-          <div class="card">
-            <img class="card-img-top" src="./images/Carousel_Placeholder.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 pb-1 pb-md-0">
-          <div class="card">
-            <img class="card-img-top" src="./images/Carousel_Placeholder.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="row">
+      <?php
+      $raw_results = mysqli_query($link, "SELECT p_id, p_image, p_name AS p_name FROM products
+			  ORDER BY p_overallReview DESC LIMIT 6") or die(mysqli_error($link));
+
+      if (mysqli_num_rows($raw_results) > 0) { // if one or more rows are returned do following
+        while ($results = mysqli_fetch_array($raw_results)) {
+          // puts data from database into array, while it's valid
+          echo ' <div class="col-sm-4">
+						<a class=" text-decoration-none" href="product.php?pid=' . $results['p_id'] . '">
+						<div class="card" style="height: 300px">
+							<img class="card-img-top" src="' . $results['p_image'] . '" style=" display: block; margin: auto; max-width: 200px; max-height:200px; overflow: hidden; object-position: 50% 50%; object-fit: contain;" alt="' . $results['p_name'] . '">
+							<h5 class="product_title">' . $results['p_name'] . '</h5>
+						</div>
+						</a>
+						</div>';
+        }
+      } else { // if there are no recommended products
+        echo "No recommended products at the moment";
+      }
+      ?>
+
     </div>
   </div>
   <div>

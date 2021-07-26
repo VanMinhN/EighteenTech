@@ -2249,6 +2249,6 @@ INSERT INTO `reviews` (`r_id`, `p_id`, `id`, `username`, `post_time`, `rating`, 
 
 /*Sample images for front page carousel*/
 INSERT INTO `carousel` (`c_id`, `c_image`, `c_created_at`) VALUES
-(1,'https://mdbootstrap.com/img/Photos/Others/clothes(5)-crop.jpg' ,'2021-07-24 22:07:08'),
-(2, 'https://mdbootstrap.com/img/Photos/Others/clothes(4)-crop.jpg','2021-07-24 22:10:35'),
-(3,'https://mdbootstrap.com/img/Photos/Others/clothes(3)-crop.jpg' ,'2021-07-24 22:13:42');
+(1,'https://sohailb.myweb.cs.uwindsor.ca/1.JPG' ,'2021-07-24 22:07:08'),
+(2, 'https://sohailb.myweb.cs.uwindsor.ca/2.JPG','2021-07-24 22:10:35'),
+(3,'https://sohailb.myweb.cs.uwindsor.ca/3.JPG' ,'2021-07-24 22:13:42');
