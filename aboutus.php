@@ -47,7 +47,7 @@ include("getDB.php");
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 text-center">
             <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="./images/Keerthana.png" data-holder-rendered="true">
-            <h3>Keerthana Madhaven</h3>
+            <h3>Keerthana Madhavan</h3>
             <p class="aboutus_title">CS student</p>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 text-center">
