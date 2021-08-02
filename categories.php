@@ -43,6 +43,7 @@ include("getDB.php");
 			  </div>
 		  </div>
     </form>
+	<?php include($IPATH."footer.html"); ?> <!-- Footer -->
         </div>
 <script src="./js/jquery-3.4.1.min.js"></script>
 	<script src="./js/popper.min.js"></script>
