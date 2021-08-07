@@ -19,37 +19,37 @@ include("getDB.php");
 	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."navbar.php"); ?>
 	</div>
 	 <div class="container" style="margin-top: 100px; background-color:white;">
-		<div class="row">
+
 			<div class="col-lg-12 mb-4 mt-2 text-center">
             <h2>COVID-19</h2>
-          	</div>
-			<div class="row">
-          		<div class="col-lg-12 mb-4 mt-2 text-center">
-            		<h2>Brief</h2>
-          		</div>
-				<hr>
-        	</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero lacus, interdum ut tortor id, pharetra porta risus. Quisque vel augue tincidunt, pulvinar ante eu, cursus orci. Proin nec bibendum metus. Nunc semper tellus id sodales congue. Quisque quis nunc augue. Sed scelerisque dolor quis dictum condimentum. Morbi nec quam risus. Etiam et arcu luctus, pulvinar lacus eget, vehicula lacus. Quisque mattis orci id augue gravida scelerisque. Ut convallis, velit et tincidunt efficitur, lectus leo ornare elit, sed tempus nibh eros ornare magna. </p>
-		<div class="row">
-          		<div class="col-lg-12 mb-4 mt-2 ">
-            		<h2>Statistics</h2>
-          		</div>
-				<hr>
-        	</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero lacus, interdum ut tortor id, pharetra porta risus. Quisque vel augue tincidunt, pulvinar ante eu, cursus orci. Proin nec bibendum metus. Nunc semper tellus id sodales congue. Quisque quis nunc augue. Sed scelerisque dolor quis dictum condimentum. Morbi nec quam risus. Etiam et arcu luctus, pulvinar lacus eget, vehicula lacus. Quisque mattis orci id augue gravida scelerisque. Ut convallis, velit et tincidunt efficitur, lectus leo ornare elit, sed tempus nibh eros ornare magna. </p>
-		<div class="row">
-          		<div class="col-lg-12 mb-4 mt-2 ">
-            		<h2>World Map</h2>
-          		</div>
-				<hr>
-        	</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero lacus, interdum ut tortor id, pharetra porta risus. Quisque vel augue tincidunt, pulvinar ante eu, cursus orci. Proin nec bibendum metus. Nunc semper tellus id sodales congue. Quisque quis nunc augue. Sed scelerisque dolor quis dictum condimentum. Morbi nec quam risus. Etiam et arcu luctus, pulvinar lacus eget, vehicula lacus. Quisque mattis orci id augue gravida scelerisque. Ut convallis, velit et tincidunt efficitur, lectus leo ornare elit, sed tempus nibh eros ornare magna. </p>
-		</div>
-        
       </div>
-      
-	
-<script src="js/jquery-3.4.1.min.js"></script>
+
+      <ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="brief-tab" data-toggle="tab" href="#brief" role="tab" aria-controls="brief" aria-selected="true">Brief</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="stats-tab" data-toggle="tab" href="#stats" role="tab" aria-controls="statistics" aria-selected="false">Statistics</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="map-tab" data-toggle="tab" href="#map" role="tab" aria-controls="map" aria-selected="false">Map</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="brief" role="tabpanel" aria-labelledby="brief-tab">
+      <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/covid19/"; include($IPATH."brief.php"); ?> <!-- COVID-19 brief -->
+    </div>
+    <div class="tab-pane fade" id="stats" role="tabpanel" aria-labelledby="stats-tab">
+      <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/covid19/"; include($IPATH."statistics.php"); ?> <!-- COVID-19 stats -->
+    </div>
+    <div class="tab-pane fade" id="map" role="tabpanel" aria-labelledby="map-tab">
+      <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/covid19/"; include($IPATH."map.php"); ?> <!-- COVID-19 map -->
+    </div>
+  </div>
+
+
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap-4.4.1.js"></script>
 	</body>
