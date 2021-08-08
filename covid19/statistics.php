@@ -11,20 +11,70 @@
   <script type="text/javascript" src='../covid19/draw_charts.js'> </script>
  <script>
     
-      var data;
-      var file = '../covid19/covid_data.csv';
+      var info_data;
+      var file = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/01-01-2021.csv';
+//       function doStuff(data) {
+//     //Data is usable here
+//     console.log( data);
+//     console.log(JSON.parse(data));
+    
+//     const Country_Labels = $.unique(data.map(function(e) {
+//         console.log(e.Country_Region);
+//     return e.Country_Region;
+//  }));
+// console.log(Country_Labels);
+
+// }
+
+// function parseData(url, callBack) {
+//     Papa.parse(url, {
+//         download: true,
+//         dynamicTyping: true,
+//         complete: function(results) {
+//             callBack(results.data);
+//             console.log(results.data);
+//         }
+//     });
+// }
+
+// parseData(file, doStuff);
+
+// var Country_Labels, new_active, death_cases, Recovered_cases;;
+var Country_Labels, active_cases, death_cases, Recovered_cases;
+var activeLen;
+      
       Papa.parse(file, 
         {
             header: true,
             download: true,
             dynamicTyping: true,
             complete: function(results){
+                console.log(typeof results.data);
+                
+                info_data = JSON.stringify(results);
                 console.log(results);
-                data = results.data;
+                console.log(results.data[0].Country_Region);
+                // Country_Lables = country(results.data);
+                // console.log(Country_Labels);
+                // death_cases =  death_cases(results.data);
+                // Recovered_cases = Recovered_cases(results.data);
+                // new_active = activeCases(results.data);
+                country(results.data);
+                death(results.data);
+                Recovered(results.data);
+               
+        //        death_cases(results.data);
+        //      Recovered_cases(results.data);
+        //  activeCases(results.data);
+                
+               
+                
             }
         }
       );
-      console.log(data);
+      console.log(info_data);
+
+    
     
   </script>
 
@@ -35,40 +85,8 @@
 	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."navbar.php"); ?>
 	</div>
 
-    
-   <canvas id="activeChart" width="800"  height="800" overflow="scroll"></canvas>
-<script>
-      const Country_Labels = $.unique(json_file.data.map(function(e) {
-    return e.Country_Region;
- }));
- console.log(Country_Labels);
- 
- const death_cases = json_file.data.map(function(e) {
-     
-     return (e.Deaths);
- 
-  });
-
-  const Recovered_cases = json_file.data.map(function(e) {
-     
-     return (e.Recovered);
- 
-  });
-
- const active_cases = json_file.data.map(function(e) {
-     
-    return (e.Active);
-
- });
-
- active_Cases = jQuery.grep(active_cases, function( n, i ) {
-  return n>=0;
-});
-
-var new_active = active_cases.filter(function(v){return v!==''});
- console.log(new_active);
-
- function dynamicColors(){
+    <script>
+         function dynamicColors(){
      var r = Math.floor(Math.random() * 255);
      var g = Math.floor(Math.random() * 255);
      var b = Math.floor(Math.random() * 255);
@@ -86,7 +104,32 @@ var new_active = active_cases.filter(function(v){return v!==''});
      return pool;
  }
 
-//graph for active cases
+ 
+
+
+        </script>
+   <canvas id="activeChart" width="800"  height="800" overflow="scroll"></canvas>
+<script>
+
+    function country(results)
+    {
+      const Country_Labels = $.unique(results.map(function(e) {
+    return e.Country_Region;
+
+    
+ }));
+
+ active_cases = results.map(function(e) {
+    
+    
+    return (e.Active);
+
+ });
+
+ console.log(active_cases.length)
+ console.log(Country_Labels);
+
+ //graph for active cases
 var ctx = document.getElementById("activeChart").getContext("2d");
 
 var config =  {
@@ -95,9 +138,9 @@ var config =  {
         labels: Country_Labels,
         datasets: [{
             label:"active",
-            data: new_active,
-            backgroundColor: poolColors(new_active.length),
-            fillColor:  poolColors(new_active.length),
+            data: active_cases,
+            backgroundColor: poolColors(active_cases.length),
+            fillColor:  poolColors(active_cases.length),
             borderWidth: 1
         },
     
@@ -147,22 +190,51 @@ var config =  {
 
 var chart = new Chart(ctx, config);
 
+}
+
+
+
+
+
+
     </script>
+    
 	 
 		<div>
       <br>
       <br>
       <canvas id="deathChart" width="800"  height="500" overflow="scroll"></canvas>
       <script>
-            //graph for active cases
-var ctx = document.getElementById("deathChart").getContext("2d");
 
-var config =  {
+    function death(results)
+    {
+      const Country_Labels1 = $.unique(results.map(function(e) {
+    return e.Country_Region;
+
+    
+ }));
+
+ 
+
+  death_cases = results.map(function(e) {
+     
+     return (e.Deaths);
+ 
+  });
+
+  
+ 
+ console.log(Country_Labels1);
+
+ //graph for death cases
+var ctx1 = document.getElementById("deathChart").getContext("2d");
+
+var config1 =  {
     type: 'bar',
     data: {
-        labels: Country_Labels,
+        labels: Country_Labels1,
         datasets: [{
-            label:"Death By Country",
+            label:"Death",
             data: death_cases,
             backgroundColor: poolColors(death_cases.length),
             fillColor:  poolColors(death_cases.length),
@@ -201,7 +273,7 @@ var config =  {
            },
            title: {
                display: true,
-               text: " Cornavirus Deaths by Country"
+               text: "Death Cornavirus cases by Country"
            }
        }
 
@@ -213,75 +285,108 @@ var config =  {
    
 };
 
-var chart = new Chart(ctx, config);
-          </script>
+var chart1 = new Chart(ctx1, config1);
+
+}
+
+
+
+    </script>
 
           <br>
           <br>
 
           <canvas id="recoveryChart" width="800"  height="500" overflow="scroll"></canvas>
-      <script>
-            //graph for active cases
+          <script>
+
+function Recovered(results)
+{
+  const Country_Labels = $.unique(results.map(function(e) {
+return e.Country_Region;
+
+
+}));
+
+recovery_cases = results.map(function(e) {
+
+
+return (e.Recovered);
+
+});
+
+console.log(active_cases.length)
+console.log(Country_Labels);
+
+//graph for active cases
 var ctx = document.getElementById("recoveryChart").getContext("2d");
 
 var config =  {
-    type: 'bar',
-    data: {
-        labels: Country_Labels,
-        datasets: [{
-            label:"Recovery By Country",
-            data: Recovered_cases,
-            backgroundColor: poolColors(Recovered_cases.length),
-            fillColor:  poolColors(Recovered_cases.length),
-            borderWidth: 1
-        },
-    
-    
-    ]
+type: 'doughnut',
+data: {
+    labels: Country_Labels,
+    datasets: [{
+        label:"Recovery",
+        data: active_cases,
+        backgroundColor: poolColors(recovery_cases.length),
+        fillColor:  poolColors(recovery_cases.length),
+        borderWidth: 1
     },
-    options: {
-        responsive: false,
-        scaleShowValues: true,
-        scales: {
-            xAxes: [{
-                display: false,
-      ticks: {
-         autoSkip: false
-      }
-  }],
-  yAxes: [{
-                           
+
+
+]
+},
+options: {
+    responsive: false,
+    scaleShowValues: true,
+    scales: {
+        xAxes: [{
+            display: false,
+  ticks: {
+     autoSkip: false
+  }
+}],
+yAxes: [{
+                       
+                        ticks: {
                             ticks: {
-                                ticks: {
-          suggestedMax: 100,
-          suggestedMin: -10
-        }
-                            }
-            }]
-        },
-       plugins: {
-           legend:{
-               display: true, 
-               position: 'bottom',
-               overflow: 'scroll'
-               
-           },
-           title: {
-               display: true,
-               text: " Cornavirus Recovery by Country"
-           }
-       }
-
+      suggestedMax: 100,
+      suggestedMin: -10
+    }
+                        }
+        }]
     },
-   
-   
+   plugins: {
+       legend:{
+           display: true, 
+           position: 'bottom',
+           overflow: 'scroll'
+           
+       },
+       title: {
+           display: true,
+           text: "Recovered Cornavirus cases by Country"
+       }
+   }
+
+},
 
 
-   
+
+
+
 };
 
 var chart = new Chart(ctx, config);
-          </script>
+
+}
+
+
+
+
+
+
+</script>
+
 
       <br>
 	<?php include($IPATH."footer.html"); ?> <!-- Footer -->
