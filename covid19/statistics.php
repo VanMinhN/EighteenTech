@@ -5,8 +5,30 @@
   var info_data;
   var Country_Labels, active_cases, death_cases, Recovered_cases;
   var activeLen;
-  var file = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/01-01-2021.csv';
+  
+ 
+  var date = new Date();
+
+
+function returnYYYYMMDD(date){
+  let d = new Date();
+  d.setDate(d.getDate() + date);
+  const month = d.getMonth() < 9 ? '0' + (d.getMonth() + 1) : d.getMonth() + 1;
+  const day = d.getDate() < 10 ? '0' + d.getDate() : d.getDate();
+  return `${month}-${day}-${d.getFullYear()}`;
+}
+
+var yesterdayDate = returnYYYYMMDD(-10);
+var todaysDate = returnYYYYMMDD(0);
+
+console.log(yesterdayDate); // returns yesterday
+console.log(todaysDate); // returns today
+
+  var file = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/' + yesterdayDate + '.csv';
+  console.log(file)
   fetch(file).then(res => res.text())
+    .then(file = file)
+    .then(console.log(file))
     .then(data => console.log(data))
   Papa.parse(file,{
             header: true,
@@ -17,6 +39,8 @@
                 info_data = JSON.stringify(results);
                 console.log(results);
                 console.log(results.data[0].Country_Region);
+                console.log(results.data[0].Active);
+                console.log(results.data[0].Death);
                 country(results.data);
                 death(results.data);
                 Recovered(results.data);
@@ -40,10 +64,25 @@ function poolColors(a){
   }
   return pool;
 }
+
+
 </script>
+
+<br>
+<br>
+
+
+<script>
+       document.write("Our dataset is LIVE that is updated weekly");
+       document.write("<br>");
+       document.write("Our dataset is based of this Github Repo https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports")
+       document.write("<br>");
+       document.write("Dataset Auto Refreshed Date: " + yesterdayDate);
+  </script>
 <div style="margin-top: 30px;">
   <canvas id="activeChart" width="800"  height="800" overflow="scroll"></canvas>
 <script>
+  
 function country(results){
   const Country_Labels = $.unique(results.map(function(e) {
   return e.Country_Region;
@@ -51,7 +90,7 @@ function country(results){
   active_cases = results.map(function(e) {
     return (e.Active);
   });
-  console.log(active_cases.length)
+  console.log(active_cases)
   console.log(Country_Labels);
   //graph for active cases
   var ctx = document.getElementById("activeChart").getContext("2d");
