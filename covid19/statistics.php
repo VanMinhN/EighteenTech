@@ -1,7 +1,6 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.1/papaparse.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.0/chart.js"></script>
-<script type="text/javascript" src='../covid19/draw_charts.js'> </script>
 <script>
   var info_data;
   var Country_Labels, active_cases, death_cases, Recovered_cases;
