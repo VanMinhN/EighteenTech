@@ -55,6 +55,6 @@ header("Access-Control-Allow-Origin: *");
 	<script src="js/bootstrap-4.4.1.js"></script>
 	</body>
 	<div class="nobg">
-	<?php include($IPATH."footer.html"); ?> <!-- Footer -->
+	<?php $assetPath = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($assetPath."footer.html"); ?> <!-- Footer -->
 		</div>
 </html>

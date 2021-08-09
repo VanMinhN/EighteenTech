@@ -5,8 +5,8 @@
   var info_data;
   var Country_Labels, active_cases, death_cases, Recovered_cases;
   var activeLen;
-  
- 
+
+
   var date = new Date();
 
 
@@ -75,14 +75,14 @@ function poolColors(a){
 <script>
        document.write("Our dataset is LIVE that is updated weekly");
        document.write("<br>");
-       document.write("Our dataset is based of this Github Repo https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports")
+       document.write("Our dataset is based of this Github Repo: <a href=\"https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports\"> https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports </a>")
        document.write("<br>");
-       document.write("Dataset Auto Refreshed Date: " + yesterdayDate);
+       document.write("Dataset Auto Refreshed Date: <b>" + yesterdayDate+"</b>");
   </script>
 <div style="margin-top: 30px;">
   <canvas id="activeChart" width="800"  height="800" overflow="scroll"></canvas>
 <script>
-  
+
 function country(results){
   const Country_Labels = $.unique(results.map(function(e) {
   return e.Country_Region;

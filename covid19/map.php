@@ -27,7 +27,7 @@
         map = new google.maps.Map(document.getElementById('vacc_centres_map'), {
           mapId: "ec9129a41ca430bd",
           center: pos,
-          zoom: 15
+          zoom: 12
         });
         bounds.extend(pos);
 
@@ -54,7 +54,7 @@
     map = new google.maps.Map(document.getElementById('vacc_centres_map'), {
       mapId: "ec9129a41ca430bd",
       center: pos,
-      zoom: 15
+      zoom: 12
     });
 
     // Display an InfoWindow at the map center

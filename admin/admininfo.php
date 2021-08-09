@@ -64,8 +64,22 @@
     </tr>
     <tr>
       <th scope="row">Covid-19 dataset</th>
-      <td><span class="badge badge-pill badge-warning">Not Operational</span></td>
-      <td>No dataset connected</td>
+			<?php
+			$url = "https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports";
+
+			// Use get_headers() function
+			$headers = @get_headers($url);
+
+			// Use condition to check the existence of URL
+			if($headers && strpos( $headers[0], '200')) {
+				echo '<td><span class="badge badge-pill badge-success">Operational</span></td>';
+				echo "<td>Connected</td>";
+			}
+			else {
+				echo '<td><span class="badge badge-pill badge-warning">Not Operational</span></td>';
+				echo "<td>Unable to connect to dataset</td>";
+			}
+			?>
     </tr>
   </tbody>
 </table>
