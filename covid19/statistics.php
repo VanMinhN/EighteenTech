@@ -12,37 +12,15 @@
  <script>
     
       var info_data;
-      var file = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/01-01-2021.csv';
-//       function doStuff(data) {
-//     //Data is usable here
-//     console.log( data);
-//     console.log(JSON.parse(data));
-    
-//     const Country_Labels = $.unique(data.map(function(e) {
-//         console.log(e.Country_Region);
-//     return e.Country_Region;
-//  }));
-// console.log(Country_Labels);
-
-// }
-
-// function parseData(url, callBack) {
-//     Papa.parse(url, {
-//         download: true,
-//         dynamicTyping: true,
-//         complete: function(results) {
-//             callBack(results.data);
-//             console.log(results.data);
-//         }
-//     });
-// }
-
-// parseData(file, doStuff);
-
-// var Country_Labels, new_active, death_cases, Recovered_cases;;
-var Country_Labels, active_cases, death_cases, Recovered_cases;
-var activeLen;
       
+        var Country_Labels, active_cases, death_cases, Recovered_cases;
+        var activeLen;
+
+      var file = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/01-01-2021.csv';
+    
+    fetch(file).then(res => res.text())
+    .then(data => console.log(data))
+    
       Papa.parse(file, 
         {
             header: true,
@@ -54,21 +32,9 @@ var activeLen;
                 info_data = JSON.stringify(results);
                 console.log(results);
                 console.log(results.data[0].Country_Region);
-                // Country_Lables = country(results.data);
-                // console.log(Country_Labels);
-                // death_cases =  death_cases(results.data);
-                // Recovered_cases = Recovered_cases(results.data);
-                // new_active = activeCases(results.data);
                 country(results.data);
                 death(results.data);
                 Recovered(results.data);
-               
-        //        death_cases(results.data);
-        //      Recovered_cases(results.data);
-        //  activeCases(results.data);
-                
-               
-                
             }
         }
       );
@@ -81,6 +47,8 @@ var activeLen;
                 <link id="ThemeStyle" rel="stylesheet" href="./css/<?= $themefile_name?>.css">
   </head>
 	<body >
+
+    
 	<div>
 	<?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."navbar.php"); ?>
 	</div>
