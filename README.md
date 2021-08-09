@@ -1,11 +1,5 @@
 # EighteenTech
 
-Basic template.
-
-## To do
-
-* COVID-19 page 
-
 ## How to run
 
 ### PHP
