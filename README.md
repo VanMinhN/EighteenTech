@@ -1,4 +1,4 @@
-# EighteenTech
+<img src="images/horizontal-logo.png" width=600>
 
 ## How to run
 
