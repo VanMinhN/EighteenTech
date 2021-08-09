@@ -49,11 +49,12 @@
 
   // Handle a geolocation error
   function handleLocationError(browserHasGeolocation, infoWindow) {
-    // Set default location to Sydney, Australia
-    pos = { lat: -33.856, lng: 151.215 };
+    // Set default location to Windsor, Ontario
+    pos = { lat: 42.314, lng: -83.0364 };
     map = new google.maps.Map(document.getElementById('vacc_centres_map'), {
+      mapId: "ec9129a41ca430bd",
       center: pos,
-      zoom: 30
+      zoom: 15
     });
 
     // Display an InfoWindow at the map center
