@@ -25,6 +25,12 @@
 			document.getElementById("nav_faq").className = "nav-link active";
 			console.log("done");
 		}
+		if(current_page === "/support.php")
+		{
+			console.log("Support");
+			document.getElementById("nav_support").className = "nav-link active";
+			console.log("done");
+		}
 };
 
 </script>
@@ -43,6 +49,7 @@
 							<li class="nav-item" > <a class="nav-link" id="nav_faq" href="./FAQ.php">FAQ</a> </li>
 							<li class="nav-item" > <a class="nav-link" id="nav_covid19" href="./covInfo.php">COVID-19</a> </li>
 							<li class="nav-item" > <a class="nav-link" id="nav_aboutus" href="./aboutus.php">About us</a> </li>
+							<li class="nav-item" > <a class="nav-link" id="nav_support" href="./support.php">Support </a> </li>
 
 	        	</ul>
 
