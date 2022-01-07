@@ -21,6 +21,9 @@
 7. Upload the .sql file from the backend folder.
 8. If the import is successful, you'll see the newly created user table. You're good to go!
 
+### Website
+Website: https://eighteentech.myweb.cs.uwindsor.ca/
+
 ## Any doubts?
 
 Ping the team members on discord.
