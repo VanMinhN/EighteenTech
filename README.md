@@ -24,6 +24,4 @@
 ### Website
 Website: https://eighteentech.myweb.cs.uwindsor.ca/
 
-## Any doubts?
 
-Ping the team members on discord.
